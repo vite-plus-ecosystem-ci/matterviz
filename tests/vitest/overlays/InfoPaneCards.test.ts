@@ -1,6 +1,6 @@
 import InfoPaneCards from '$lib/overlays/InfoPaneCards.svelte'
 import { mount } from 'svelte'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test(`renders duplicate unkeyed rows`, () => {
   mount(InfoPaneCards, {

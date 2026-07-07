@@ -5,7 +5,7 @@ import {
   generate_plot_series,
   should_hide_plot,
 } from '$lib/trajectory/plotting'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_trajectory_frame } from '../setup'
 
 // Test data and configuration constants

@@ -1,5 +1,5 @@
 import { group_demo_routes } from '$site/state.svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`group_demo_routes`, () => {
   test.each([

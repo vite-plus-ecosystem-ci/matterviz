@@ -4,7 +4,7 @@ import * as helpers from '$lib/convex-hull/helpers'
 import { get_convex_hull_stats } from '$lib/convex-hull/thermodynamics'
 import type { PhaseData } from '$lib/convex-hull/types'
 import { MAGNETIC_ORDERING_CATEGORY } from '$lib/convex-hull/types'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 class MockPath2D {
   arc(

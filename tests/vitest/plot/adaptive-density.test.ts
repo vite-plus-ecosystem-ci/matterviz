@@ -10,7 +10,7 @@ import {
   should_render_points,
   type DensePointSeries,
 } from '$lib/plot/scatter/adaptive-density'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 const CI_MULTIPLIER = [`true`, `1`].includes(process.env.CI ?? ``) ? 5 : 1
 const PSEUDO_RANDOM_MULTIPLIER = 48_271

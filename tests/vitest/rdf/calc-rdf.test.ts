@@ -4,7 +4,7 @@ import type { Matrix3x3 } from '$lib/math'
 import { calculate_all_pair_rdfs, calculate_rdf } from '$lib/rdf'
 import type { Pbc } from '$lib/structure'
 import { structure_map } from '$site/structures'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { create_test_structure, make_crystal } from '../setup'
 
 // Use actual structure files from the project

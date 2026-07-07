@@ -3,7 +3,7 @@ import { InteractiveAxisLabel } from '$lib/plot'
 import type { AxisOption } from '$lib/plot/core/types'
 import type { ComponentProps } from 'svelte'
 import { mount, unmount } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 
 const options: AxisOption[] = [
   { key: `energy`, label: `Energy`, unit: `eV` },

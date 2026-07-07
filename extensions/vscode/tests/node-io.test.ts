@@ -1,4 +1,4 @@
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { stream_file_to_buffer } from '../src/node-io'
 
 const mock_vscode = vi.hoisted(() => ({

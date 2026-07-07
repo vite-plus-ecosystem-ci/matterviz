@@ -1,7 +1,7 @@
 import { SymmetryStats } from '$lib/symmetry'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // Helper function to create mock MoyoDataset for testing

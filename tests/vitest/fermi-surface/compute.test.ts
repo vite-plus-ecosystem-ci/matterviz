@@ -7,7 +7,7 @@ import {
 } from '$lib/fermi-surface/compute'
 import type { BandGridData, FermiSurfaceData, Isosurface } from '$lib/fermi-surface/types'
 import type { Matrix3x3, Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`extract_fermi_surface`, () => {
   const identity_lattice: Matrix3x3 = [

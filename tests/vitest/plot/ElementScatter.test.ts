@@ -1,6 +1,6 @@
 import { ElementScatter } from '$lib'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Atomic radii for first 10 elements (H through Ne)
 const y_values = [53, 31, 167, 112, 87, 77, 75, 73, 71, 69]

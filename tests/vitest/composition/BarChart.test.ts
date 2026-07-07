@@ -1,6 +1,6 @@
 import { BarChart, count_atoms_in_composition, fractional_composition } from '$lib/composition'
 import { createRawSnippet, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 describe(`BarChart component`, () => {

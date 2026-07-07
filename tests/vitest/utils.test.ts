@@ -1,5 +1,5 @@
 import { decode_url_safe_base64, merge_nested, parse_leading_num, parse_num_token } from '$lib'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`parse_num_token / parse_leading_num`, () => {
   test.each([

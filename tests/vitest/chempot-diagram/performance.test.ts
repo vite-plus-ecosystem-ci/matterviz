@@ -8,7 +8,7 @@ import {
 import { count_atoms_in_composition } from '$lib/composition/parse'
 import type { PhaseData } from '$lib/convex-hull/types'
 import process from 'node:process'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { load_json } from '../setup'
 
 const test_dir = import.meta.dirname

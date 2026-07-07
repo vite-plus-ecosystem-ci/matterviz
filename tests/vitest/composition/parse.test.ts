@@ -21,7 +21,7 @@ import {
   parse_formula_with_wildcards,
   sanitize_composition_keys,
 } from '$lib/composition'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`atomic number utilities`, () => {
   test.each([

@@ -9,7 +9,7 @@ import {
   parse_supercell_scaling,
   scale_lattice_matrix,
 } from '$lib/structure/supercell'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 // Sample structure for testing

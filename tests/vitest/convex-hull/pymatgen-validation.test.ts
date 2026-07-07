@@ -7,7 +7,7 @@
 import type { ElementSymbol } from '$lib'
 import { calculate_e_above_hull } from '$lib/convex-hull/thermodynamics'
 import type { PhaseData } from '$lib/convex-hull/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import pymatgen_reference from './fixtures/quinary_pymatgen_reference.json' with { type: 'json' }
 
 interface PymatgenEntry {

@@ -1,7 +1,7 @@
 // Tests for the marching cubes algorithm and vertex normal computation
 import { compute_vertex_normals, marching_cubes } from '$lib/marching-cubes'
 import type { Matrix3x3, Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_grid } from './setup'
 
 const IDENTITY: Matrix3x3 = [

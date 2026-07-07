@@ -1,7 +1,7 @@
 import { ScatterPlot3D } from '$lib'
 import type { DataSeries3D, Surface3DConfig } from '$lib/plot/core/types'
 import { flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import ScatterPlot3DHarness from './ScatterPlot3DHarness.svelte'
 
 // Smoke tests to ensure component mounts without errors.

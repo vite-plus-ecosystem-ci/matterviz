@@ -3,7 +3,7 @@ import { resolve_line_tween } from '$lib/plot/core/utils'
 import { interpolatePath } from 'd3-interpolate-path'
 import { mount } from 'svelte'
 import { sineIn } from 'svelte/easing'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`resolve_line_tween (path-morph budget)`, () => {
   test.each([

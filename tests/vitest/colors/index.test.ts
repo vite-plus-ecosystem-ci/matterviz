@@ -11,7 +11,7 @@ import {
   PLOT_COLORS,
   watch_dark_mode,
 } from '$lib/colors'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 
 describe(`colors module`, () => {
   describe(`color constants`, () => {

@@ -9,7 +9,7 @@ import {
   wyckoff_sequence,
 } from '$lib/symmetry'
 import type { MoyoWyckoffPosition } from '@spglib/moyo-wasm'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const make_row = (wyckoff: string, overrides: Partial<WyckoffPos> = {}): WyckoffPos => ({
   wyckoff,

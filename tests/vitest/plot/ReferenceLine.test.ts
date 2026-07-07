@@ -2,7 +2,7 @@
 import { ReferenceLine } from '$lib'
 import type { RefLine } from '$lib/plot'
 import { mount } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // Helper to query all elements of a type

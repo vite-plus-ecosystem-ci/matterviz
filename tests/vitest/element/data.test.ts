@@ -5,7 +5,7 @@
 import type { ElementSymbol } from '$lib/element'
 import { element_data } from '$lib/element'
 import { CATEGORY_COUNTS as expected_counts } from '$lib/labels'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Precomputed lookup map for O(1) element access
 const elements_by_symbol = new Map(element_data.map((el) => [el.symbol, el]))

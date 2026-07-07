@@ -1,6 +1,6 @@
 import { calculate_e_above_hull } from '$lib/convex-hull/thermodynamics'
 import type { PhaseData } from '$lib/convex-hull/types'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`calculate_e_above_hull`, () => {
   // Helper to create entry

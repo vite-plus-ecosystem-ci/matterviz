@@ -6,7 +6,7 @@ import {
   filter_series_to_ranges,
   pick_tooltip_bg,
 } from '$lib/plot/scatter/scatter-data'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const color_scale = (val: number) => `scale(${val})`
 const ranges: AxisRanges = { x: [0, 10], x2: [100, 200], y: [0, 10], y2: [-50, 50] }

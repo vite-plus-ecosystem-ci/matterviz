@@ -9,7 +9,7 @@ import {
   VECTOR_PALETTE,
 } from '$lib/structure'
 import { glob_text, structure_files, structures } from '$site/structures'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const ref_data: Record<
   string,

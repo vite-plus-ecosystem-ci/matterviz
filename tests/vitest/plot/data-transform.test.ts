@@ -5,7 +5,7 @@ import {
   prepare_legend_data,
 } from '$lib/plot/core/data-transform'
 import { DEFAULTS } from '$lib/settings'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`data-transform utility functions`, () => {
   describe(`extract_series_color`, () => {

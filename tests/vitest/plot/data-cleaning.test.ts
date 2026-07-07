@@ -26,7 +26,7 @@ import {
   smooth_savitzky_golay,
   sync_metadata,
 } from '$lib/plot'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 // --- Test Data Generators ---
 

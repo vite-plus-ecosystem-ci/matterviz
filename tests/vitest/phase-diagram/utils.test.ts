@@ -30,7 +30,7 @@ import {
   tokenize_formula,
   transform_vertices,
 } from '$lib/phase-diagram/utils'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`point_in_polygon`, () => {
   const square: Vec2[] = [

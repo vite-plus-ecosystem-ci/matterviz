@@ -20,7 +20,7 @@ import {
   serialize_for_copy,
   values_equal,
 } from '$lib/layout/json-tree/utils'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`get_value_type`, () => {
   it.each([

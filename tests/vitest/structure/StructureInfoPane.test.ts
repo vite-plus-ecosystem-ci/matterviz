@@ -2,7 +2,7 @@ import { StructureInfoPane } from '$lib'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
 import type { ComponentProps } from 'svelte'
 import { mount, tick } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, get_dummy_structure } from '../setup'
 
 describe(`StructureInfoPane`, () => {

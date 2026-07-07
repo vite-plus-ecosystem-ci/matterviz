@@ -30,7 +30,7 @@ import {
   sync_axis_range,
 } from '$lib/spectral/helpers'
 import type { BaseBandStructure, RibbonConfig } from '$lib/spectral/types'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 import { IDENTITY_MATRIX3 } from '../setup'
 
 describe(`is_valid_range`, () => {

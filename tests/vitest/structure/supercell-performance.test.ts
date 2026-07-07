@@ -3,7 +3,7 @@ import * as math from '$lib/math'
 import type { Crystal } from '$lib/structure'
 import { make_supercell, parse_supercell_scaling } from '$lib/structure/supercell'
 import process from 'node:process'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 // Create a large test structure with random Fe sites in a 10 Å cubic lattice

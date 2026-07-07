@@ -6,7 +6,7 @@ import {
   sanitize_icon_svg,
   sanitize_svg,
 } from '$lib'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // XSS payloads that must never survive any sanitizer
 const XSS_PAYLOADS = [

@@ -6,7 +6,7 @@ import {
   normalize_system_name,
   parse_tdb,
 } from '$lib/phase-diagram/parse'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { SAMPLE_TDB_CONTENT } from './fixtures/test-data'
 
 describe(`parse_tdb`, () => {

@@ -1,6 +1,6 @@
 import { EmptyState } from '$lib'
 import { createRawSnippet, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query } from './setup'
 
 describe(`EmptyState`, () => {

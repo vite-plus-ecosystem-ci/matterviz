@@ -3,7 +3,7 @@ import { element_data, PeriodicTable, PropertySelect } from '$lib'
 import { CATEGORY_COUNTS, ELEM_HEATMAP_LABELS } from '$lib/labels'
 import type { Vec2 } from '$lib/math'
 import { createRawSnippet, mount, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const mouseenter = new MouseEvent(`mouseenter`)

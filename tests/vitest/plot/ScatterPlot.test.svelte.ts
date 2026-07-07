@@ -4,7 +4,7 @@ import type { DataSeries, FillRegion } from '$lib/plot'
 import { get_series_color, get_series_symbol } from '$lib/plot/core/data-transform'
 import { DEFAULT_SERIES_COLORS, DEFAULT_SERIES_SYMBOLS } from '$lib/plot/core/types'
 import { type ComponentProps, createRawSnippet, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query, mount_sized, resize_element, svg_query } from '../setup'
 
 const basic = {

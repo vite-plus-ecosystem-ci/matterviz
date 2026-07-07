@@ -15,7 +15,7 @@ import {
   TRIANGLE_VERTICES,
 } from '$lib/convex-hull/barycentric-coords'
 import type { PhaseData } from '$lib/convex-hull/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`ternary: constants and projections`, () => {
   test(`triangle vertices are equilateral base`, () => {

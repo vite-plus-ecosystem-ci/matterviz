@@ -4,7 +4,7 @@ import {
   encode_structure_id,
   fetch_optimade_providers,
 } from '$lib/api/optimade'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { MOCK_PROVIDERS } from '../../fixtures/optimade-mocks'
 
 describe(`OPTIMADE API utilities`, () => {

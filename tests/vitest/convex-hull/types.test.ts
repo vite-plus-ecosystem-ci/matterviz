@@ -9,7 +9,7 @@ import {
   is_unary_entry,
 } from '$lib/convex-hull/helpers'
 import { HULL_FACE_COLOR_MODES } from '$lib/convex-hull/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`arity helpers`, () => {
   const make = (composition: Record<string, number>) => ({ composition }) as PhaseData

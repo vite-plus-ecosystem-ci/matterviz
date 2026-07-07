@@ -1,5 +1,5 @@
 import { build_gizmo_props, build_orbit_props } from '$lib/scene'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`build_gizmo_props`, () => {
   test(`shared axis defaults`, () => {

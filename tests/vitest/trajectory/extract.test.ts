@@ -6,7 +6,7 @@ import {
   structural_data_extractor,
 } from '$lib/trajectory/extract'
 import { parse_trajectory_data } from '$lib/trajectory/parse'
-import { beforeAll, describe, expect, it } from 'vitest'
+import { beforeAll, describe, expect, it } from 'vite-plus/test'
 import { make_trajectory_frame, read_binary_test_file } from '../setup'
 
 const constant_lattice_keys = [

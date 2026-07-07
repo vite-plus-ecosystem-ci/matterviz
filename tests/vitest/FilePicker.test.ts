@@ -1,6 +1,6 @@
 import { type FileInfo, FilePicker } from '$lib'
 import { mount } from 'svelte'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { doc_query } from './setup'
 
 describe(`FilePicker`, () => {

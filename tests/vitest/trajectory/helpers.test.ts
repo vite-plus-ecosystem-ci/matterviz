@@ -5,7 +5,7 @@ import {
 } from '$lib/trajectory/helpers'
 import type { ElementSymbol } from '$lib/element'
 import type { Matrix3x3 } from '$lib/math'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`trajectory helpers`, () => {
   it(`throws clear error for invalid position vectors`, () => {

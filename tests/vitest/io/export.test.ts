@@ -13,7 +13,7 @@ import {
 import { download } from '$lib/io/fetch'
 import type { Camera, Scene, WebGLRenderer } from 'three'
 import { Vector2 } from 'three'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 vi.mock(`$lib/io/fetch`, () => ({ download: vi.fn() }))
 

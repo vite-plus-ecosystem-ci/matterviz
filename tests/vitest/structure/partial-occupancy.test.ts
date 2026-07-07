@@ -5,7 +5,7 @@ import {
   merge_split_partial_sites,
   PARTIAL_OCCUPANCY_CAP_ARC,
 } from '$lib/structure/partial-occupancy'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const make_site = (species: Site[`species`], xyz: Vec3, label: string): Site => ({
   species,

@@ -1,6 +1,6 @@
 import type { Vec2 } from '$lib/math'
 import type { Surface3DConfig } from '$lib/plot/core/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Tests for surface configuration logic that affects material properties.
 // The actual Three.js rendering is validated via Playwright visual tests.

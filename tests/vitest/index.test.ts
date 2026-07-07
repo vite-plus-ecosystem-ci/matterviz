@@ -1,6 +1,6 @@
 import * as lib from '$lib'
 import * as labels from '$lib/labels'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 test(`library exports all Svelte components from $lib/*.svelte`, () => {
   const svelte_files = Object.keys(import.meta.glob(`$lib/*.svelte`))

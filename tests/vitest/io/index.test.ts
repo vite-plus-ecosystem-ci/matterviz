@@ -1,5 +1,5 @@
 import { handle_url_drop, load_from_url } from '$lib/io'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 globalThis.fetch = vi.fn()
 

@@ -1,6 +1,6 @@
 import type { Vec2, Vec3 } from '$lib/math'
 import * as math from '$lib/math'
-import { describe, expect, it, test } from 'vitest'
+import { describe, expect, it, test } from 'vite-plus/test'
 
 describe(`combinations`, () => {
   // oxfmt-ignore

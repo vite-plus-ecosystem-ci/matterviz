@@ -6,7 +6,7 @@ import {
   parse_formula_with_oxidation,
 } from '$lib/composition'
 import { type ComponentProps, mount } from 'svelte'
-import { expect, test, vi } from 'vitest'
+import { expect, test, vi } from 'vite-plus/test'
 
 // Mount Formula into document.body and return its rendered `.formula` root (or null)
 const mount_formula = (props: ComponentProps<typeof Formula>): HTMLElement | null => {
