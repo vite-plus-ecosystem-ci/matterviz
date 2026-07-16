@@ -1,5 +1,5 @@
 // @vitest-environment happy-dom
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 // Isolate watcher behavior from palette data and theme registration side effects.
 vi.mock(`$lib/colors`, () => ({

@@ -6,7 +6,7 @@ import * as exports from '$lib/structure/export'
 import { make_supercell } from '$lib/structure/supercell'
 import { structures } from '$site/structures'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   assertHoverScopedShortcut,
   bind_props,

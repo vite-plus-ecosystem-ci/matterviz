@@ -1,6 +1,6 @@
 // Tests for Fermi surface file parsing via parse_fermi_file
 import { parse_fermi_file } from '$lib/fermi-surface/parse'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Typed wrapper for band-grid formats (BXSF/FRMSF) to avoid per-test casts
 type BandGrid = {

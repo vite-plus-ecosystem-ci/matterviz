@@ -1,5 +1,5 @@
 import { DEFAULTS, merge } from '$lib/settings'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`Settings`, () => {
   describe(`merge function`, () => {

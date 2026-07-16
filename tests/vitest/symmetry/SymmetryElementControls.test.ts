@@ -9,7 +9,7 @@ import {
   SymmetryElementControls,
 } from '$lib/symmetry'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const make_elem = (
   kind: SymmetryElement[`kind`],

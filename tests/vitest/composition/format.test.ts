@@ -6,7 +6,7 @@ import {
   get_formula_label_segments,
   get_hill_formula,
 } from '$lib/composition'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`get_alphabetical_formula`, () => {
   test.each([

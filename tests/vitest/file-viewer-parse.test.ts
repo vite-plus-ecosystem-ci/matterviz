@@ -1,5 +1,5 @@
 import { parse_file_content } from '$lib/file-viewer/parse'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test(`parses a POSCAR structure through the worker-safe entry`, async () => {
   const poscar = `Si2\n1.0\n5.43 0 0\n0 5.43 0\n0 0 5.43\nSi\n2\ndirect\n0 0 0 Si\n0.25 0.25 0.25 Si\n`

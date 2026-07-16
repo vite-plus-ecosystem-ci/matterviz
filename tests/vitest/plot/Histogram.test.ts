@@ -1,7 +1,7 @@
 import { Histogram, type Vec2 } from '$lib'
 import { bin, max as d3max } from 'd3-array'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { axis_label_pivot_y, resize_element } from '../setup'
 
 function mount_histogram(props: Record<string, unknown>) {

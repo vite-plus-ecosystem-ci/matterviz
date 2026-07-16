@@ -1,7 +1,7 @@
 import type { PhaseDiagramData } from '$lib/phase-diagram'
 import { PhaseDiagramControls } from '$lib/phase-diagram'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Sample phase diagram data for testing
 const sample_data: PhaseDiagramData = {

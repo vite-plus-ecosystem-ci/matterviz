@@ -9,7 +9,7 @@ import { get_traj_parse_warnings } from '$lib/trajectory/parse/diagnostics'
 import { existsSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import process from 'node:process'
-import { describe, expect, it, test, vi } from 'vitest'
+import { describe, expect, it, test, vi } from 'vite-plus/test'
 import { get_dummy_structure, read_binary_test_file, read_maybe_gz } from '../setup'
 
 const TRAJECTORY_DIR = `src/site/trajectories`

@@ -1,6 +1,6 @@
 import { InfoTag } from '$lib/layout'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 describe(`InfoTag`, () => {

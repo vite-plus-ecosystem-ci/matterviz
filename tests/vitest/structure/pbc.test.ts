@@ -11,7 +11,7 @@ import lifemn_cif from '$site/structures/Li4Fe3Mn1(PO4)4.cif?raw'
 import nacl_poscar from '$site/structures/NaCl-cubic.poscar?raw'
 import quartz_cif from '$site/structures/quartz-alpha.cif?raw'
 import extended_xyz_quartz from '$site/structures/quartz.extxyz?raw'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 const mp_1_struct = structure_map.get(`mp-1`) as Crystal

@@ -4,7 +4,7 @@ import { currentWritable } from '@threlte/core'
 import type * as threlte_core from '@threlte/core'
 import { flushSync } from 'svelte'
 import type { Camera, Scene, WebGLRenderer } from 'three'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 // Stub only useThrelte and keep the real @threlte/core exports - using the real
 // currentWritable makes the camera store behave authentically: `.current` is a

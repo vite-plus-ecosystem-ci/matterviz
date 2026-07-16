@@ -3,7 +3,7 @@ import {
   resolve_slice_color_range,
   slice_to_rgba,
 } from '$lib/isosurface/slice-rendering'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const make_slice = () => ({
   data: new Float64Array([Number.NaN, -2, 0, 2]),

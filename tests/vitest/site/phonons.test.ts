@@ -1,5 +1,5 @@
 import { phonon_bands, phonon_data, phonon_dos } from '$site/phonons'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`Phonon Module Tests`, () => {
   const band_entries = Object.entries(phonon_bands)

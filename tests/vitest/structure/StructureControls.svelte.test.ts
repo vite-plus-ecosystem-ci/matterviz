@@ -1,6 +1,6 @@
 import { StructureControls } from '$lib/structure'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props, simple_structure } from '../setup'
 
 describe(`StructureControls reactive props`, () => {

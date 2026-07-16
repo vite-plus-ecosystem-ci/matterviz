@@ -1,6 +1,6 @@
 import { DEFAULTS } from '$lib/settings'
 import { build_structure_props_from_settings } from '$lib/structure/prop-groups'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test(`settings builder groups structure props`, () => {
   const props = build_structure_props_from_settings(DEFAULTS)

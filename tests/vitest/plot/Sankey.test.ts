@@ -1,7 +1,7 @@
 import { Sankey } from '$lib'
 import type { SankeyData, SankeyLinkHandlerProps, SankeyNodeHandlerProps } from '$lib/plot'
 import { type ComponentProps, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 
 const data: SankeyData = {

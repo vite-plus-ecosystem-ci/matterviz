@@ -6,7 +6,7 @@ import type { AnyStructure, Site } from '$lib/structure'
 import { get_pbc_image_sites } from '$lib/structure'
 import type { HistoryStacks } from '$lib/structure/edit-history'
 import { push_edit, step_history } from '$lib/structure/edit-history'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { get_dummy_structure, make_crystal } from '../setup'
 
 // === Element Normalization ===

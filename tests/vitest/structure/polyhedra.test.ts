@@ -10,7 +10,7 @@ import {
 } from '$lib/structure/polyhedra'
 import type { Polyhedron } from '$lib/structure/polyhedra'
 import { make_supercell } from '$lib/structure/supercell'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 // Minimal BondPair stub (only fields polyhedra code reads)

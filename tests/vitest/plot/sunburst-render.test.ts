@@ -6,7 +6,7 @@ import {
   project_arcs,
 } from '$lib/plot'
 import type { ScreenGeometry, ViewWindow } from '$lib/plot/sunburst/render'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const TWO_PI = 2 * Math.PI
 // pre-order: root=0, a=1 (x [0, 0.25]), a1=2 (x [0, 0.25]), b=3 (x [0.25, 1])

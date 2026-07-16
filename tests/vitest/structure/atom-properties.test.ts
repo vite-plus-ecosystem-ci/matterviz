@@ -7,7 +7,7 @@ import * as ap from '$lib/structure/atom-properties'
 import { get_pbc_image_sites } from '$lib/structure/pbc'
 import { make_supercell } from '$lib/structure/supercell'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 type MoyoDatasetWithOrigMap = MoyoDataset & { orig_site_indices_by_input_idx?: number[][] }

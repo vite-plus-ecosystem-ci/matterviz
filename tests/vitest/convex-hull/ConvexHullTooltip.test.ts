@@ -4,7 +4,7 @@ import type { PolymorphStats } from '$lib/convex-hull/helpers'
 import type { ConvexHullTooltipProp } from '$lib/convex-hull/index'
 import type { PhaseData } from '$lib/convex-hull/types'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const mock_entry = (overrides: Partial<PhaseData> = {}): PhaseData => ({

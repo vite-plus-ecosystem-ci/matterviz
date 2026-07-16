@@ -5,7 +5,7 @@ import {
   marching_cubes_buffers,
 } from '$lib/marching-cubes'
 import type { Matrix3x3, Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { cubic_matrix, make_grid } from './setup'
 
 const IDENTITY = cubic_matrix(1)

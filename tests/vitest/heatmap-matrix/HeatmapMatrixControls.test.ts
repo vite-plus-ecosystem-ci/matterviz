@@ -2,7 +2,7 @@ import type { ElementAxisOrderingKey } from '$lib/heatmap-matrix'
 import { HeatmapMatrixControls, ORDERING_LABELS } from '$lib/heatmap-matrix'
 import type { ComponentProps } from 'svelte'
 import { mount, tick } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const mount_controls = (

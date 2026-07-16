@@ -2,7 +2,7 @@ import type { Vec3 } from '$lib/math'
 import type { CellType } from '$lib/symmetry'
 import { moyo_cell_to_structure, transform_cell } from '$lib/symmetry'
 import type { MoyoCell, MoyoDataset } from '@spglib/moyo-wasm'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 // Helper to create a MoyoCell

@@ -1,5 +1,5 @@
 import { is_vaspwave_filename, parse_vaspwave_charge } from '$lib/isosurface/parse-vaspwave'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { read_binary_test_file } from '../setup'
 
 const VASP_HDF5_FIXTURE_DIR = `tests/vitest/fixtures/vasp-hdf5`

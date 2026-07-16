@@ -1,6 +1,6 @@
 import { BarPlot, BoxPlot, Histogram, ScatterPlot } from '$lib'
 import { tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 
 type LocalPoint = { x: number; y: number; button?: number }

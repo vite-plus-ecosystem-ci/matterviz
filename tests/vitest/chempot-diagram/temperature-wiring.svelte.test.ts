@@ -2,7 +2,7 @@ import ChemPotDiagram2D from '$lib/chempot-diagram/ChemPotDiagram2D.svelte'
 import ChemPotDiagram3D from '$lib/chempot-diagram/ChemPotDiagram3D.svelte'
 import type { PhaseData } from '$lib/convex-hull/types'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const binary_temp_entries: PhaseData[] = [
   {

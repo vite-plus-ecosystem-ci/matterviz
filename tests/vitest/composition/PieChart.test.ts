@@ -1,6 +1,6 @@
 import { PieChart } from '$lib/composition'
 import { createRawSnippet, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`PieChart component`, () => {
   test(`renders SVG with correct viewBox`, () => {

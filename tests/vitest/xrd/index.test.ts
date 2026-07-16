@@ -1,7 +1,7 @@
 import type { Matrix3x3, Vec2 } from '$lib/math'
 import type { Crystal } from '$lib/structure'
 import { compute_xrd_pattern, type XrdPattern } from '$lib/xrd'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { create_test_structure } from '../setup'
 import type { ElementSymbol } from '$lib/element/types'
 

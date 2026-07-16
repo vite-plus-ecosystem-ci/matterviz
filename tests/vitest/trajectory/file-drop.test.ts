@@ -4,7 +4,7 @@
 import type { TrajHandlerData } from '$lib/trajectory'
 import Trajectory from '$lib/trajectory/Trajectory.svelte'
 import { mount, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const MULTI_FRAME_XYZ = `2\nStep 1\nH 0.0 0.0 0.0\nH 0.0 0.0 0.74
 2\nStep 2\nH 0.0 0.0 0.0\nH 0.0 0.0 0.78`
