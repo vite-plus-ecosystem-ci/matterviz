@@ -1,0 +1,505 @@
+.npmrc
+  s_37601f7e5402cc::t_9faa136f1f7730 1-2
+extensions/anywidget/vite.config.ts
+  s_37601f7e5402cc::t_33b684f67545e4 7
+extensions/dash/vite.config.ts
+  s_37601f7e5402cc::t_4942bd270bf372 4-5
+extensions/vscode/tests/extension.test.ts
+  s_37601f7e5402cc::t_2ffab241cd273c 14
+extensions/vscode/tests/node-io.test.ts
+  s_37601f7e5402cc::t_6993e059dd0abc 1
+extensions/vscode/tests/vite-plugin-json-gz.test.ts
+  s_37601f7e5402cc::t_2642601e94cccc 5
+extensions/vscode/vite.config.ts
+  s_37601f7e5402cc::t_f69ac8173721f3 3
+package.json
+  s_37601f7e5402cc::t_4c376db92fc276 317,329-331
+pnpm-lock.yaml
+  s_0ac33e64701c66::t_796bc776568f6d 1-3914
+pnpm-workspace.yaml
+  s_0ac33e64701c66::t_f331501fba7792 1-75
+tests/vitest/DragOverlay.test.ts
+  s_37601f7e5402cc::t_6d26084ed89857 3
+tests/vitest/DraggablePane.test.svelte.ts
+  s_37601f7e5402cc::t_a3ca701cbf9a3c 3
+tests/vitest/EmptyState.test.ts
+  s_37601f7e5402cc::t_e5a566559ec1d1 3
+tests/vitest/FilePicker.test.ts
+  s_0ac33e64701c66::t_15474b975f9d49 3
+tests/vitest/FullscreenButton.test.ts
+  s_0ac33e64701c66::t_95fda20ad4b831 3
+tests/vitest/Icon.test.ts
+  s_37601f7e5402cc::t_917f530afced98 4
+tests/vitest/SettingsSection.test.svelte.ts
+  s_0ac33e64701c66::t_fd48f3b3a27ce3 3
+tests/vitest/Spinner.test.ts
+  s_37601f7e5402cc::t_31947c3d431b5c 3
+tests/vitest/StatusMessage.test.ts
+  s_37601f7e5402cc::t_cfee733331ef29 3
+tests/vitest/anywidget-reactive.test.ts
+  s_0ac33e64701c66::t_ae673784cf36e3 3
+tests/vitest/anywidget-renderers.test.ts
+  s_37601f7e5402cc::t_f804e40dd2db1f 3
+tests/vitest/api/optimade.test.ts
+  s_37601f7e5402cc::t_67801ef5c70e84 8
+tests/vitest/brillouin-compute.test.ts
+  s_37601f7e5402cc::t_327ce2c5778556 24
+tests/vitest/chempot-diagram/compute.test.ts
+  s_37601f7e5402cc::t_7272e95c2deb92 39
+tests/vitest/chempot-diagram/controls-state.svelte.test.ts
+  s_37601f7e5402cc::t_20f092c12b1146 9
+tests/vitest/chempot-diagram/temperature-wiring.svelte.test.ts
+  s_37601f7e5402cc::t_20eb1a1b95c10c 5
+tests/vitest/chempot-diagram/temperature.test.ts
+  s_37601f7e5402cc::t_c1ac8dd93384c4 9
+tests/vitest/colors.test.ts
+  s_37601f7e5402cc::t_44712bbd7dfddf 20
+tests/vitest/composition/BarChart.test.ts
+  s_0ac33e64701c66::t_442f7435809323 3
+tests/vitest/composition/BubbleChart.test.ts
+  s_0ac33e64701c66::t_e33ab9fa17ae4c 3
+tests/vitest/composition/Composition.svelte.test.ts
+  s_37601f7e5402cc::t_c00126ed243e72 4
+tests/vitest/composition/Formula.test.ts
+  s_0ac33e64701c66::t_fbe7bee04667e6 9
+tests/vitest/composition/FormulaFilter.svelte.test.ts
+  s_37601f7e5402cc::t_2289885a3c80e5 3
+tests/vitest/composition/PieChart.test.ts
+  s_37601f7e5402cc::t_c3a1649b427b6f 3
+tests/vitest/composition/chem-sys.test.ts
+  s_0ac33e64701c66::t_ef763e014bd2ca 2
+tests/vitest/composition/format.test.ts
+  s_37601f7e5402cc::t_06830f9ff3815b 9
+tests/vitest/composition/index.test.ts
+  s_0ac33e64701c66::t_7fc24bdab24494 2
+tests/vitest/composition/parse.test.ts
+  s_37601f7e5402cc::t_f88ee86da22acb 24
+tests/vitest/controls.test.ts
+  s_37601f7e5402cc::t_981b7add240152 2
+tests/vitest/convex-hull/ConvexHullControls.test.ts
+  s_37601f7e5402cc::t_1cf584c9c78a8a 7
+tests/vitest/convex-hull/ConvexHullSelection.test.ts
+  s_37601f7e5402cc::t_bd5db60a85f559 4
+tests/vitest/convex-hull/ConvexHullStats.test.ts
+  s_37601f7e5402cc::t_335dfab3c6a062 4
+tests/vitest/convex-hull/ConvexHullTooltip.test.ts
+  s_0ac33e64701c66::t_53387a0db310ae 7
+tests/vitest/convex-hull/StructurePopup.test.ts
+  s_0ac33e64701c66::t_dd8d495f3a2779 4
+tests/vitest/convex-hull/barycentric-coords.test.ts
+  s_37601f7e5402cc::t_2bc030ea7bf10b 18
+tests/vitest/convex-hull/gas-thermodynamics.test.ts
+  s_0ac33e64701c66::t_c3a3d22911ac6c 18
+tests/vitest/convex-hull/helpers.test.ts
+  s_0ac33e64701c66::t_434c78cdea649b 6
+tests/vitest/convex-hull/pymatgen-validation.test.ts
+  s_37601f7e5402cc::t_87313c47b9cd21 10
+tests/vitest/convex-hull/thermodynamics.test.ts
+  s_37601f7e5402cc::t_5937590a40cc32 27
+tests/vitest/convex-hull/types.test.ts
+  s_37601f7e5402cc::t_a28c8de273c90a 9
+tests/vitest/coordination/calc-coordination.test.ts
+  s_0ac33e64701c66::t_9ad13bd5a9befb 2
+tests/vitest/decompress.test.ts
+  s_37601f7e5402cc::t_91d231dcd14f5a 6
+tests/vitest/effects.test.svelte.ts
+  s_37601f7e5402cc::t_14d7ee17651a63 4
+tests/vitest/element/BohrAtom.test.ts
+  s_37601f7e5402cc::t_864fd3fb3bf020 3
+tests/vitest/element/ElementStats.test.ts
+  s_37601f7e5402cc::t_d3175a81218391 4
+tests/vitest/element/data.test.ts
+  s_37601f7e5402cc::t_286b4c19d335e8 9
+tests/vitest/fermi-surface/FermiSlice.test.ts
+  s_0ac33e64701c66::t_b4439343213d95 7
+tests/vitest/fermi-surface/FermiSurface.test.ts
+  s_37601f7e5402cc::t_062e8f35d5762b 3
+tests/vitest/fermi-surface/FermiSurfaceControls.test.ts
+  s_37601f7e5402cc::t_2553d33552324d 4
+tests/vitest/fermi-surface/FermiSurfaceTooltip.test.ts
+  s_37601f7e5402cc::t_1e70aa92a8819e 5
+tests/vitest/fermi-surface/compute-conventions.test.ts
+  s_37601f7e5402cc::t_a8928f2ec0621d 9
+tests/vitest/fermi-surface/compute.test.ts
+  s_37601f7e5402cc::t_7d2e016e3d9ed7 10
+tests/vitest/fermi-surface/export.test.ts
+  s_37601f7e5402cc::t_580a3ea581a7b5 4
+tests/vitest/fermi-surface/parse.test.ts
+  s_37601f7e5402cc::t_301a989a959c00 3
+tests/vitest/fermi-surface/site-files.test.ts
+  s_0ac33e64701c66::t_7ef3798c3ab40e 2
+tests/vitest/fermi-surface/symmetry.test.ts
+  s_0ac33e64701c66::t_b9a9439935ad94 3
+tests/vitest/fermi-surface/types.test.ts
+  s_37601f7e5402cc::t_f0084bf9de8e73 5
+tests/vitest/file-viewer-parse.test.ts
+  s_37601f7e5402cc::t_9ca64c5a9947e8 2
+tests/vitest/file-viewer-reload.test.ts
+  s_37601f7e5402cc::t_91241d7f25381c 5
+tests/vitest/file-viewer/detect.test.ts
+  s_37601f7e5402cc::t_969980ee660918 4
+tests/vitest/file-viewer/eligibility.test.ts
+  s_37601f7e5402cc::t_66dfaf7231083c 7
+tests/vitest/file-viewer/host-transfer.test.ts
+  s_37601f7e5402cc::t_459bd5b3d1eea0 6
+tests/vitest/file-viewer/main.test.ts
+  s_37601f7e5402cc::t_d8c57f3952d37c 19
+tests/vitest/file-viewer/parse-entry.test.ts
+  s_37601f7e5402cc::t_98fd914a925bfe 2
+tests/vitest/file-viewer/plot-utils.test.ts
+  s_37601f7e5402cc::t_84c2537df40429 1
+tests/vitest/heatmap-matrix/HeatmapMatrix.test.ts
+  s_37601f7e5402cc::t_6d77ef49d9bd26 8
+tests/vitest/heatmap-matrix/HeatmapMatrixControls.test.ts
+  s_37601f7e5402cc::t_da67b7996f6479 5
+tests/vitest/heatmap-matrix/index.test.ts
+  s_37601f7e5402cc::t_3be38b2d9a42f2 13
+tests/vitest/index.test.ts
+  s_37601f7e5402cc::t_28e857927bd975 3
+tests/vitest/instanced-mesh-limit.test.ts
+  s_0ac33e64701c66::t_b45fe9ac70ed8e 2
+tests/vitest/io/export.test.ts
+  s_37601f7e5402cc::t_e48425fe447799 16
+tests/vitest/io/fetch.test.ts
+  s_37601f7e5402cc::t_2aa3370a4589f8 2
+tests/vitest/io/file-drop.test.ts
+  s_37601f7e5402cc::t_e82cdc16c87a3d 5
+tests/vitest/io/index.test.ts
+  s_37601f7e5402cc::t_6af5ff680618ad 2
+tests/vitest/io/is-binary.test.ts
+  s_37601f7e5402cc::t_8b46ce7fb8f766 13
+tests/vitest/isosurface/IsosurfaceControls.test.svelte.ts
+  s_37601f7e5402cc::t_54ea9a8c83fb50 10
+tests/vitest/isosurface/VolumeSlice.test.svelte.ts
+  s_37601f7e5402cc::t_33c15cce6d9260 6
+tests/vitest/isosurface/coloring.test.ts
+  s_37601f7e5402cc::t_cec72cda9391c4 8
+tests/vitest/isosurface/parse-vaspwave.test.ts
+  s_37601f7e5402cc::t_65c461e19ab495 2
+tests/vitest/isosurface/parse.test.ts
+  s_0ac33e64701c66::t_8323f023c38de2 4
+tests/vitest/isosurface/sampling.test.ts
+  s_37601f7e5402cc::t_d2d106195612cd 15
+tests/vitest/isosurface/slice-rendering.test.ts
+  s_37601f7e5402cc::t_07eb9624f94f54 6
+tests/vitest/isosurface/slice.test.ts
+  s_37601f7e5402cc::t_abd0583474f183 10
+tests/vitest/isosurface/types.test.ts
+  s_0ac33e64701c66::t_15d0bef36afd52 21
+tests/vitest/labels.test.ts
+  s_37601f7e5402cc::t_db0a14f6f63ca8 17
+tests/vitest/layout/InfoCard.test.ts
+  s_0ac33e64701c66::t_37c475a4f9f639 3
+tests/vitest/layout/InfoTag.test.ts
+  s_0ac33e64701c66::t_97673611e71365 3
+tests/vitest/layout/NumberRangeInput.svelte.test.ts
+  s_0ac33e64701c66::t_9b96364789c20e 3
+tests/vitest/layout/PropertyFilter.test.ts
+  s_37601f7e5402cc::t_801e47ead1e1e7 3
+tests/vitest/layout/json-tree.test.ts
+  s_37601f7e5402cc::t_c4b35c8e0a635e 5
+tests/vitest/layout/json-tree.utils.test.ts
+  s_37601f7e5402cc::t_63e731771f7d63 21
+tests/vitest/marching-cubes.test.ts
+  s_37601f7e5402cc::t_e2efa1d1add474 12
+tests/vitest/math.test.ts
+  s_0ac33e64701c66::t_abf94506e8f645 3
+tests/vitest/overlays/InfoPaneCards.test.ts
+  s_0ac33e64701c66::t_7273bbbf6d0d30 3
+tests/vitest/overlays/clipboard.test.ts
+  s_0ac33e64701c66::t_09959996a8f680 2
+tests/vitest/package-exports.test.ts
+  s_37601f7e5402cc::t_9aa9eb2900c905 3
+tests/vitest/periodic-table/ElementTile.test.ts
+  s_37601f7e5402cc::t_bd973a2abdd1ba 4
+tests/vitest/periodic-table/PeriodicTable.test.svelte.ts
+  s_0ac33e64701c66::t_8fc8f7d0cd2618 6
+tests/vitest/phase-diagram/IsobaricBinaryPhaseDiagram.test.ts
+  s_0ac33e64701c66::t_91ca66241732f5 4
+tests/vitest/phase-diagram/PhaseDiagramControls.test.ts
+  s_0ac33e64701c66::t_0b2b7e5c1ce055 4
+tests/vitest/phase-diagram/PhaseDiagramExportPane.test.ts
+  s_37601f7e5402cc::t_c6499e9322ca22 5
+tests/vitest/phase-diagram/PhaseDiagramTooltip.test.ts
+  s_37601f7e5402cc::t_55d4065462e979 13
+tests/vitest/phase-diagram/TdbInfoPanel.test.ts
+  s_0ac33e64701c66::t_66413373d574b1 4
+tests/vitest/phase-diagram/build-diagram.test.ts
+  s_37601f7e5402cc::t_d18b6ce9a289f3 3
+tests/vitest/phase-diagram/parse.test.ts
+  s_37601f7e5402cc::t_8f8b63dac4ed52 9
+tests/vitest/phase-diagram/utils.test.ts
+  s_0ac33e64701c66::t_3339a84788095d 32
+tests/vitest/plot/BarPlot.test.ts
+  s_37601f7e5402cc::t_3b5581c1a3fded 4
+tests/vitest/plot/BinnedScatterPlot.test.svelte.ts
+  s_37601f7e5402cc::t_3a42fc037e41ce 6
+tests/vitest/plot/BoxPlot.test.ts
+  s_37601f7e5402cc::t_928a1aaddde177 4
+tests/vitest/plot/BoxPlotControls.test.ts
+  s_37601f7e5402cc::t_0492b821a22b8e 3
+tests/vitest/plot/ColorBar.test.ts
+  s_0ac33e64701c66::t_ea0eefbd5bfea0 6
+tests/vitest/plot/ColorScaleSelect.test.ts
+  s_37601f7e5402cc::t_48711510cb7a98 4
+tests/vitest/plot/ElementScatter.test.ts
+  s_37601f7e5402cc::t_87063f37bc59f2 3
+tests/vitest/plot/FillArea.test.ts
+  s_37601f7e5402cc::t_8fd7fe3f583434 6
+tests/vitest/plot/Histogram.test.ts
+  s_37601f7e5402cc::t_5697819ed6c292 4
+tests/vitest/plot/InteractiveAxisLabel.test.ts
+  s_37601f7e5402cc::t_e4d3177f1e82ad 6
+tests/vitest/plot/Line.test.ts
+  s_37601f7e5402cc::t_7b57c337f20f33 4
+tests/vitest/plot/PanZoom.test.ts
+  s_0ac33e64701c66::t_8ad2b1d7fc9c17 3
+tests/vitest/plot/PlotAxis.test.ts
+  s_37601f7e5402cc::t_ec531f9e15e8fc 3
+tests/vitest/plot/PlotControls.test.svelte.ts
+  s_37601f7e5402cc::t_5e07170a1cf0b6 3
+tests/vitest/plot/PlotLegend.test.ts
+  s_37601f7e5402cc::t_5d6e726ddc896d 5
+tests/vitest/plot/PlotMarginals.test.svelte.ts
+  s_37601f7e5402cc::t_ce00234bbfd4a9 4
+tests/vitest/plot/PlotTooltip.test.ts
+  s_37601f7e5402cc::t_4051849d9b33d2 3
+tests/vitest/plot/PortalSelect.test.ts
+  s_37601f7e5402cc::t_4bb259688e8a69 4
+tests/vitest/plot/ReferenceLine.test.ts
+  s_37601f7e5402cc::t_a15820a6fa5a1a 5
+tests/vitest/plot/Sankey.test.ts
+  s_37601f7e5402cc::t_5eb3e22779596b 4
+tests/vitest/plot/ScatterPlot.test.svelte.ts
+  s_37601f7e5402cc::t_f66c7a2eace481 7
+tests/vitest/plot/ScatterPlot3D.test.ts
+  s_37601f7e5402cc::t_6c13795d1538d4 4
+tests/vitest/plot/ScatterPoint.test.ts
+  s_37601f7e5402cc::t_a47886652be48a 4
+tests/vitest/plot/Sunburst.test.svelte.ts
+  s_37601f7e5402cc::t_3b69d78dd0426f 5
+tests/vitest/plot/Treemap.test.svelte.ts
+  s_37601f7e5402cc::t_c09d09074323c1 5
+tests/vitest/plot/Violin.test.ts
+  s_37601f7e5402cc::t_62efb3f11ccb62 4
+tests/vitest/plot/adaptive-density.test.ts
+  s_37601f7e5402cc::t_cb5a422303bf2d 13
+tests/vitest/plot/auto-place.test.ts
+  s_37601f7e5402cc::t_00b8d13c1e3056 2
+tests/vitest/plot/axis-utils.test.ts
+  s_37601f7e5402cc::t_29fa1489c47612 3
+tests/vitest/plot/bar-data.test.ts
+  s_37601f7e5402cc::t_82a899b276b444 9
+tests/vitest/plot/box-plot.test.ts
+  s_37601f7e5402cc::t_d021eeb3bd2a0d 3
+tests/vitest/plot/data-cleaning.test.ts
+  s_37601f7e5402cc::t_ebb1b57774ef06 17
+tests/vitest/plot/data-transform.test.ts
+  s_37601f7e5402cc::t_4c3c8c3049a352 3
+tests/vitest/plot/fill-between.test.ts
+  s_37601f7e5402cc::t_06675d8bb967e5 16
+tests/vitest/plot/fullscreen.test.ts
+  s_37601f7e5402cc::t_a24a65cf47ce97 3
+tests/vitest/plot/interactions.test.ts
+  s_37601f7e5402cc::t_807702fe5b28f8 16
+tests/vitest/plot/kde.test.ts
+  s_37601f7e5402cc::t_e0bd6358df8e2e 2
+tests/vitest/plot/label-placement.test.ts
+  s_37601f7e5402cc::t_c63776cb738eb3 17
+tests/vitest/plot/layout.test.ts
+  s_37601f7e5402cc::t_9b091bf7203ab3 18
+tests/vitest/plot/marginals.test.ts
+  s_37601f7e5402cc::t_13be3f782359d1 22
+tests/vitest/plot/reference-line.test.ts
+  s_37601f7e5402cc::t_d6dd2a94aa1859 13
+tests/vitest/plot/sankey-layout.test.ts
+  s_37601f7e5402cc::t_bd10be7d280fa4 3
+tests/vitest/plot/scales.test.ts
+  s_37601f7e5402cc::t_91b9c7669a25e9 22
+tests/vitest/plot/scatter-data.test.ts
+  s_37601f7e5402cc::t_f0b53dd3357d0a 9
+tests/vitest/plot/series-visibility.test.ts
+  s_37601f7e5402cc::t_cfbe72db00f9ba 8
+tests/vitest/plot/sunburst-layout.test.ts
+  s_37601f7e5402cc::t_0ed45f17f4b71f 10
+tests/vitest/plot/sunburst-render.test.ts
+  s_37601f7e5402cc::t_0b29f9ee1df461 9
+tests/vitest/plot/svg.test.ts
+  s_37601f7e5402cc::t_3a87bb31e45c71 2
+tests/vitest/plot/treemap-layout.test.ts
+  s_37601f7e5402cc::t_5ffaa539f270f1 10
+tests/vitest/rdf/RdfPlot.test.ts
+  s_37601f7e5402cc::t_6b1238b22e291c 6
+tests/vitest/rdf/calc-rdf.test.ts
+  s_37601f7e5402cc::t_e17f100c91085d 7
+tests/vitest/sanitize.test.ts
+  s_37601f7e5402cc::t_1c301bd0d3d9e2 10
+tests/vitest/scene/bind-renderer.test.svelte.ts
+  s_37601f7e5402cc::t_599e6b207c2667 7
+tests/vitest/scene/props.test.ts
+  s_37601f7e5402cc::t_d45383df20217f 2
+tests/vitest/settings.test.ts
+  s_37601f7e5402cc::t_17f392e506ff91 2
+tests/vitest/setup.ts
+  s_37601f7e5402cc::t_880038e186d9c3 11
+tests/vitest/site/phonons.test.ts
+  s_0ac33e64701c66::t_bf027bb96f7475 2
+tests/vitest/site/plot-utils.test.ts
+  s_37601f7e5402cc::t_ff97530e5c26cb 2
+tests/vitest/site/search.test.ts
+  s_37601f7e5402cc::t_8b602e9378a66c 3
+tests/vitest/site/state.test.ts
+  s_37601f7e5402cc::t_0845c118d37a64 2
+tests/vitest/spectral/Bands.test.ts
+  s_0ac33e64701c66::t_96fa13a3be7314 5
+tests/vitest/spectral/Dos.test.ts
+  s_0ac33e64701c66::t_959f8134f97615 14
+tests/vitest/spectral/helpers.test.ts
+  s_37601f7e5402cc::t_8b819f0d62dc65 33
+tests/vitest/state.test.ts
+  s_0ac33e64701c66::t_1928befec363c3 4
+tests/vitest/structure/AtomLegend.test.ts
+  s_37601f7e5402cc::t_c00befe4d2ea62 7
+tests/vitest/structure/CellSelect.test.svelte.ts
+  s_37601f7e5402cc::t_1f57101acbe743 5
+tests/vitest/structure/Structure.test.svelte.ts
+  s_37601f7e5402cc::t_9eaaff0faec43f 9
+tests/vitest/structure/StructureCarousel.test.ts
+  s_37601f7e5402cc::t_6946258605a3f3 3
+tests/vitest/structure/StructureControls.svelte.test.ts
+  s_37601f7e5402cc::t_a9224eae3264bc 3
+tests/vitest/structure/StructureControls.test.ts
+  s_37601f7e5402cc::t_95ab135c59c953 4
+tests/vitest/structure/StructureExportPane.test.ts
+  s_37601f7e5402cc::t_9c44745f94ee1b 7
+tests/vitest/structure/StructureInfoPane.test.ts
+  s_37601f7e5402cc::t_d56dca427a7434 5
+tests/vitest/structure/atom-label-placement.test.ts
+  s_37601f7e5402cc::t_21c8710b95787f 10
+tests/vitest/structure/atom-properties.test.ts
+  s_37601f7e5402cc::t_a78efad7f851dc 10
+tests/vitest/structure/bond-order-perception.test.ts
+  s_37601f7e5402cc::t_1f6d013ba989b3 1
+tests/vitest/structure/bonding.test.ts
+  s_37601f7e5402cc::t_87fb8bf5a097a6 8
+tests/vitest/structure/edit-atoms.test.ts
+  s_37601f7e5402cc::t_1f934a47447dd9 9
+tests/vitest/structure/export.test.ts
+  s_37601f7e5402cc::t_2af332f44c3f1d 36
+tests/vitest/structure/geometry.test.ts
+  s_37601f7e5402cc::t_2b0c1e279796ca 9
+tests/vitest/structure/index.test.ts
+  s_37601f7e5402cc::t_950855b57a7725 12
+tests/vitest/structure/measure.test.ts
+  s_37601f7e5402cc::t_838eec525152dc 3
+tests/vitest/structure/parse.test.ts
+  s_37601f7e5402cc::t_95556fc1235baf 35
+tests/vitest/structure/partial-occupancy.test.ts
+  s_37601f7e5402cc::t_5b6fd735bc4b72 7
+tests/vitest/structure/pbc.test.ts
+  s_37601f7e5402cc::t_d575083a5a0f83 14
+tests/vitest/structure/polyhedra.test.ts
+  s_37601f7e5402cc::t_1907deb95bc691 13
+tests/vitest/structure/prop-groups.test.ts
+  s_37601f7e5402cc::t_99855de4c50076 3
+tests/vitest/structure/supercell.test.ts
+  s_37601f7e5402cc::t_92e4cc01749535 12
+tests/vitest/structure/validation.test.ts
+  s_37601f7e5402cc::t_9e6a3418d33397 2
+tests/vitest/symmetry/SymmetryElementControls.test.ts
+  s_37601f7e5402cc::t_ed5615394bbb02 12
+tests/vitest/symmetry/SymmetryStats.test.ts
+  s_37601f7e5402cc::t_0412204410b0af 4
+tests/vitest/symmetry/WyckoffTable.test.ts
+  s_37601f7e5402cc::t_389e28e1a6102e 6
+tests/vitest/symmetry/cell-transform.test.ts
+  s_37601f7e5402cc::t_05d480898d7e47 5
+tests/vitest/symmetry/index.test.ts
+  s_37601f7e5402cc::t_4a8922e816fe3c 15
+tests/vitest/symmetry/moyo-integration.test.ts
+  s_37601f7e5402cc::t_6a6e85519138ab 22
+tests/vitest/symmetry/spacegroups.test.ts
+  s_37601f7e5402cc::t_8efa1b5306c0bf 3
+tests/vitest/symmetry/symmetry-elements.test.ts
+  s_37601f7e5402cc::t_e577337f7a7ad7 16
+tests/vitest/symmetry/wyckoff-db.test.ts
+  s_37601f7e5402cc::t_b0e4eace5ce8e5 12
+tests/vitest/table/HeatmapTable.test.svelte.ts
+  s_0ac33e64701c66::t_cd175b5a16e552 3
+tests/vitest/table/ToggleMenu.svelte.test.ts
+  s_37601f7e5402cc::t_5e0198c2b951b7 4
+tests/vitest/table/index.test.ts
+  s_37601f7e5402cc::t_fdca68afc43186 4
+tests/vitest/theme/ThemeControl.test.ts
+  s_37601f7e5402cc::t_d8ec7fb8aabbfc 3
+tests/vitest/theme/embedded.test.ts
+  s_37601f7e5402cc::t_cb52d056c624cc 2
+tests/vitest/theme/index.test.ts
+  s_37601f7e5402cc::t_1f3ecfe216760a 13
+tests/vitest/time.test.ts
+  s_37601f7e5402cc::t_1c5f83d1bf67b6 2
+tests/vitest/trajectory/Trajectory.test.svelte.ts
+  s_37601f7e5402cc::t_da591954cb8e99 3
+tests/vitest/trajectory/TrajectoryInfoPane.test.svelte.ts
+  s_0ac33e64701c66::t_30a02eaca3b3ce 4
+tests/vitest/trajectory/data-url.test.ts
+  s_37601f7e5402cc::t_90b73724bf97d2 9
+tests/vitest/trajectory/extract.test.ts
+  s_37601f7e5402cc::t_6a730e0295cefc 9
+tests/vitest/trajectory/file-drop.test.ts
+  s_0ac33e64701c66::t_5c137631d028ea 6
+tests/vitest/trajectory/helpers.test.ts
+  s_0ac33e64701c66::t_891ffdfd26340c 8
+tests/vitest/trajectory/parse.test.ts
+  s_37601f7e5402cc::t_d51628f9c9ab8e 12
+tests/vitest/trajectory/plotting.test.ts
+  s_0ac33e64701c66::t_9195316d7b8f8d 9
+tests/vitest/trajectory/streaming.test.ts
+  s_37601f7e5402cc::t_666a5b48e9b5da 15
+tests/vitest/trajectory/trajectory-index.test.ts
+  s_37601f7e5402cc::t_a4185a46de5a43 10
+tests/vitest/trajectory/trajectory-keyboard.test.ts
+  s_0ac33e64701c66::t_0676848c2d4905 4
+tests/vitest/trajectory/vaspout-h5.test.ts
+  s_37601f7e5402cc::t_5f67804923fa0f 11
+tests/vitest/url-params.test.ts
+  s_37601f7e5402cc::t_d81d1893705083 13
+tests/vitest/utils.test.ts
+  s_37601f7e5402cc::t_85ac43eb98f89c 2
+tests/vitest/xrd/XrdPlot.test.ts
+  s_37601f7e5402cc::t_3d50808514c54f 4
+tests/vitest/xrd/broadening.test.ts
+  s_37601f7e5402cc::t_bd76b29ae93555 3
+tests/vitest/xrd/calc-xrd.test.ts
+  s_37601f7e5402cc::t_3b9c1f9fa16937 9
+tests/vitest/xrd/index.test.ts
+  s_37601f7e5402cc::t_26e0bc0303d918 4
+tests/vitest/xrd/parse.test.ts
+  s_37601f7e5402cc::t_3a68aa1be5b769 17
+vite.config.ts
+  s_37601f7e5402cc::t_acb96c523b08f7 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "22921626874e69db0d4ea8e55f89951e4ed3fa45",
+  "prompts": {},
+  "sessions": {
+    "s_0ac33e64701c66": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_075d29060ffezQSiOhstWcng5h",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    },
+    "s_37601f7e5402cc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_075d290fdffeXiYxJ0jrfpaLFG",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    }
+  }
+}
