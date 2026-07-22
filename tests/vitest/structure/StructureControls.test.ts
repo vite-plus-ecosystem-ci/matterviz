@@ -1,7 +1,7 @@
 import type { AnyStructure } from '$lib'
 import { StructureControls } from '$lib/structure'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query, simple_structure } from '../setup'
 
 describe(`StructureControls`, () => {

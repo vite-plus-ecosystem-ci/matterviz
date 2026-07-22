@@ -2,7 +2,7 @@ import { create_display } from '$lib/file-viewer/main'
 import type * as ParseModule from '$lib/file-viewer/parse'
 import type { ParseResult } from '$lib/file-viewer/parse'
 import type * as SvelteModule from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 
 const test_mocks = vi.hoisted(() => {
   const post_message = vi.fn()

@@ -10,7 +10,7 @@ import {
   save_theme_preference,
   THEME_TYPE,
 } from '$lib/theme'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`Theme System`, () => {
   beforeEach(() => {

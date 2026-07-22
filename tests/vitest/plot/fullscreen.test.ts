@@ -1,6 +1,6 @@
 import { BarPlot, FullscreenToggle } from '$lib'
 import { mount, tick } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 
 describe(`Plot Fullscreen Toggle`, () => {
   afterEach(() => {

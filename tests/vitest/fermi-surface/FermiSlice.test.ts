@@ -4,7 +4,7 @@ import FermiSlice from '$lib/fermi-surface/FermiSlice.svelte'
 import type { FermiSliceData, FermiSurfaceData } from '$lib/fermi-surface/types'
 import type { Matrix3x3, Vec3 } from '$lib/math'
 import { createRawSnippet, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // Create mock Fermi surface data with configurable bands

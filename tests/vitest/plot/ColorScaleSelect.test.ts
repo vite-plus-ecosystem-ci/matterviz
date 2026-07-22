@@ -1,7 +1,7 @@
 import { ColorScaleSelect } from '$lib'
 import type { D3InterpolateName } from '$lib/colors'
 import { mount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 describe(`ColorScaleSelect`, () => {

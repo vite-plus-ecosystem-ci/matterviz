@@ -36,7 +36,7 @@ import { filter_entries_at_temperature } from '$lib/convex-hull/helpers'
 import type { PhaseData } from '$lib/convex-hull/types'
 import type { Vec2 } from '$lib/math'
 import { convex_hull_2d, polygon_centroid, solve_linear_system } from '$lib/math'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { load_json } from '../setup'
 
 const test_dir = import.meta.dirname

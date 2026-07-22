@@ -1,5 +1,5 @@
 import { build_gizmo_props, build_orbit_props, page_visibility } from '$lib/scene'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`build_gizmo_props`, () => {
   test(`shared axis defaults`, () => {

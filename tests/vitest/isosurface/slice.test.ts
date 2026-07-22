@@ -7,7 +7,7 @@ import {
   sample_plane_slice,
 } from '$lib/isosurface/slice'
 import type { Matrix3x3, Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { cubic_matrix, make_grid, make_linear_volume, make_volume } from '../setup'
 
 // Helper: assert result is non-null and return narrowed type

@@ -1,7 +1,7 @@
 import { ScatterPoint, symbol_names } from '$lib'
 import type { PointStyle } from '$lib/plot'
 import { mount } from 'svelte'
-import { beforeEach, describe, expect, test } from 'vitest'
+import { beforeEach, describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 describe(`ScatterPoint`, () => {

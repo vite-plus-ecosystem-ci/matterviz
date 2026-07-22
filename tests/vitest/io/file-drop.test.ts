@@ -2,7 +2,7 @@ import type { FileDropOptions } from '$lib/io/file-drop'
 import { create_file_drop_handler, drag_over_handlers } from '$lib/io/file-drop'
 import { decompress_file } from '$lib/io/decompress'
 import { dropped_file_url, load_from_url } from '$lib/io/url-drop'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 vi.mock(`$lib/io/decompress`, () => ({ decompress_file: vi.fn() }))
 vi.mock(`$lib/io/url-drop`, () => ({

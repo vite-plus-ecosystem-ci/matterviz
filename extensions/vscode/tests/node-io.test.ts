@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { deflateRawSync, deflateSync, gzipSync } from 'node:zlib'
 import {
   decode_indexed_trajectory_text,

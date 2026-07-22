@@ -6,7 +6,7 @@ import { get_element_counts } from '$lib/structure'
 import { make_supercell } from '$lib/structure/supercell'
 import { structures } from '$site/structures'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { assertHoverScopedShortcut, bind_props, doc_query, press_window_key } from '../setup'
 
 // Passthrough spy so individual tests can make make_supercell throw

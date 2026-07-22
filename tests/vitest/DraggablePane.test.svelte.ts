@@ -1,6 +1,6 @@
 import { DraggablePane } from '$lib'
 import { createRawSnippet, mount, tick, unmount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from './setup'
 
 describe(`DraggablePane`, () => {

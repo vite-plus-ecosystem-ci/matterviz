@@ -1,7 +1,7 @@
 import TrajectoryInfoPane from '$lib/trajectory/TrajectoryInfoPane.svelte'
 import type { TrajectoryFrame, TrajectoryType } from '$lib/trajectory'
 import { mount, tick } from 'svelte'
-import { afterEach, expect, test } from 'vitest'
+import { afterEach, expect, test } from 'vite-plus/test'
 
 afterEach(() => document.body.replaceChildren())
 

@@ -1,6 +1,6 @@
 import type { Vec2 } from '$lib/math'
 import { compute_broadened_pattern, DEFAULT_BROADENING } from '$lib/xrd/broadening'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`compute_broadened_pattern`, () => {
   const dummy_pattern = { x: [20, 40], y: [100, 50] }

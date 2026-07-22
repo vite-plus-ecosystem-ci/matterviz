@@ -7,7 +7,7 @@ import {
   tile_rects,
 } from '$lib/plot'
 import { normalize_treemap_label_lines, place_treemap_label } from '$lib/plot/treemap/labels'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const size = { width: 400, height: 300 }
 const no_pad = { padding_inner: 0, padding_top: 0, padding_outer: 0 }

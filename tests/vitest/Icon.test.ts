@@ -1,7 +1,7 @@
 import { Icon, ICON_DATA } from '$lib'
 import type { IconName } from '$lib/icons'
 import { mount } from 'svelte'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 import { svg_query } from './setup'
 
 describe(`Icon`, () => {
