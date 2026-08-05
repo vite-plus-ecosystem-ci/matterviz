@@ -5,7 +5,7 @@ import {
   fetch_optimade_providers,
   fetch_suggested_structures,
 } from '$lib/api/optimade'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { MOCK_PROVIDERS } from '../../fixtures/optimade-mocks'
 
 describe(`OPTIMADE API utilities`, () => {

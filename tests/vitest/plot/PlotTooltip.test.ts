@@ -1,6 +1,6 @@
 import { PlotTooltip } from '$lib/plot'
 import { createRawSnippet, mount, type ComponentProps } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const make_children = (text: string = `Test`) =>

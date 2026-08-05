@@ -20,7 +20,7 @@ import {
 import { parse_xyz_trajectory } from '$lib/trajectory/parse/xyz'
 import { unzipSync } from 'fflate'
 import { mount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 vi.mock(`$lib/io/fetch`, async (import_original) => ({
   ...(await import_original<Record<string, unknown>>()),

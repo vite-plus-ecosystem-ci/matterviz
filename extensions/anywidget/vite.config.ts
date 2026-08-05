@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { resolve } from 'node:path'
 import { gunzipSync } from 'node:zlib'
-import type { Plugin } from 'vite'
+import type { Plugin } from 'vite-plus'
 import { defineConfig, type PluginOption } from 'vite-plus'
 
 // Load moyo (spglib) symmetry WASM from jsDelivr by default. Hosts can set

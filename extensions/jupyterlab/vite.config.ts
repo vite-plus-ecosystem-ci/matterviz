@@ -1,7 +1,7 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { resolve } from 'node:path'
-import type { Plugin, PluginOption } from 'vite'
-import { defineConfig } from 'vite'
+import type { Plugin, PluginOption } from 'vite-plus'
+import { defineConfig } from 'vite-plus'
 // Shared with the VS Code webview build.
 import { vite_plugin_json_gz } from '../vscode/vite-plugin-json-gz.ts'
 

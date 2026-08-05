@@ -3,7 +3,7 @@
 // file was successfully loaded, else it clobbers the trajectory with a parse error.
 import Trajectory from '$lib/trajectory/Trajectory.svelte'
 import { mount, unmount, type ComponentProps } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 
 const MULTI_FRAME_XYZ = `2\nStep 1\nH 0.0 0.0 0.0\nH 0.0 0.0 0.74
 2\nStep 2\nH 0.0 0.0 0.0\nH 0.0 0.0 0.78`

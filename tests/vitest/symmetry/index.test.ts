@@ -12,7 +12,7 @@ import {
   wyckoff_positions_from_moyo,
 } from '$lib/symmetry'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, make_wyckoff_dataset } from '../setup'
 import { structures } from '$site/structures'
 

@@ -10,7 +10,7 @@ import type {
 import { PhaseDiagramTooltip } from '$lib/phase-diagram'
 import type { Snippet } from 'svelte'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { create_hover_info } from './fixtures/test-data'
 
 describe(`PhaseDiagramTooltip`, () => {

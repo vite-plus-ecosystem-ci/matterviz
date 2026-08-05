@@ -1,6 +1,6 @@
 import { apply_slice, build_diagram, parse_curve_ref } from '$lib/phase-diagram/build-diagram'
 import type { DiagramInput } from '$lib/phase-diagram/diagram-input'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`parse_curve_ref`, () => {
   test.each([

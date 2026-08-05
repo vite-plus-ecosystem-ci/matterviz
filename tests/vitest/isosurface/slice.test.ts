@@ -9,7 +9,7 @@ import {
 import type { CartesianPlane, PlaneSliceOptions } from '$lib/isosurface/slice'
 import { create_volume_slice_settings } from '$lib/isosurface/slice-settings'
 import type { Matrix3x3, Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { cubic_matrix, make_grid, make_linear_volume, make_volume } from '../setup'
 
 // Helper: assert result is non-null and return narrowed type

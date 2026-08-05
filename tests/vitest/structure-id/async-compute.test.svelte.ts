@@ -2,7 +2,7 @@
 // of compute_structure_id_async — including that a thrown error becomes a rejection rather
 // than a synchronous throw, which is the contract every caller's .catch() relies on.
 import { calc_structure_id, compute_structure_id_async } from '$lib/structure-id'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_fcc } from './lattices'
 
 describe(`compute_structure_id_async`, () => {

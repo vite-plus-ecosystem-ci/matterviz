@@ -4,7 +4,7 @@
 import type { compute_msd_async as ComputeMsdAsync } from '$lib/msd/async-compute.svelte'
 import { calc_msd } from '$lib/msd/calc-msd'
 import type { MsdOptions, MsdPositions } from '$lib/msd/index'
-import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vite-plus/test'
 import { drift_positions } from './helpers'
 
 type WorkerMessage = { id: number; input: MsdPositions; options: MsdOptions }

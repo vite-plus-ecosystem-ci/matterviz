@@ -4,7 +4,7 @@ import { StructureExportPane } from '$lib/structure'
 import * as export_funcs from '$lib/structure/export'
 import { mount } from 'svelte'
 import type { Camera, Scene } from 'three/webgpu'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, simple_structure } from '../setup'
 
 // Mock the export functions

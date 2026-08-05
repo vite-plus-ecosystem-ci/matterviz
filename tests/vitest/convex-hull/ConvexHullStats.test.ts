@@ -1,7 +1,7 @@
 import { ConvexHullStats } from '$lib/convex-hull'
 import type { ConvexHullEntry, PhaseStats } from '$lib/convex-hull/types'
 import { flushSync, mount } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const mock_stats = (overrides: Partial<PhaseStats> = {}): PhaseStats => ({

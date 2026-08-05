@@ -1,5 +1,5 @@
 import * as utils from '$site/plot-utils'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Note: stochastic functions are tested with shape/invariants, not exact values
 describe(`plot-utils random generators`, () => {

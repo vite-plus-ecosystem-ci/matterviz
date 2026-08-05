@@ -9,7 +9,7 @@ import selective_dynamics_poscar from '$site/structures/selective-dynamics.posca
 import { make_supercell } from '$lib/structure/supercell'
 import { CNA_TYPE_COLORS, CNA_TYPE_NAMES, CNA_TYPE_PROPERTY } from '$lib/structure-id'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 type MoyoDatasetWithOrigMap = MoyoDataset & { orig_site_indices_by_input_idx?: number[][] }

@@ -5,7 +5,7 @@ import * as bonding from '$lib/structure/bonding'
 import { get_pbc_image_sites } from '$lib/structure/pbc'
 import { test_molecules } from '$site/molecules'
 import process from 'node:process'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 // Simple helper for tests that only need xyz coordinates

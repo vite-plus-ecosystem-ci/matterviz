@@ -1,6 +1,6 @@
 import FermiSurface from '$lib/fermi-surface/FermiSurface.svelte'
 import { mount, unmount, type ComponentProps } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 
 const create_drop_event = (file: File): DragEvent => {
   const drag_event = new DragEvent(`drop`, { bubbles: true })

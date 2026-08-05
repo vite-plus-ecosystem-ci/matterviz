@@ -10,7 +10,7 @@ import {
   weights_to_param,
 } from '$lib/url-params'
 import type { WeightsConfig } from '$lib/url-params'
-import { expect, expectTypeOf, test, vi } from 'vitest'
+import { expect, expectTypeOf, test, vi } from 'vite-plus/test'
 
 test.each([
   [``, false, false],

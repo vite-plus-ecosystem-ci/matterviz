@@ -1,7 +1,7 @@
 import type { TrajectoryType, TrajectoryXQuantity, TrajHandlerData } from '$lib/trajectory'
 import { Trajectory } from '$lib/trajectory'
 import { flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { make_trajectory_frame, resize_element } from '../setup'
 
 const make_traj = (metadatas: Record<string, number>[]) => ({

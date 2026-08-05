@@ -1,7 +1,7 @@
 import type { Label } from '$lib/table'
 import ToggleMenu from '$lib/table/ToggleMenu.svelte'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test'
 import ToggleMenuHarness from './ToggleMenuHarness.svelte'
 
 afterEach(() => {

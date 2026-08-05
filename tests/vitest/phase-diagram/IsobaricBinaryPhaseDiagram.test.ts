@@ -1,7 +1,7 @@
 import { format_hover_info_text, IsobaricBinaryPhaseDiagram } from '$lib/phase-diagram'
 import type { LeverRuleResult, PhaseDiagramData } from '$lib/phase-diagram/types'
 import { type ComponentProps, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 import { create_hover_info } from './fixtures/test-data'
 

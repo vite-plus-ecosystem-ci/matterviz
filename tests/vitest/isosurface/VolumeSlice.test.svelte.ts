@@ -3,7 +3,7 @@ import VolumeSlice from '$lib/isosurface/VolumeSlice.svelte'
 import type { SliceResult } from '$lib/isosurface/slice'
 import type { VolumeSliceMode } from '$lib/isosurface/slice-rendering'
 import { mount, tick, type ComponentProps } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const make_slice = (): SliceResult => {

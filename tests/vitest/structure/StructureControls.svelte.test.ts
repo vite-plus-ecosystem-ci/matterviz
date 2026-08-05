@@ -3,7 +3,7 @@ import { StructureControls } from '$lib/structure'
 import { CNA_TYPE_PROPERTY } from '$lib/structure-id'
 import type { TrajectoryPositionStream } from '$lib/trajectory'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props, make_crystal, simple_structure } from '../setup'
 
 const mount_controls = async (

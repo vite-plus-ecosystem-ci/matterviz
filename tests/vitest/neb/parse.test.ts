@@ -9,7 +9,7 @@ import { analyze_barrier, path_spline, reaction_coordinate } from '$lib/neb/reac
 import { count_xyz_frames } from '$lib/trajectory/helpers'
 import { li_mgo_hop_json, LI_MGO_HOP_FILENAME, reaction_paths } from '$site/neb'
 import { type ComponentProps, mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import { make_crystal, resize_element } from '../setup'
 
 const CELL = 4

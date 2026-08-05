@@ -2,7 +2,7 @@ import type { AnyStructure } from '$lib'
 import type { Matrix3x3 } from '$lib/math'
 import { StructureControls } from '$lib/structure'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { cubic_matrix, doc_query, make_crystal, simple_structure } from '../setup'
 
 describe(`StructureControls`, () => {

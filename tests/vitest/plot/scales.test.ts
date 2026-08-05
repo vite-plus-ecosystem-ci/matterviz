@@ -19,7 +19,7 @@ import {
   is_time_scale,
 } from '$lib/plot/core/types'
 import { scaleLinear, scaleLog, scaleTime } from 'd3-scale'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const sample_points = [1, 2, 3, 4, 5].map((x) => ({ x, y: x * 10 }))
 

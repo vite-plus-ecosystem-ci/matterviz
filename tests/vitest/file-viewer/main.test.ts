@@ -13,7 +13,7 @@ import {
 import { zipSync } from 'fflate'
 import { mount } from 'svelte'
 import type * as svelte_module from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 // parse_structure_file throws on parse failure but can still return a structure with
 // zero atoms (e.g. a CIF with cell params but no _atom_site records). Mock it to that

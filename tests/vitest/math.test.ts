@@ -1,6 +1,6 @@
 import type { Vec2, Vec3 } from '$lib/math'
 import * as math from '$lib/math'
-import { describe, expect, it, test } from 'vitest'
+import { describe, expect, it, test } from 'vite-plus/test'
 
 // Per-axis periodicity flags, structurally the Pbc type math.ts takes but does not re-export
 type Pbc3 = [boolean, boolean, boolean]

@@ -7,7 +7,7 @@ import {
   sanitize_svg,
 } from '$lib'
 import type * as Sanitize from '$lib/sanitize'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 // XSS payloads that must never survive any sanitizer
 const XSS_PAYLOADS = [

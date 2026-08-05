@@ -4,7 +4,7 @@ import { default_controls } from '$lib/convex-hull/index'
 import type { ConvexHullEntry } from '$lib/convex-hull/types'
 import type { ComponentProps } from 'svelte'
 import { flushSync, mount } from 'svelte'
-import { beforeEach, describe, expect, test } from 'vitest'
+import { beforeEach, describe, expect, test } from 'vite-plus/test'
 
 const mag = (magnetic_ordering?: string): ConvexHullEntry => ({
   composition: { Fe: 1, O: 1 },

@@ -10,7 +10,7 @@ import {
   span_or,
 } from '$lib/plot/core/reference-line'
 import type { RefLine } from '$lib/plot/core/types'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`normalize_value`, () => {
   test.each([

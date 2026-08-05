@@ -6,7 +6,7 @@ import {
   is_on_hull,
   is_unary_entry,
 } from '$lib/convex-hull/helpers'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`arity helpers`, () => {
   const make = (composition: Record<string, number>) => ({ composition }) as PhaseData

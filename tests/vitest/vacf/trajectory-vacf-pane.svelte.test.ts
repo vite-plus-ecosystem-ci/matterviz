@@ -1,7 +1,7 @@
 import type { TrajectoryType } from '$lib/trajectory'
 import TrajectoryVacfPane from '$lib/vacf/TrajectoryVacfPane.svelte'
 import { mount, tick } from 'svelte'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 import { bind_props, make_crystal } from '../setup'
 
 const settle = async (): Promise<void> => {

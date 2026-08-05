@@ -1,8 +1,8 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { resolve } from 'node:path'
 import process from 'node:process'
-import type { Plugin, PluginOption } from 'vite'
-import { defineConfig } from 'vite'
+import type { Plugin, PluginOption } from 'vite-plus'
+import { defineConfig } from 'vite-plus'
 
 // Plugin to strip Node.js imports from the UMD bundle
 const strip_node_imports_plugin = (): Plugin => ({

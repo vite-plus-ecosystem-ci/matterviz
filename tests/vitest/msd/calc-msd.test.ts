@@ -1,7 +1,7 @@
 import type { ElementSymbol } from '$lib/element'
 import { calc_msd, compute_msd_async, fit_einstein_diffusion } from '$lib/msd'
 import type { Pbc } from '$lib/structure'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { cubic_matrix } from '../setup'
 import {
   ballistic_frames,

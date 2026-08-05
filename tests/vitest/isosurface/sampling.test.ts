@@ -12,7 +12,7 @@ import type { DisplayRange } from '$lib/isosurface/sampling'
 import { marching_cubes } from '$lib/marching-cubes'
 import type { Matrix3x3, Vec3 } from '$lib/math'
 import { create_frac_to_cart } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import {
   cubic_matrix,
   make_grid,

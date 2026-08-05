@@ -14,7 +14,7 @@ import {
   segment_rect_intersects,
   segments_intersect,
 } from '$lib/plot/core/utils/label-placement'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // === Geometry helpers ===
 

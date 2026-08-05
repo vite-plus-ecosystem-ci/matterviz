@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { gunzipSync } from 'node:zlib'
 import { vite_plugin as live_examples } from 'svelte-widgets/live-examples'
-import type { Plugin } from 'vite'
+import type { Plugin } from 'vite-plus'
 import { defineConfig, type PluginOption } from 'vite-plus'
 // @ts-expect-error Node ESM config load needs the .ts extension here
 import { mock_vscode } from './extensions/vscode/tests/vscode-mock.ts'

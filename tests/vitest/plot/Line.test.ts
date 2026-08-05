@@ -1,7 +1,7 @@
 import { Line, type Vec2 } from '$lib'
 import { resolve_line_tween } from '$lib/plot/core/utils'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`resolve_line_tween (path-morph budget)`, () => {
   test.each([

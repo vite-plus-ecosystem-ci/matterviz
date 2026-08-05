@@ -16,7 +16,7 @@ import type { Molecule } from '$lib/structure'
 import { calc_structure_coordination } from '$lib/structure/atom-properties'
 import { structure_map } from '$site/structures'
 import { tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, mount_sized } from '../setup'
 
 // Exact tetrahedral angle: acos(-1/3) in degrees

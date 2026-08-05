@@ -11,7 +11,7 @@ import {
   suggest_vacf_frame_stride,
   VELOCITY_SITE_PROPERTY,
 } from '$lib/vacf'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 import { circular_motion, max_abs_error } from './helpers'
 

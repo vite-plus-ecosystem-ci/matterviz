@@ -1,7 +1,7 @@
 import type { D3InterpolateName } from '$lib/colors'
 import type { CellVal } from '$lib/table'
 import { calc_cell_color, strip_html } from '$lib/table'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`calc_cell_color`, () => {
   // Tests for cases that should return null colors

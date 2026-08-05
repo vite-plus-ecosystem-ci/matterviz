@@ -2,7 +2,7 @@ import Bands from '$lib/spectral/Bands.svelte'
 import type { BaseBandStructure } from '$lib/spectral/types'
 import type { ComponentProps } from 'svelte'
 import { mount, tick } from 'svelte'
-import { afterEach, describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vite-plus/test'
 
 const base_band_structure: BaseBandStructure = {
   recip_lattice: {

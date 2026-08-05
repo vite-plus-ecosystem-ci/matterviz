@@ -6,7 +6,7 @@ import type { VaspoutElectronicData } from '$lib/trajectory/parse/vaspout-electr
 import { parse_vaspout_h5_file } from '$lib/trajectory/parse/vaspout-h5'
 import { is_trajectory_file } from '$lib/trajectory/format-detect'
 import type * as h5wasm from 'h5wasm'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { read_binary_test_file } from '../setup'
 
 const VASPOUT_FIXTURE_DIR = `tests/vitest/fixtures/vasp-hdf5`

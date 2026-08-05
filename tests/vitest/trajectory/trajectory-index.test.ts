@@ -11,7 +11,7 @@ import {
   validate_trajectory,
 } from '$lib/trajectory'
 import { validate_3x3_matrix } from '$lib/trajectory/helpers'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_trajectory_frame } from '../setup'
 
 // Factory for trajectories

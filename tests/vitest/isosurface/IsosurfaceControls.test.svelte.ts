@@ -7,7 +7,7 @@ import type {
   VolumetricData,
 } from '$lib/isosurface/types'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query, make_grid, make_volume as make_volume_fixture } from '../setup'
 
 // Minimal VolumetricData fixture for testing controls (2x2x2 grid with values 1..8)

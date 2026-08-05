@@ -18,7 +18,7 @@ import {
   y_axis_label_x,
   y2_axis_label_x,
 } from '$lib/plot/core/layout'
-import { describe, expect, it, test, vi } from 'vitest'
+import { describe, expect, it, test, vi } from 'vite-plus/test'
 
 describe(`layout utility functions`, () => {
   describe(`rectangle helpers`, () => {
