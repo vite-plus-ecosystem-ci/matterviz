@@ -1,5 +1,5 @@
 import { format_duration, format_relative_time, format_utc_time } from '$lib/time'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`format_utc_time`, () => {
   test.each([

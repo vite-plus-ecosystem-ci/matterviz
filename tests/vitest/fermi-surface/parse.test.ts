@@ -1,6 +1,6 @@
 // Tests for Fermi surface file parsing via parse_fermi_file
 import { parse_fermi_file } from '$lib/fermi-surface/parse'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`parse_fermi_file`, () => {
   describe(`BXSF format`, () => {

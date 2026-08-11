@@ -18,7 +18,7 @@ import {
 import { structure_map } from '$site/structures'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
 import { space_group_type } from '@spglib/moyo-wasm'
-import { beforeAll, describe, expect, test } from 'vitest'
+import { beforeAll, describe, expect, test } from 'vite-plus/test'
 import { init_moyo_for_tests, make_crystal } from '../setup'
 
 // Helper to get structure or throw with descriptive error

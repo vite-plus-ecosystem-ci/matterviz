@@ -6,7 +6,7 @@ import {
   wyckoff_positions_from_moyo,
 } from '$lib/symmetry'
 import type { MoyoOperation } from '@spglib/moyo-wasm'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_symmetry_structure, make_wyckoff_dataset } from '../setup'
 
 const make_operation = (rot: Vec9, trans: Vec3): MoyoOperation => ({

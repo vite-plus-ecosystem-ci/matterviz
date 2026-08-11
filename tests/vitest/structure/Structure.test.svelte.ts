@@ -6,7 +6,7 @@ import type { StructureHandlerData } from '$lib/structure'
 import * as exports from '$lib/structure/export'
 import { structures } from '$site/structures'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   assertHoverScopedShortcut,
   bind_props,

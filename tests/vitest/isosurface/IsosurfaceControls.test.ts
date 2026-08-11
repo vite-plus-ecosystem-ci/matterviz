@@ -3,7 +3,7 @@ import IsosurfaceControls from '$lib/isosurface/IsosurfaceControls.svelte'
 import { DEFAULT_ISOSURFACE_SETTINGS } from '$lib/isosurface/types'
 import type { IsosurfaceSettings, VolumetricData } from '$lib/isosurface/types'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query, make_grid, make_volume as make_volume_fixture } from '../setup'
 
 // Minimal VolumetricData fixture for testing controls (2x2x2 grid with values 1..8)

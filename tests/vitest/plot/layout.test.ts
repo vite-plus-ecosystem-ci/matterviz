@@ -13,7 +13,7 @@ import {
   sample_series_obstacle_points,
   TICK_LABEL_HEIGHT,
 } from '$lib/plot/core/layout'
-import { describe, expect, it, test } from 'vitest'
+import { describe, expect, it, test } from 'vite-plus/test'
 
 describe(`layout utility functions`, () => {
   describe(`rectangle helpers`, () => {

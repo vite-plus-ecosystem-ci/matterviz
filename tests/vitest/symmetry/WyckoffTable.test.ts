@@ -3,7 +3,7 @@ import { WyckoffTable } from '$lib/symmetry'
 import type { MoyoWyckoffPosition } from '@spglib/moyo-wasm'
 import type { ComponentProps } from 'svelte'
 import { mount } from 'svelte'
-import { beforeEach, describe, expect, test } from 'vitest'
+import { beforeEach, describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 describe(`WyckoffTable`, () => {

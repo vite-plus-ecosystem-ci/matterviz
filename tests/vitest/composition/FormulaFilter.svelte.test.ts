@@ -1,6 +1,6 @@
 import { FormulaFilter } from '$lib/composition'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 
 describe(`FormulaFilter`, () => {

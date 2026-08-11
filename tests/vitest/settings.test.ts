@@ -1,5 +1,5 @@
 import { DEFAULTS, type DefaultSettings, merge, SETTINGS_CONFIG } from '$lib/settings'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`Settings`, () => {
   describe(`SETTINGS_CONFIG`, () => {

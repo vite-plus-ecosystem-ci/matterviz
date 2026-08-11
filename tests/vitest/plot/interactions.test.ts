@@ -13,7 +13,7 @@ import {
   zoom_range_by_factor,
 } from '$lib/plot/core/interactions'
 import type { AxisRanges, ScaleType, Y2SyncConfig, Y2SyncMode } from '$lib/plot/core/types'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`pan_range_by_pixels`, () => {
   // pan must be uniform in *screen* space: constant shift on linear axes,

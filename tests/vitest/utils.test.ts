@@ -1,5 +1,5 @@
 import { decode_url_safe_base64, merge_nested } from '$lib'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`merge_nested`, () => {
   test(`merges flat and nested objects`, () => {

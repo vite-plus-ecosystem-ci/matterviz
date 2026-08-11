@@ -1,5 +1,5 @@
 import { parse_structure_file } from '$lib/structure/parse'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { base64_to_array_buffer, parse_file_content } from '../src/webview/main'
 
 // parse_structure_file throws on parse failure but can still return a structure with

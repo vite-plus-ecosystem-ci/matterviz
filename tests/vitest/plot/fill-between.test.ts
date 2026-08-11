@@ -22,7 +22,7 @@ import type {
 } from '$lib/plot/core/types'
 import { FILL_CURVE_TYPES } from '$lib/plot/core/types'
 import { curveMonotoneX, line } from 'd3-shape'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 // Reproduce the exact generator Line.svelte uses for series lines
 const series_line = (pts: readonly Pt[]): string =>

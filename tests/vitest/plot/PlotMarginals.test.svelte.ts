@@ -1,7 +1,7 @@
 import type { DataSeries, MarginalSideInput } from '$lib/plot'
 import { BarPlot, BoxPlot, Histogram, ScatterPlot } from '$lib/plot'
 import { type ComponentProps, createRawSnippet, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 
 const scatter_series: DataSeries = {

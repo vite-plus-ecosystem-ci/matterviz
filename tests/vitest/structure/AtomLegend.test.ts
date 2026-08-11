@@ -4,7 +4,7 @@ import { colors } from '$lib/state.svelte'
 import AtomLegend from '$lib/structure/AtomLegend.svelte'
 import type { ComponentProps } from 'svelte'
 import { mount as svelte_mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 let mounted_components: ReturnType<typeof svelte_mount>[] = []

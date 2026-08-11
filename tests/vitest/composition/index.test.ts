@@ -1,5 +1,5 @@
 import { get_chart_font_scale } from '$lib/composition'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`get_chart_font_scale`, () => {
   it(`returns base scale when text fits`, () => {

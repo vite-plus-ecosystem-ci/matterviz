@@ -14,7 +14,7 @@ import {
 } from '$lib/spectral/helpers'
 import type { DosData, ElectronicDos, PhononDos, SpinMode } from '$lib/spectral/types'
 import { mount, tick } from 'svelte'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 
 // Test fixtures
 const phonon_dos: PhononDos = {

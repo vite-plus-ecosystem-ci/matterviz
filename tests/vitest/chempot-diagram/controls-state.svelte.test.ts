@@ -5,7 +5,7 @@ import {
 } from '$lib/chempot-diagram/controls-state.svelte'
 import type { ChemPotDiagramConfig } from '$lib/chempot-diagram/types'
 import { CHEMPOT_DEFAULTS } from '$lib/chempot-diagram/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`create_chempot_overrides`, () => {
   test(`resolve falls back override > config > custom default > CHEMPOT_DEFAULTS`, () => {

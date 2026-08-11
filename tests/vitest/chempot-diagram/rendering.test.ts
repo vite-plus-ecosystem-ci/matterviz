@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import process from 'node:process'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const chempot_3d_source = readFileSync(
   `${process.cwd()}/src/lib/chempot-diagram/ChemPotDiagram3D.svelte`,

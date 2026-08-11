@@ -6,7 +6,7 @@ import {
   sunburst_from_paths,
 } from '$lib/plot'
 import { hsl } from 'd3-color'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 const close = (val: number) => expect.closeTo(val, 9)
 

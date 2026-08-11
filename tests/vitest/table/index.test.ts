@@ -1,7 +1,7 @@
 import type { CellVal, OnSortCallback, RowData } from '$lib/table'
 import { calc_cell_color, strip_html } from '$lib/table'
 import type * as d3sc from 'd3-scale-chromatic'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 type ColorScale = keyof typeof d3sc | null
 

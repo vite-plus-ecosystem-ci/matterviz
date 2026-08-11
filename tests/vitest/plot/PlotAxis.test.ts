@@ -1,6 +1,6 @@
 import PlotAxis from '$lib/plot/core/components/PlotAxis.svelte'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 
 // Plot geometry shared across cases: plot area is x∈[40,180], y∈[10,70]
 const pad = { t: 10, b: 30, l: 40, r: 20 }

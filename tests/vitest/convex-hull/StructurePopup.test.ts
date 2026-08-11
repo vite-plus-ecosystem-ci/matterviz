@@ -1,7 +1,7 @@
 import type { StructurePopupContext } from '$lib/convex-hull'
 import StructurePopup from '$lib/convex-hull/StructurePopup.svelte'
 import { createRawSnippet, flushSync, mount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, make_crystal, svg_query } from '../setup'
 
 const mock_structure = make_crystal(3, [[`Li`, [0, 0, 0], 1]])

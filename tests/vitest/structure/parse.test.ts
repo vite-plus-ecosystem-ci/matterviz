@@ -31,7 +31,7 @@ import tio2_cif from '$site/structures/TiO2.cif?raw'
 import vasp4_format from '$site/structures/vasp4-format.poscar?raw'
 import process from 'node:process'
 import { join } from 'node:path'
-import { assert, afterEach, beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { assert, afterEach, beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 import { get_dummy_structure, read_maybe_gz } from '../setup'
 
 // Suppress console.error for the entire test file since parse functions

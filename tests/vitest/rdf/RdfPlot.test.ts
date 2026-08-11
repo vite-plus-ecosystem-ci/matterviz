@@ -3,7 +3,7 @@ import type { RdfPattern } from '$lib/rdf'
 import type { Pbc } from '$lib/structure'
 import { structure_map } from '$site/structures'
 import { type ComponentProps, createRawSnippet, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, resize_element } from '../setup'
 
 const nacl_structure = structure_map.get(`mp-1234`)

@@ -24,7 +24,7 @@ import {
   process_hull_for_stats,
 } from '$lib/convex-hull/thermodynamics'
 import type { ConvexHullTriangle, PhaseData } from '$lib/convex-hull/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Test fixture factory - derives total energy from energy_per_atom and composition
 const make_phase = (

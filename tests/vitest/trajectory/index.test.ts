@@ -1,6 +1,6 @@
 import type { TrajectoryFrame, TrajectoryType } from '$lib/trajectory'
 import { get_trajectory_stats, validate_trajectory } from '$lib/trajectory'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_trajectory_frame } from '../setup'
 
 describe(`Trajectory Validation`, () => {

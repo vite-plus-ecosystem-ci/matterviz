@@ -1,5 +1,5 @@
 import { calc_coordination_nums } from '$lib/coordination'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 describe(`calc_coordination_nums`, () => {

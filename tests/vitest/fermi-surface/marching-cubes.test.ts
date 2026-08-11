@@ -1,7 +1,7 @@
 // Tests for marching cubes via fermi-surface re-export (backward compatibility)
 import { marching_cubes } from '$lib/marching-cubes'
 import type { Matrix3x3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_grid } from '../setup'
 
 // Helper: create uniform grid with constant value

@@ -3,7 +3,7 @@ import {
   decompress_file,
   detect_compression_format,
 } from '$lib/io/decompress'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Compress bytes with the platform CompressionStream for round-trip tests
 const compress = async (

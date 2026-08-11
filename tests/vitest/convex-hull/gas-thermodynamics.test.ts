@@ -16,7 +16,7 @@ import {
 } from '$lib/convex-hull/gas-thermodynamics'
 import type { GasSpecies, GasThermodynamicsConfig, PhaseData } from '$lib/convex-hull/types'
 import { DEFAULT_GAS_PRESSURES, DEFAULT_GAS_TEMP, GAS_SPECIES } from '$lib/convex-hull/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Helper to create test entries with default energy=0
 const make_entry = (comp: Record<string, number>, energy = 0): PhaseData => ({

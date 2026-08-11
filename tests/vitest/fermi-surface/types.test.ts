@@ -2,7 +2,7 @@
 import { is_band_grid_data, is_fermi_surface_data } from '$lib/fermi-surface/types'
 import type { BandGridData, FermiSurfaceData } from '$lib/fermi-surface/types'
 import type { Matrix3x3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const identity_lattice: Matrix3x3 = [
   [1, 0, 0],

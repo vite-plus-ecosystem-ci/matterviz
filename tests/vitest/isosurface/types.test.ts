@@ -11,7 +11,7 @@ import {
   type VolumetricData,
 } from '$lib/isosurface/types'
 import type { Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_grid, make_volume as make_volume_fixture } from '../setup'
 
 describe(`grid_data_range`, () => {

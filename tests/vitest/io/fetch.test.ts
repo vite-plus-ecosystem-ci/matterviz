@@ -1,5 +1,5 @@
 import { to_query } from '$lib/io/fetch'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`to_query`, () => {
   test.each([

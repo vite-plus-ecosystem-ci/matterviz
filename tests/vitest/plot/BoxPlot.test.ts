@@ -1,7 +1,7 @@
 import { BoxPlot, type Vec2 } from '$lib'
 import type { BoxPlotSeries, Orientation, WhiskerMode } from '$lib/plot'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, inside_clip_path, mount_sized, resize_element } from '../setup'
 
 const dist = (count: number, center = 0, spread = 1): number[] =>

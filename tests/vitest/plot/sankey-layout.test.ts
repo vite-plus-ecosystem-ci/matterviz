@@ -1,6 +1,6 @@
 import type { SankeyData } from '$lib/plot'
 import { compute_sankey_layout, sankey_align_fn, sankey_from_links } from '$lib/plot'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 // Simple two-column graph: A->C (1), B->C (2). C value = 1 + 2 = 3.
 const tri: SankeyData = {

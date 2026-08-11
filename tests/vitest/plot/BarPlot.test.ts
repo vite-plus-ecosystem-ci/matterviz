@@ -1,7 +1,7 @@
 import { BarPlot } from '$lib'
 import type { BarHandlerProps, BarMode, BarSeries, Orientation } from '$lib/plot'
 import { type ComponentProps, createRawSnippet, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { axis_label_pivot_y, inside_clip_path, mount_sized } from '../setup'
 
 const basic: BarSeries = {

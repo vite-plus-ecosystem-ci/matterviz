@@ -6,7 +6,7 @@ import {
   rotation_from_direction,
 } from '$lib/structure/geometry'
 import { Euler, Matrix4, Vector3 } from 'three'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`quaternion_from_direction`, () => {
   test.each([

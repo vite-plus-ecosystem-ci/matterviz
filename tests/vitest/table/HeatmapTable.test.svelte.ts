@@ -1,6 +1,6 @@
 import { HeatmapTable, type Label, type RowData } from '$lib'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { assert, describe, expect, it, vi } from 'vitest'
+import { assert, describe, expect, it, vi } from 'vite-plus/test'
 import { bind_props } from '../setup'
 
 describe(`HeatmapTable`, () => {

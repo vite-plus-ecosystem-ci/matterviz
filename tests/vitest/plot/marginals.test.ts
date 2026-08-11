@@ -20,7 +20,7 @@ import type {
   MarginalSeriesCurve,
   ResolvedMarginalConfig,
 } from '$lib/plot/core/marginals'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const resolved = (over: Partial<ResolvedMarginalConfig> = {}): ResolvedMarginalConfig => ({
   ...MARGINAL_DEFAULTS,

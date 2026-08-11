@@ -6,7 +6,7 @@ import {
   make_label_position_calculator,
 } from '$lib/structure/atom-label-placement'
 import { Object3D, OrthographicCamera } from 'three'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const expectVecClose = (actual: Vec3, expected: Vec3): void => {
   for (const [idx, val] of actual.entries()) {

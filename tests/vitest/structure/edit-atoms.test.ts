@@ -4,7 +4,7 @@ import { ELEM_SYMBOLS } from '$lib/labels'
 import { create_cart_to_frac } from '$lib/math'
 import type { AnyStructure, Site } from '$lib/structure'
 import { get_pbc_image_sites } from '$lib/structure'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { get_dummy_structure, make_crystal } from '../setup'
 
 // === Element Normalization ===

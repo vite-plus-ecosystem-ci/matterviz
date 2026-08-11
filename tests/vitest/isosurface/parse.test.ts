@@ -1,7 +1,7 @@
 // Tests for isosurface volumetric file parsers (CHGCAR, .cube)
 import { parse_chgcar, parse_cube, parse_volumetric_file } from '$lib/isosurface/parse'
 import type { Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // === Helper to build minimal CHGCAR content ===
 function make_chgcar({

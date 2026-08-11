@@ -1,6 +1,6 @@
 // Tests for point group symmetry operations
 import { IDENTITY_4x4, OH_SYMMETRY_MATRICES } from '$lib/fermi-surface/symmetry'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`symmetry module`, () => {
   describe(`OH_SYMMETRY_MATRICES`, () => {

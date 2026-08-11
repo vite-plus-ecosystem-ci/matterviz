@@ -13,7 +13,7 @@ import {
   trajectory_property_config,
 } from '$lib/labels'
 import { format as d3_format } from 'd3-format'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`labels utils`, () => {
   test(`ELEM_HEATMAP_LABELS maps each label to a valid heatmap key`, () => {

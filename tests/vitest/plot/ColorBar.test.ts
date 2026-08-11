@@ -3,7 +3,7 @@ import { luminance } from '$lib/colors'
 import type { AxisOption, ColorScaleOption } from '$lib/plot/core/types'
 import * as d3_sc from 'd3-scale-chromatic'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 
 describe(`ColorBar Horizontal (Default)`, () => {

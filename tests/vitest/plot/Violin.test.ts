@@ -1,7 +1,7 @@
 import { Violin } from '$lib'
 import type { BoxPlotSeries } from '$lib/plot'
 import type { ComponentProps } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 
 const dist = (count: number, center = 0, spread = 1): number[] =>

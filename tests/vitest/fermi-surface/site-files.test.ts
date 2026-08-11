@@ -1,5 +1,5 @@
 import { fermi_file_colors, fermi_surface_files } from '$site/fermi-surfaces'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 // Regression test for production bug where fermi_surface_files derived their `url`
 // from import.meta.glob's `?url` values. The rolldown production build treats

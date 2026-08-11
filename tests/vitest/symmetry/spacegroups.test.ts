@@ -1,6 +1,6 @@
 import type { CrystalSystem } from '$lib/symmetry/spacegroups'
 import * as spg from '$lib/symmetry/spacegroups'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`CRYSTAL_SYSTEM_RANGES`, () => {
   test(`should have 7 contiguous systems from 1-230`, () => {

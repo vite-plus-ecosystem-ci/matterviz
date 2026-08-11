@@ -2,7 +2,7 @@
 import { JsonTree } from '$lib/layout'
 import { serialize_for_copy } from '$lib/layout/json-tree/utils'
 import { flushSync, mount, tick } from 'svelte'
-import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 import JsonTreeReplacementHarness from './JsonTreeReplacementHarness.svelte'
 

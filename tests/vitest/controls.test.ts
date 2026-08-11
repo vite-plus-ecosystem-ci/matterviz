@@ -1,5 +1,5 @@
 // Unit tests for controls visibility configuration
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { normalize_show_controls } from '$lib/controls'
 
 describe(`normalize_show_controls`, () => {

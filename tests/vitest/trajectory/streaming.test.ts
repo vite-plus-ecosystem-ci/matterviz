@@ -13,7 +13,7 @@ import {
 import { generate_streaming_plot_series } from '$lib/trajectory/plotting'
 import process from 'node:process'
 import { flushSync, mount, tick } from 'svelte'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 import TrajectoryRaceHarness from './TrajectoryRaceHarness.svelte'
 
 // CI environments have higher timing variability

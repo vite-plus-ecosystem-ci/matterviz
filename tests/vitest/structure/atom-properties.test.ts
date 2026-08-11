@@ -5,7 +5,7 @@ import type { Vec3 } from '$lib/math'
 import type { Crystal } from '$lib/structure'
 import * as ap from '$lib/structure/atom-properties'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 type MoyoDatasetWithOrigMap = MoyoDataset & { orig_site_indices_by_input_idx?: number[][] }

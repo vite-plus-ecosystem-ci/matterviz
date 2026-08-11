@@ -15,7 +15,7 @@ import type { Buffer } from 'node:buffer'
 import fs from 'node:fs'
 import path from 'node:path'
 import zlib from 'node:zlib'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`parse_xy_file`, () => {
   // Note: parse_xy_file normalizes y values to 0-100 range

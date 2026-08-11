@@ -3,7 +3,7 @@
 import { FillArea } from '$lib/plot'
 import type { FillGradient, FillRegion } from '$lib/plot/core/types'
 import { mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // Mock scale functions
