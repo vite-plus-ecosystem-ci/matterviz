@@ -8,7 +8,7 @@ import {
 } from '$lib/structure/atom-properties'
 import type { ComponentProps } from 'svelte'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 let mounted_components: ReturnType<typeof mount>[] = []

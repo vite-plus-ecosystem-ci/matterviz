@@ -3,7 +3,7 @@ import {
   resolve_tick_layout,
   type MeasuredAxis,
 } from '$lib/plot/core/layout'
-import { afterAll, beforeAll, describe, expect, test, vi } from 'vitest'
+import { afterAll, beforeAll, describe, expect, test, vi } from 'vite-plus/test'
 
 const CI_MULTIPLIER = [`true`, `1`].includes(process.env.CI ?? ``) ? 5 : 1
 const AXIS_SIZE = 1200

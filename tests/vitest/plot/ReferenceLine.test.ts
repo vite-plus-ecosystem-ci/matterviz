@@ -6,7 +6,7 @@ import ReferenceLinesLayer from '$lib/plot/core/components/ReferenceLinesLayer.s
 import { solve_decorations } from '$lib/plot/core/decorations'
 import { create_reference_annotation_candidates } from '$lib/plot/core/reference-line'
 import { mount } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // Helper to query all elements of a type

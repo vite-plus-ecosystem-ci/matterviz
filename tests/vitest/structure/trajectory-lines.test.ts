@@ -8,7 +8,7 @@ import {
   unwrapped_stream_positions,
 } from '$lib/structure/trajectory-lines'
 import type { TrajectoryPositionStream } from '$lib/trajectory'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const CUBIC_10: Matrix3x3 = [
   [10, 0, 0],

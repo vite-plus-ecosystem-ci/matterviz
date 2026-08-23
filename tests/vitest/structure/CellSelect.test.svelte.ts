@@ -2,7 +2,7 @@ import CellSelect from '$lib/structure/CellSelect.svelte'
 import type { CellType } from '$lib/symmetry'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
 import { mount, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 
 // Mock sym_data for testing cell type buttons

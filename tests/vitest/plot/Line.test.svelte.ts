@@ -3,7 +3,7 @@ import Line from '$lib/plot/core/components/Line.svelte'
 import { SETTLE_MS } from '$lib/plot/core/settling-tween.svelte'
 import { resolve_line_tween } from '$lib/plot/core/utils'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, expect_transition_properties } from '../setup'
 
 describe(`resolve_line_tween (path-morph budget)`, () => {

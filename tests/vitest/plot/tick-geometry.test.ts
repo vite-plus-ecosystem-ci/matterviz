@@ -11,7 +11,7 @@ import {
   type TickLabelItem,
   validate_tick_label_anchor,
 } from '$lib/plot/core/tick-geometry'
-import { describe, expect, it, test, vi } from 'vitest'
+import { describe, expect, it, test, vi } from 'vite-plus/test'
 
 const dimensions = (width: number, line_height = 10, line_count = 1): TickLabelDimensions => ({
   line_widths: Array.from({ length: line_count }, () => width),

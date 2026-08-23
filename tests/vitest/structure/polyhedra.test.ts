@@ -15,7 +15,7 @@ import {
 import type { Polyhedron } from '$lib/structure/polyhedra'
 import { make_supercell } from '$lib/structure/supercell'
 import { Color } from 'three/webgpu'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 const CI_MULTIPLIER = [`true`, `1`].includes(process.env.CI ?? ``) ? 5 : 1

@@ -1,6 +1,6 @@
 import { BoxPlotControls } from '$lib/plot'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`BoxPlotControls`, () => {
   const checkbox_by_label = (

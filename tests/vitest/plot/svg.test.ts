@@ -1,5 +1,5 @@
 import { bar_path } from '$lib/plot/core/svg'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`bar_path`, () => {
   it.each([

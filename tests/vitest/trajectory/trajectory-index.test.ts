@@ -11,7 +11,7 @@ import {
   validate_trajectory,
 } from '$lib/trajectory'
 import { validate_3x3_matrix } from '$lib/trajectory/helpers'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_trajectory_frame } from '../setup'
 
 // Factory for trajectories
@@ -40,23 +40,19 @@ function make_trajectory(
   const trajectory: TrajectoryType = { frames }
   if (total_frames !== undefined) trajectory.total_frames = total_frames
   if (with_indexed_frames) {
-    trajectory.indexed_frames = frames.map(
-      (_, idx): FrameIndex => ({
-        frame_number: idx,
-        byte_offset: idx * 1000,
-        estimated_size: 1000,
-      }),
-    )
+    trajectory.indexed_frames = frames.map((_, idx): FrameIndex => ({
+      frame_number: idx,
+      byte_offset: idx * 1000,
+      estimated_size: 1000,
+    }))
     trajectory.is_indexed = true
   }
   if (with_plot_metadata) {
-    trajectory.plot_metadata = frames.map(
-      (frame, idx): TrajectoryMetadata => ({
-        frame_number: idx,
-        step: frame.step,
-        properties: { energy: -idx * 0.1, temperature: 300 + idx },
-      }),
-    )
+    trajectory.plot_metadata = frames.map((frame, idx): TrajectoryMetadata => ({
+      frame_number: idx,
+      step: frame.step,
+      properties: { energy: -idx * 0.1, temperature: 300 + idx },
+    }))
   }
   return trajectory
 }

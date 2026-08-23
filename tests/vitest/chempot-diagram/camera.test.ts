@@ -1,5 +1,5 @@
 import { rescale_zoom_to_fit } from '$lib/chempot-diagram/camera'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`rescale_zoom_to_fit`, () => {
   test.each([

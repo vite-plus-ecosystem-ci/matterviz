@@ -8,7 +8,7 @@ import {
   type FacetAxisMode,
   type FacetPanel,
 } from '$lib/plot/core/facets'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 const panels = (count: number): FacetPanel<string>[] =>
   Array.from({ length: count }, (_entry, panel_idx) => ({

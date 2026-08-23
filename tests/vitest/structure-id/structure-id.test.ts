@@ -14,7 +14,7 @@ import {
   neighbor_count,
   structure_type_fractions,
 } from '$lib/structure-id'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import {
   BCC_LATTICE_CONST,
   bcc_nn_distance,

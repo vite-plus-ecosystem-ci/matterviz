@@ -12,7 +12,7 @@ import {
   zone_axis_direction,
 } from '$lib/scene/zone-axis'
 import { PerspectiveCamera, Vector3 } from 'three/webgpu'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Deliberately triclinic (no 90-degree angle) so direct and reciprocal directions genuinely
 // differ — a cubic-only test cannot tell the two conventions apart.

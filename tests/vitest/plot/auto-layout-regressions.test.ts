@@ -16,7 +16,7 @@ import {
   type TickLayoutSide,
 } from '$lib/plot/core/tick-layout'
 import { DEFAULT_FONT_SPEC, type FontSpec } from '$lib/plot/core/text-metrics'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const font = (font_size: number, line_height: number): FontSpec => ({
   ...DEFAULT_FONT_SPEC,

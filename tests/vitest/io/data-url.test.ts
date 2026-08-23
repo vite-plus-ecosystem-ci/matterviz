@@ -1,7 +1,7 @@
 import { create_data_url_loader, type DataUrlRequest } from '$lib/io/data-url'
 import type * as url_drop from '$lib/io/url-drop'
 import { load_from_url } from '$lib/io/url-drop'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 vi.mock(`$lib/io/url-drop`, async (import_original) => ({
   ...(await import_original<typeof url_drop>()),

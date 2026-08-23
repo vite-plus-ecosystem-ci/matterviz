@@ -3,7 +3,7 @@ import {
   place_tooltip,
   type TooltipPlacementConfig,
 } from '$lib/plot/core/decorations'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const base_config: TooltipPlacementConfig = {
   anchor: { x: 50, y: 50 },

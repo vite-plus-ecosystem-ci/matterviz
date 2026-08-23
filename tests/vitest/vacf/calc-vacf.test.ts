@@ -1,6 +1,6 @@
 import type { ElementSymbol } from '$lib/element'
 import { calc_vacf, central_difference_velocities } from '$lib/vacf'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { cubic_matrix } from '../setup'
 import {
   build_vacf_input,

@@ -1,5 +1,5 @@
 import { deferred_fetch_responses, get_resize_observer_count } from './setup'
-import { expect, test, vi } from 'vitest'
+import { expect, test, vi } from 'vite-plus/test'
 
 test(`ResizeObserver disconnect unregisters and observe re-registers once`, async () => {
   const initial_count = get_resize_observer_count()

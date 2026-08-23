@@ -9,7 +9,7 @@ import {
   saed_pattern_radius,
   saed_spot_angle,
 } from '$lib/xrd'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../setup'
 
 const make_simple_cubic = (a_len: number): Crystal =>

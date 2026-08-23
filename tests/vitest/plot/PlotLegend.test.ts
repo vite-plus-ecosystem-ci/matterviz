@@ -2,7 +2,7 @@
 import { type FillGradient, type LegendItem, PlotLegend } from '$lib/plot'
 import { mount, tick } from 'svelte'
 import { SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const default_series_data: LegendItem[] = [
@@ -308,15 +308,12 @@ describe(`PlotLegend`, () => {
   })
 
   test(`filters large legends`, async () => {
-    const series_data = Array.from(
-      { length: 13 },
-      (_, idx): LegendItem => ({
-        label: idx === 10 ? `Target series` : `Series ${idx}`,
-        visible: true,
-        series_idx: idx,
-        display_style: {},
-      }),
-    )
+    const series_data = Array.from({ length: 13 }, (_, idx): LegendItem => ({
+      label: idx === 10 ? `Target series` : `Series ${idx}`,
+      visible: true,
+      series_idx: idx,
+      display_style: {},
+    }))
     mount(PlotLegend, { target: document.body, props: { series_data } })
 
     const filter = doc_query(`.legend-filter`, HTMLInputElement)

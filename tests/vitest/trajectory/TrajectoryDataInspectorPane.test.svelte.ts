@@ -4,7 +4,7 @@ import type { TrajectoryFrame, TrajectoryType } from '$lib/trajectory'
 import { full_data_extractor } from '$lib/trajectory'
 import TrajectoryDataInspectorPane from '$lib/trajectory/TrajectoryDataInspectorPane.svelte'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { make_trajectory_frame } from '../setup'
 
 let mounted_pane: ReturnType<typeof mount> | undefined

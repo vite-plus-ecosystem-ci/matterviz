@@ -8,7 +8,7 @@ import {
 import { analyze_barrier, path_spline, reaction_coordinate } from '$lib/neb/reaction-path'
 import { li_mgo_hop_json, reaction_paths } from '$site/neb'
 import { type ComponentProps, flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   create_drop_event,

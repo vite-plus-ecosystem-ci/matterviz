@@ -1,6 +1,6 @@
 import { BrillouinZoneControls } from '$lib/brillouin'
 import { mount } from 'svelte'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test(`Brillouin zone edge width readout preserves slider precision`, () => {
   mount(BrillouinZoneControls, {

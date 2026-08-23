@@ -11,7 +11,7 @@ import {
   magic_head,
   strip_gz_ext,
 } from '$lib/io/is-binary'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const bytes = (...nums: number[]): Uint8Array => new Uint8Array(nums)
 const to_buffer = (nums: number[]): ArrayBuffer => {

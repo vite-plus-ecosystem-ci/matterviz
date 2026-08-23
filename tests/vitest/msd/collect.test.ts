@@ -10,7 +10,7 @@ import { join } from 'node:path'
 import process from 'node:process'
 import { type Component, type ComponentProps, mount, tick, unmount } from 'svelte'
 import { SvelteMap } from 'svelte/reactivity'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 import { cubic_matrix, read_maybe_gz } from '../setup'
 import { drift_positions, make_frame, max_rel_error, on_x_axis } from './helpers'
 

@@ -1,5 +1,5 @@
 import { flatten_row, parse_ndjson } from '$lib/io/ndjson'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const manifest_row = {
   key: {

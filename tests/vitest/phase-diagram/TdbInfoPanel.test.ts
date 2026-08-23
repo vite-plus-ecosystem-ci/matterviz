@@ -1,7 +1,7 @@
 import { TdbInfoPanel } from '$lib/phase-diagram'
 import type { TdbParseResult } from '$lib/phase-diagram/parse'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Create a successful TDB parse result for testing.
 const create_tdb_result = (

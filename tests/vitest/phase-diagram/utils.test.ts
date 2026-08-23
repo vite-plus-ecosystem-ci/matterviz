@@ -29,7 +29,7 @@ import {
   tokenize_formula,
   transform_vertices,
 } from '$lib/phase-diagram/utils'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`find_phase_at_point`, () => {
   const test_data: PhaseDiagramData = {

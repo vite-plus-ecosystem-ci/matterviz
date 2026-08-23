@@ -13,7 +13,7 @@ import {
   should_hide_plot,
 } from '$lib/trajectory/plotting'
 import type { PlotSeriesOptions } from '$lib/trajectory/plotting'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_trajectory_frame } from '../setup'
 
 const DEFAULT_PROPERTY_CONFIG = {

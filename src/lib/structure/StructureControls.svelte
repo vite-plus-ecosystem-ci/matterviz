@@ -359,9 +359,9 @@
     }
   }
   type SettingKeysOfType<Value> = {
-    [Key in StructureSettingKey]: (typeof SETTINGS_CONFIG.structure)[Key] extends SettingType<Value>
-      ? Key
-      : never
+    [
+      Key in StructureSettingKey
+    ]: (typeof SETTINGS_CONFIG.structure)[Key] extends SettingType<Value> ? Key : never
   }[StructureSettingKey]
   type NumericSettingKey = SettingKeysOfType<number>
   // Rows rendered by the shared snippets must both name a setting and bind to the matching

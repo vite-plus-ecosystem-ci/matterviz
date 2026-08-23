@@ -12,7 +12,7 @@ import {
   type ReferenceAnnotationDecorationItem,
 } from '$lib/plot/core/decorations'
 import { compute_element_placement, rects_overlap, type Rect } from '$lib/plot/core/layout'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const base_pad = { t: 20, b: 40, l: 50, r: 20 }
 const width = 550

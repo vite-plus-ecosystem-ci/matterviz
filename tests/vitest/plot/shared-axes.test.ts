@@ -11,7 +11,7 @@ import {
   union_ranges,
 } from '$lib/plot/core/shared-axes'
 import type { AxisConfig } from '$lib/plot/core/types'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`shared range helpers`, () => {
   it.each([

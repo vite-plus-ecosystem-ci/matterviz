@@ -1,6 +1,6 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { resolve } from 'node:path'
-import { defineConfig, type PluginOption } from 'vite'
+import { defineConfig, type PluginOption } from 'vite-plus'
 import { three_compat_alias, vite_plugin_json_gz } from '../../src/vite-plugins.ts'
 import { mock_vscode } from './tests/vscode-mock.ts'
 

@@ -5,7 +5,7 @@ import {
   fft_in_place,
   next_power_of_two,
 } from '$lib/fft'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_rng, max_abs_error } from './helpers'
 
 // O(n^2) reference transform, same sign convention as fft_in_place

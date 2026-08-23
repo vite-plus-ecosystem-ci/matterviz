@@ -7,7 +7,7 @@ import {
   type SummaryStat,
 } from '$lib'
 import { type ComponentProps, mount, tick, unmount } from 'svelte'
-import { assert, describe, expect, it, vi } from 'vitest'
+import { assert, describe, expect, it, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 
 const mount_table = (props: ComponentProps<typeof HeatmapTable>): ReturnType<typeof mount> =>

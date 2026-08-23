@@ -1,6 +1,6 @@
 import { type FileInfo, FilePicker, file_type_paint } from '$lib'
 import { flushSync, mount, unmount } from 'svelte'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test'
 import { doc_query } from './setup'
 
 describe(`FilePicker`, () => {

@@ -11,7 +11,7 @@ import {
 } from '$lib/spectral/helpers'
 import type { ElectronicDos, PhononDos, SpinMode } from '$lib/spectral/types'
 import { mount, tick, unmount } from 'svelte'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { bind_props, expect_plot_controls, mount_sized } from '../setup'
 
 // Test fixtures

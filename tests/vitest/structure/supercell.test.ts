@@ -8,7 +8,7 @@ import {
   make_supercell,
   parse_supercell_scaling,
 } from '$lib/structure/supercell'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, type SimpleSite } from '../setup'
 
 // Sample structure for testing

@@ -1,7 +1,7 @@
 import { PlotControls } from '$lib/plot'
 import { DEFAULTS } from '$lib/settings'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 
 describe(`PlotControls`, () => {

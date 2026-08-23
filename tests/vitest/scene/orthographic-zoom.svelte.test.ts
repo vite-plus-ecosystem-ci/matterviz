@@ -1,6 +1,6 @@
 import { create_orthographic_zoom } from '$lib/scene'
 import { flushSync } from 'svelte'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 // Shared by BrillouinZoneScene, FermiSurfaceScene and ScatterPlot3DScene, so a regression here
 // hits three renderers at once — and both bugs this replaced lived in exactly this logic.

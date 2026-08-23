@@ -17,7 +17,7 @@ import {
 } from '$lib/settings/viewer-state'
 import { globSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const settings_module = join(`src`, `lib`, `settings.ts`)
 

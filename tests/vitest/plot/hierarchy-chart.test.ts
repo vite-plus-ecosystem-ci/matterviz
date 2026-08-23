@@ -17,7 +17,7 @@ import { make_cached_contrast } from '$lib/plot/core/utils/hierarchy-labels'
 import type { PositionedArc, SunburstNode } from '$lib/plot/sunburst/sunburst'
 import { compute_sunburst_layout } from '$lib/plot/sunburst/sunburst'
 import { SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 // oxfmt-ignore
 const tree: SunburstNode = {

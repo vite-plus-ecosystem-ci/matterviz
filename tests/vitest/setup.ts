@@ -11,7 +11,7 @@ import { resolve } from 'node:path'
 import { gunzipSync } from 'node:zlib'
 import { type Component, type ComponentProps, flushSync, mount, tick } from 'svelte'
 import { SvelteMap, SvelteSet } from 'svelte/reactivity'
-import { beforeEach, expect, onTestFinished, vi } from 'vitest'
+import { beforeEach, expect, onTestFinished, vi } from 'vite-plus/test'
 
 // Node 22+ has a built-in localStorage Proxy that lacks the standard Storage
 // API (getItem/setItem/etc). Vitest's populateGlobal skips overriding globals

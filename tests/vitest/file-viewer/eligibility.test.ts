@@ -6,7 +6,7 @@ import {
   normalize_browser_supported_filename,
   should_encode_filename_as_base64,
 } from '$lib/file-viewer/eligibility'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 const vasp_filenames = [`xdatcar`, ...VASP_STRUCTURE_FILES, ...VASP_VOLUMETRIC_FILES]
 

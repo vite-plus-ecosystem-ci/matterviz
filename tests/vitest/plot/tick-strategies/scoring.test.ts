@@ -2,7 +2,7 @@ import { TICK_GEOMETRY_EPSILON } from '$lib/plot/core/tick-geometry'
 import { create_tick_candidate, type TickStrategy } from '$lib/plot/core/tick-strategies'
 import { select_tick_candidate } from '$lib/plot/core/tick-strategies/scoring'
 import type { MeasuredTickCandidate } from '$lib/plot/core/tick-strategies/types'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 const measured = (
   id: string,

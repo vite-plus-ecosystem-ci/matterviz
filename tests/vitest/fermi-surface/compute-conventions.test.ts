@@ -6,7 +6,7 @@ import { extract_fermi_surface } from '$lib/fermi-surface/compute'
 import { parse_fermi_file } from '$lib/fermi-surface/parse'
 import type { BandGridData } from '$lib/fermi-surface/types'
 import type { Matrix3x3, Vec3 } from '$lib/math'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const scaled = (scale: number): Matrix3x3 => [
   [scale, 0, 0],

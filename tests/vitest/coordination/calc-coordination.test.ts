@@ -6,7 +6,7 @@ import type { StructureEntry, StructureInput } from '$lib'
 import { calc_coordination_nums, CoordinationBarPlot } from '$lib/coordination'
 import type { Molecule } from '$lib/structure'
 import { tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, mount_sized } from '../setup'
 
 // Simple cubic structure (NaCl-like)

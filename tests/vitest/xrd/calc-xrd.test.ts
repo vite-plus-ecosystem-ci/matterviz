@@ -17,7 +17,7 @@ import type { XrdPattern } from '$lib/xrd'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { fixture_id, xrd_patterns } from '../fixtures/xrd'
 import { make_crystal, read_maybe_gz } from '../setup'
 

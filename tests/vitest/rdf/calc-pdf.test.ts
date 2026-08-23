@@ -12,7 +12,7 @@ import {
 } from '$lib/rdf'
 import { neutron_scattering_length } from '$lib/scattering'
 import type { Crystal } from '$lib/structure'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, type SimpleSite } from '../setup'
 
 // Cubic lattice constant shared by the sc/bcc/fcc reference cells. 3.615 Å is chosen so none of

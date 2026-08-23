@@ -1,7 +1,7 @@
 import TrajectoryMsdPane from '$lib/msd/TrajectoryMsdPane.svelte'
 import type { TrajectoryType } from '$lib/trajectory'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, expect, test } from 'vitest'
+import { afterEach, expect, test } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 import { make_frame, on_x_axis } from './helpers'
 

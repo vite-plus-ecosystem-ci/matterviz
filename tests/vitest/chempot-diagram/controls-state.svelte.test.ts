@@ -6,7 +6,7 @@ import {
 import type { ChemPotDiagramConfig } from '$lib/chempot-diagram/types'
 import { CHEMPOT_DEFAULTS } from '$lib/chempot-diagram/types'
 import { readFileSync } from 'node:fs'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const read_component_source = (component: string): string =>
   readFileSync(

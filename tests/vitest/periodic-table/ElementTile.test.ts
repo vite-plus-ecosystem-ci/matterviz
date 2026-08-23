@@ -2,7 +2,7 @@ import { element_data, ElementTile } from '$lib'
 import type { SplitLayout, TileSegment } from '$lib/element'
 import { DEFAULT_CATEGORY_COLORS } from '$lib/colors'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const rand_element = element_data[0]

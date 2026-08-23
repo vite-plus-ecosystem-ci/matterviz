@@ -27,7 +27,7 @@ import {
   y_axis_label_x,
   y2_axis_label_x,
 } from '$lib/plot/core/layout'
-import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 import { mock_text_measurement } from '../setup'
 
 describe(`layout utility functions`, () => {

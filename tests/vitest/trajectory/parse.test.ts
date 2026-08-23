@@ -12,7 +12,7 @@ import { get_trajectory_type } from '$site/trajectories'
 import { readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import process from 'node:process'
-import { describe, expect, it, test, vi } from 'vitest'
+import { describe, expect, it, test, vi } from 'vite-plus/test'
 import {
   get_dummy_structure,
   make_crystal,

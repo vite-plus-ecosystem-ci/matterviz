@@ -1,6 +1,6 @@
 import { create_canvas_text_color } from '$lib/convex-hull/canvas-colors.svelte'
 import { flushSync, tick } from 'svelte'
-import { afterEach, expect, test } from 'vitest'
+import { afterEach, expect, test } from 'vite-plus/test'
 
 afterEach(() => {
   delete document.documentElement.dataset.theme

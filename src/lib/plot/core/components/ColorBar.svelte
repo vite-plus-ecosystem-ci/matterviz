@@ -503,24 +503,24 @@
   // Align items based on orientation and title position
   let div_style = $derived(`
     --cbar-wrapper-align-items: ${
-        orientation === `vertical` &&
-        (actual_title_side === `left` || actual_title_side === `right`)
-          ? `stretch`
-          : `center`
-      };
+      orientation === `vertical` &&
+      (actual_title_side === `left` || actual_title_side === `right`)
+        ? `stretch`
+        : `center`
+    };
     --cbar-label-display: ${
-        orientation === `vertical` &&
-        (actual_title_side === `left` || actual_title_side === `right`)
-          ? `flex`
-          : `inline-block`
-      };
+      orientation === `vertical` &&
+      (actual_title_side === `left` || actual_title_side === `right`)
+        ? `flex`
+        : `inline-block`
+    };
     height: ${
-        orientation === `vertical` ? `var(--cbar-height, 100%)` : `var(--cbar-height, auto)`
-      };
+      orientation === `vertical` ? `var(--cbar-height, 100%)` : `var(--cbar-height, auto)`
+    };
     min-height: ${orientation === `vertical` ? `var(--cbar-min-height, 150px)` : `auto`};
     max-height: ${
-        orientation === `vertical` ? `var(--cbar-max-height, 1000px)` : `none`
-      }; ${wrapper_style ?? ``}`)
+      orientation === `vertical` ? `var(--cbar-max-height, 1000px)` : `none`
+    }; ${wrapper_style ?? ``}`)
 </script>
 
 <div

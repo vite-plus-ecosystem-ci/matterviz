@@ -3,7 +3,7 @@ import { place_decorations } from '$lib/plot/core/auto-place'
 import { calc_auto_padding, DEFAULT_PLOT_PADDING } from '$lib/plot/core/layout'
 import { resolve_plot_title } from '$lib/plot/core/plot-title'
 import BinnedScatterPlot from '$lib/plot/scatter/BinnedScatterPlot.svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { mock_text_measurement, mount_sized } from '../setup'
 
 const title = {

@@ -1,7 +1,7 @@
 import type { ElementAxisOrderingKey } from '$lib/heatmap-matrix'
 import { HeatmapMatrixControls, ORDERING_LABELS } from '$lib/heatmap-matrix'
 import { mount, tick, type ComponentProps } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, expect_labelled_settings_grid } from '../setup'
 
 const mount_controls = (
