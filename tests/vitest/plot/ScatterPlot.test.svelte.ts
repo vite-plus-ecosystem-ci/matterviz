@@ -39,7 +39,9 @@ const hover = async (element: Element): Promise<void> => {
   await tick()
 }
 const next_animation_frame = (): Promise<void> =>
-  new Promise((resolve) => requestAnimationFrame(() => resolve()))
+  new Promise((resolve) => {
+    requestAnimationFrame(() => resolve())
+  })
 const scatter_clip_rect = (element: ParentNode): Rect => {
   const rect = element.querySelector(`defs clipPath rect`)
   if (!rect) throw new Error(`Scatter clip rectangle not found`)

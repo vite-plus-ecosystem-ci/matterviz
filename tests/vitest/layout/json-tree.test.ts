@@ -562,7 +562,9 @@ describe(`JsonTree`, () => {
     search_input.value = `findme`
     search_input.dispatchEvent(new Event(`input`, { bubbles: true }))
     flushSync()
-    await new Promise((resolve) => setTimeout(resolve, 175))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 175)
+    })
     await tick()
     expect(search_input.value).toBe(`findme`)
 
@@ -608,7 +610,9 @@ describe(`search navigation`, () => {
     input.dispatchEvent(new Event(`input`, { bubbles: true }))
     flushSync()
     // Wait for debounce (150ms) + microtask
-    await new Promise((resolve) => setTimeout(resolve, 200))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 200)
+    })
     flushSync()
     await tick()
   }
@@ -1212,7 +1216,9 @@ describe(`clipboard interactions`, () => {
     const value_el = document.querySelector(`.json-value`) as HTMLSpanElement
     value_el.click()
     flushSync()
-    await new Promise((resolve) => setTimeout(resolve, 10))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 10)
+    })
     flushSync()
 
     const feedback = document.querySelector(`.copy-feedback`)
@@ -1235,7 +1241,9 @@ describe(`clipboard interactions`, () => {
     expect(leaf_node.classList.contains(`focused`)).toBe(true)
     leaf_node.dispatchEvent(new KeyboardEvent(`keydown`, { key: `Enter`, bubbles: true }))
     flushSync()
-    await new Promise((resolve) => setTimeout(resolve, 10))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 10)
+    })
     expect(write_text).toHaveBeenCalledWith(`42`)
   })
 })

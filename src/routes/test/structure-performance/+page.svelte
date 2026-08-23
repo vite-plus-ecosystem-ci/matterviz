@@ -100,7 +100,9 @@
 
   async function generate_structure_async(count: number): Promise<void> {
     is_generating = true
-    await new Promise((resolve) => setTimeout(resolve, 0))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 0)
+    })
     test_structure = generate_structure(count)
     is_generating = false
   }

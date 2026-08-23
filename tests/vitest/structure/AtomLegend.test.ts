@@ -707,7 +707,7 @@ describe(`AtomLegend Component`, () => {
     test.each([
       [{ H: `Na` } as const, `Sodium (remapped from H)`, `remapped`],
       [undefined, `Hydrogen`, `not remapped`],
-    ])(`tooltip shows %s element name when %s`, (element_mapping, expected_title, _) => {
+    ])(`tooltip shows %s element name when %s`, (element_mapping, expected_title, _case) => {
       mount_legend({ elements: { H: 1 }, element_mapping })
       expect(doc_query<HTMLLabelElement>(`label`).title).toBe(expected_title)
     })
@@ -730,7 +730,7 @@ describe(`AtomLegend Component`, () => {
     test.each([
       [{ H: `Na` } as const, true, `remapped`],
       [undefined, false, `not remapped`],
-    ])(`label has remapped class=%s when %s`, (element_mapping, has_class, _) => {
+    ])(`label has remapped class=%s when %s`, (element_mapping, has_class, _case) => {
       mount_legend({ elements: { H: 1 }, element_mapping })
       expect(doc_query<HTMLLabelElement>(`label`).classList.contains(`remapped`)).toBe(
         has_class,

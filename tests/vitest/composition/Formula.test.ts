@@ -302,7 +302,9 @@ test.each([`Vesta`, `Jmol`] as const)(
     element_group.dispatchEvent(new MouseEvent(`mouseenter`, { bubbles: true }))
 
     // Wait for Svelte to update the DOM
-    await new Promise((resolve) => setTimeout(resolve, 0))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 0)
+    })
 
     const tooltip = document.querySelector(`.tooltip`)
     expect(tooltip).toBeInstanceOf(HTMLElement)

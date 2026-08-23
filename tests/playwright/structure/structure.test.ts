@@ -578,10 +578,14 @@ test.describe(`Structure Component Tests`, () => {
             },
           }),
         )
-        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+        await new Promise<void>((resolve) => {
+          requestAnimationFrame(() => resolve())
+        })
       }
       for (let frame_idx = 0; frame_idx < 2; frame_idx++) {
-        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+        await new Promise<void>((resolve) => {
+          requestAnimationFrame(() => resolve())
+        })
       }
     })
     expect(perspective_fit_errors).toEqual([])

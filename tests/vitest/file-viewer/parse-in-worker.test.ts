@@ -559,7 +559,9 @@ describe(`parse_in_worker`, () => {
     })
     // oxlint-disable-next-line eslint-plugin-unicorn/require-post-message-target-origin -- MessagePort has no targetOrigin argument.
     frame_port.postMessage({ id: 10, method: `load_frame`, args: [0] })
-    await new Promise<void>((resolve) => setTimeout(resolve, 0))
+    await new Promise<void>((resolve) => {
+      setTimeout(resolve, 0)
+    })
     expect(follow_up_response).toBeUndefined()
     dispose_spy.mockRestore()
     frame_port.close()

@@ -156,8 +156,7 @@
   // Yield to browser so spinner can render before heavy computation
   const tick = () =>
     new Promise<void>((resolve) =>
-      requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
-    )
+      { requestAnimationFrame(() => requestAnimationFrame(() => resolve())), })
 
   // Parse and load Fermi surface with error handling
   async function safe_parse(

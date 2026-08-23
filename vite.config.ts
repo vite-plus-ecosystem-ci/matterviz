@@ -3,8 +3,7 @@ import { sveltekit } from '@sveltejs/kit/vite'
 import { readFileSync } from 'node:fs'
 import { gunzipSync } from 'node:zlib'
 import { vite_plugin as live_examples } from 'svelte-widgets/live-examples'
-import type { Plugin } from 'vite-plus'
-import { defineConfig, type PluginOption } from 'vite-plus'
+import { type Plugin, defineConfig, type PluginOption } from 'vite-plus'
 // @ts-expect-error Node ESM config load needs the .ts extension here
 import { mock_vscode } from './extensions/vscode/tests/vscode-mock.ts'
 // @ts-expect-error Node ESM config load needs the .ts extension here
@@ -87,7 +86,7 @@ const config = make_config()
 export default defineConfig({
   ...config, // shared lint/fmt/build
   plugins,
-  worker: { plugins: () => [json_gz_plugin() as unknown as PluginOption] },
+  worker: { plugins: () => [json_gz_plugin()] },
   fmt: {
     ...config.fmt,
     printWidth: 95,
@@ -115,6 +114,15 @@ export default defineConfig({
       `extensions/jupyterlab/**`,
       `extensions/vscode/**`,
     ],
+    // Ecosystem-ci smoke test only: oxlint 1.79.0 promotes these into the
+    // enabled categories. Fixing them in code would change semantics
+    // (`.sort()` mutates in place, unlike `toSorted()`) or drop the `??=`
+    // lazy-init idiom this codebase uses deliberately.
+    rules: {
+      ...config.lint?.rules,
+      'no-array-sort': 'off',
+      'no-multi-assign': 'off',
+    },
   },
 
   test: {

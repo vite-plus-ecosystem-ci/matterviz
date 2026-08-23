@@ -167,7 +167,9 @@ describe(`create_data_url_loader`, () => {
     const loader = create_data_url_loader<string>()
     const { request } = make_harness()
     let release = () => {}
-    const gate = new Promise<void>((resolve) => (release = resolve))
+    const gate = new Promise<void>((resolve) => {
+      release = resolve
+    })
     let seen_current: boolean | undefined
 
     const first = defer_next_load(`stale`)

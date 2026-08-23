@@ -356,7 +356,9 @@ export function sweep_gizmo_handles(
             bubbles: true,
           })
           cvs.dispatchEvent(move)
-          await new Promise((resolve) => requestAnimationFrame(resolve))
+          await new Promise((resolve) => {
+            requestAnimationFrame(resolve)
+          })
           if (cvs.style.cursor === `pointer`) hits.push({ key: `${row},${col}`, x, y })
         }
       }

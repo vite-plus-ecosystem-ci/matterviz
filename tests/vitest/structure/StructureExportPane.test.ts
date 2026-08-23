@@ -180,7 +180,9 @@ describe(`StructureExportPane`, () => {
     copy_btn?.dispatchEvent(new Event(`click`, { bubbles: true }))
 
     // Flush microtasks then verify clipboard was not called
-    await new Promise<void>((resolve) => queueMicrotask(resolve))
+    await new Promise<void>((resolve) => {
+      queueMicrotask(resolve)
+    })
     expect(navigator.clipboard.writeText).not.toHaveBeenCalled()
   })
 

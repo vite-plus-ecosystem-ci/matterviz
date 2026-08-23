@@ -52,7 +52,10 @@ const count_canvas_clears = (): { base: number; overlay: number } => {
   )
   return clears
 }
-const let_frames_run = () => new Promise((resolve) => setTimeout(resolve, 60))
+const let_frames_run = () =>
+  new Promise((resolve) => {
+    setTimeout(resolve, 60)
+  })
 const button = (test_id: string): HTMLButtonElement => doc_query(`[data-testid="${test_id}"]`)
 const selected_text = (): string =>
   doc_query(`[data-testid="selected-entry"]`).textContent ?? ``

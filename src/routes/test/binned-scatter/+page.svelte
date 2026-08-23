@@ -30,7 +30,9 @@
   const y_axis = $derived(make_axis(`y`))
 
   const next_frame = () =>
-    new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+    new Promise<void>((resolve) => {
+      requestAnimationFrame(() => resolve())
+    })
 
   function make_series(test_mode: TestMode, count: number): DensePointSeries[] {
     if (test_mode === `singleton`) {

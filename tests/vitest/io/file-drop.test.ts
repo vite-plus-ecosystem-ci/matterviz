@@ -204,7 +204,9 @@ describe(`create_file_drop_handler`, () => {
     )
     const slow_drop = vi.fn(async (_content: string | ArrayBuffer, filename: string) => {
       order.push(`start ${filename}`)
-      await new Promise((resolve) => setTimeout(resolve, 5))
+      await new Promise((resolve) => {
+        setTimeout(resolve, 5)
+      })
       order.push(`end ${filename}`)
     })
     const handler = create_file_drop_handler({ allow: () => true, on_drop: slow_drop })

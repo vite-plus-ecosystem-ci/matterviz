@@ -532,9 +532,9 @@ export async function export_trajectory_video(
       if (on_step) await on_step(idx)
 
       // Double RAF ensures Three.js completes rendering before capture
-      await new Promise((resolve) =>
-        requestAnimationFrame(() => requestAnimationFrame(resolve)),
-      )
+      await new Promise((resolve) => {
+        requestAnimationFrame(() => requestAnimationFrame(resolve))
+      })
 
       // Capture frame
       track.requestFrame?.()
@@ -543,7 +543,9 @@ export async function export_trajectory_video(
       const elapsed = performance.now() - frame_start
       const remaining = Math.max(0, frame_duration - elapsed)
       if (remaining > 0) {
-        await new Promise((resolve) => setTimeout(resolve, remaining))
+        await new Promise((resolve) => {
+          setTimeout(resolve, remaining)
+        })
       }
     }
   } catch (error) {

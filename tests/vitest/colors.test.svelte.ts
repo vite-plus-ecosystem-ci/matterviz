@@ -14,7 +14,9 @@ afterEach(() => {
 
 // Let the observer/storage callback land, then flush the effect it invalidated
 const settle = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 0))
+  await new Promise((resolve) => {
+    setTimeout(resolve, 0)
+  })
   flushSync()
 }
 

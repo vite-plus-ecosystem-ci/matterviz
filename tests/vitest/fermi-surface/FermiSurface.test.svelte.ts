@@ -88,7 +88,9 @@ test(`a slow first data_url cannot overwrite a newer one`, async () => {
   vi.spyOn(globalThis, `fetch`).mockImplementation((input, init) => {
     const url = input instanceof Request ? input.url : input.toString()
     if (init?.headers) return Promise.resolve(new Response(`text`))
-    return new Promise((resolve) => responses.set(url, resolve))
+    return new Promise((resolve) => {
+      responses.set(url, resolve)
+    })
   })
 
   const url_a = `http://x/a.bxsf`

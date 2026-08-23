@@ -831,7 +831,9 @@ describe(`Structure string parsing`, () => {
   test(`keeps loading active until async data_url handlers finish`, async () => {
     mock_fetch_response(SAMPLE_POSCAR_CONTENT)
     let resolve_drop!: () => void
-    const drop_done = new Promise<void>((resolve) => (resolve_drop = resolve))
+    const drop_done = new Promise<void>((resolve) => {
+      resolve_drop = resolve
+    })
     const on_file_drop = vi.fn(() => drop_done)
     const state = { loading: false }
     mount_structure(bind_props({ data_url: `/test.poscar`, on_file_drop }, state))

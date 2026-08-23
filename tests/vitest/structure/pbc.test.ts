@@ -497,7 +497,7 @@ test(`edge detection should be precise for atoms at boundaries`, () => {
   expect(center_images).toHaveLength(0)
 
   // Check specific image positions for corner atom
-  const corner_image_positions = corner_images.map(([_, xyz]) => xyz)
+  const corner_image_positions = corner_images.map((corner_image) => corner_image[1])
 
   // Should have images at expected positions like (5,0,0), (0,5,0), (0,0,5), etc.
   const expected_corner_images = [

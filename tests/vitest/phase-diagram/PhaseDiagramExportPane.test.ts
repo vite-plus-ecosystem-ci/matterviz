@@ -143,7 +143,9 @@ describe(`PhaseDiagramExportPane`, () => {
 
     vi.mocked(navigator.clipboard.writeText).mockClear()
     copy_btn.dispatchEvent(new Event(`click`, { bubbles: true }))
-    await new Promise<void>((resolve) => queueMicrotask(resolve))
+    await new Promise<void>((resolve) => {
+      queueMicrotask(resolve)
+    })
     expect(navigator.clipboard.writeText).not.toHaveBeenCalled()
   })
 
@@ -230,7 +232,9 @@ describe(`PhaseDiagramExportPane`, () => {
       get_button(button_title).dispatchEvent(new Event(`click`, { bubbles: true }))
 
       // Flush microtasks then verify export/clipboard was not called
-      await new Promise<void>((resolve) => queueMicrotask(resolve))
+      await new Promise<void>((resolve) => {
+        queueMicrotask(resolve)
+      })
       expect(was_called()).not.toHaveBeenCalled()
     },
   )

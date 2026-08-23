@@ -370,7 +370,9 @@ describe(`Trajectory`, () => {
     }
     flushSync()
     expect(step_events).toHaveLength(events_before_scrub)
-    await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+    await new Promise<void>((resolve) => {
+      requestAnimationFrame(() => resolve())
+    })
     expect(step_events.at(-1)).toEqual({ step_idx: 1, frame_count: 3 })
     expect(step_events).toHaveLength(events_before_scrub + 1)
     expect(commit_events).toEqual([1])

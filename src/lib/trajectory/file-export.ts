@@ -124,7 +124,9 @@ async function* iter_export_frames(
     const completed = frame_idx - start_frame + 1
     on_progress?.(completed, total)
     if (completed < total && completed % YIELD_EVERY_FRAMES === 0) {
-      await new Promise<void>((resolve) => setTimeout(resolve, 0))
+      await new Promise<void>((resolve) => {
+        setTimeout(resolve, 0)
+      })
     }
   }
 }

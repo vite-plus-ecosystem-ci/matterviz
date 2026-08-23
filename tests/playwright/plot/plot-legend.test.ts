@@ -20,7 +20,9 @@ async function wait_for_position_stable(
 
   const start = Date.now()
   while (Date.now() - start < timeout) {
-    await new Promise((resolve) => setTimeout(resolve, 50))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 50)
+    })
     const current_pos = await get_element_center(locator)
     if (!current_pos || !last_pos) continue
 

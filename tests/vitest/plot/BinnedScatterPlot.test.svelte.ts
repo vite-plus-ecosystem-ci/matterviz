@@ -671,7 +671,10 @@ describe(`BinnedScatterPlot`, () => {
     // Assert the pulse actually advances rather than just rendering one highlighted frame:
     // the visibility gate silently froze it everywhere before, and a frozen pulse still
     // draws that first frame. Redraws show up as further arc() calls.
-    const let_frames_run = () => new Promise((resolve) => setTimeout(resolve, 60))
+    const let_frames_run = () =>
+      new Promise((resolve) => {
+        setTimeout(resolve, 60)
+      })
     const after_mount = radii.length
     await let_frames_run()
     expect(radii.length).toBeGreaterThan(after_mount)
@@ -714,11 +717,15 @@ describe(`BinnedScatterPlot`, () => {
       ...unit_axes,
     })
     await settle()
-    await new Promise((resolve) => setTimeout(resolve, 60))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 60)
+    })
 
     const settled = { ...clears, resizes: resize_count() }
     expect(settled.overlay).toBeGreaterThan(0)
-    await new Promise((resolve) => setTimeout(resolve, 60))
+    await new Promise((resolve) => {
+      setTimeout(resolve, 60)
+    })
     expect(clears.overlay).toBeGreaterThan(settled.overlay)
     expect(clears.base).toBe(settled.base) // points layer untouched between view changes
     expect(resize_count()).toBe(settled.resizes)

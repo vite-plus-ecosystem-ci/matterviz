@@ -138,7 +138,9 @@ async function load_centered_scene(
         }),
       )
       for (let frame_idx = 0; frame_idx < 5; frame_idx++) {
-        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+        await new Promise<void>((resolve) => {
+          requestAnimationFrame(() => resolve())
+        })
       }
     },
     { specs: species, rot: rotation },
@@ -344,7 +346,10 @@ test.describe(`StructureScene Component Tests`, () => {
     // 20 frames covers roughly 1/3 s at 60fps, enough to catch transient hover loss.
     for (let frame_idx = 0; frame_idx < 20; frame_idx++) {
       await page.evaluate(
-        () => new Promise<void>((resolve) => requestAnimationFrame(() => resolve())),
+        () =>
+          new Promise<void>((resolve) => {
+            requestAnimationFrame(() => resolve())
+          }),
       )
       expect(await tooltip.isVisible()).toBe(true)
     }
