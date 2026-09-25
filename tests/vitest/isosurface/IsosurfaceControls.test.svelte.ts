@@ -7,7 +7,7 @@ import type {
   VolumetricData,
 } from '$lib/isosurface/types'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import {
   doc_query,
   expect_labelled_settings_grid,

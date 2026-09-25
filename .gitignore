@@ -29,3 +29,4 @@ static/tmp
 # agent worktrees / local config
 .claude
 __pycache__/
+.vitest/

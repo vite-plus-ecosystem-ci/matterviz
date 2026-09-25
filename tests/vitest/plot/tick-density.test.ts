@@ -1,5 +1,5 @@
 import { suggest_tick_count, thin_tick_indices } from '$lib/plot/core/tick-density'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`suggest_tick_count`, () => {
   test.each([

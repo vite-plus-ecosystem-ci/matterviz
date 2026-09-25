@@ -1,6 +1,6 @@
 import { NumberRangeInput } from '$lib/layout'
 import { mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props } from '../setup'
 
 describe(`NumberRangeInput`, () => {

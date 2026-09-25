@@ -1,5 +1,5 @@
 import { type CanvasMarker, draw_markers } from '$lib/plot/core/canvas-markers'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 class StubPath2D {
   added: { path: StubPath2D; transform: DOMMatrix }[] = []

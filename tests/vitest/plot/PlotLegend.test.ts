@@ -2,7 +2,7 @@
 import { type FillGradient, type LegendItem, PlotLegend } from '$lib/plot'
 import { mount, tick } from 'svelte'
 import { SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const default_series_data: LegendItem[] = [

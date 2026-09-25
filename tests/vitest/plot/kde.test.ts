@@ -1,5 +1,5 @@
 import { gaussian_kde, scott_bandwidth, silverman_bandwidth } from '$lib/plot'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Independent O(n*m) Gaussian-sum reference (no subsampling), used to verify gaussian_kde
 const ref_density = (samples: number[], grid: number[], bandwidth: number): number[] => {

@@ -1,7 +1,7 @@
 import { SETTLE_MS } from '$lib/plot/core/settling-tween.svelte'
 import { BarPlot, BoxPlot, Histogram, ScatterPlot } from '$lib'
 import { tick, type ComponentProps } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 
 type LocalPoint = { x: number; y: number; button?: number }

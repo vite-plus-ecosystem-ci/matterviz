@@ -4,7 +4,7 @@ import type { DataSeries, FillRegion } from '$lib/plot'
 import type { FacetLayoutContext } from '$lib/plot/core/facets'
 import { rects_overlap, type Rect } from '$lib/plot/core/layout'
 import { type ComponentProps, createRawSnippet, flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   doc_query,

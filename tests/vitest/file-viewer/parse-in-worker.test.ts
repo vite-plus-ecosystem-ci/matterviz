@@ -14,7 +14,7 @@ import type {
   WorkerLike,
 } from '$lib/file-viewer/parse-in-worker'
 import type { TrajectoryType } from '$lib/trajectory'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test'
 
 const structure_result: ParseResult = {
   type: `structure`,

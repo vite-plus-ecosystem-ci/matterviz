@@ -8,7 +8,7 @@ import { calc_lattice_params } from '$lib/math'
 import type { Crystal } from '$lib/structure'
 import { calc_structure_id } from '$lib/structure-id'
 import { make_site } from '$lib/structure/site'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { load_json } from '../setup'
 
 interface OvitoCase {

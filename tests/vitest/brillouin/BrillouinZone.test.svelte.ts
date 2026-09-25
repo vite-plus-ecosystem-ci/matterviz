@@ -1,6 +1,6 @@
 import BrillouinZone from '$lib/brillouin/BrillouinZone.svelte'
 import { mount, unmount } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 
 let mounted_component: ReturnType<typeof mount> | undefined
 

@@ -10,7 +10,7 @@ import TrajectoryVacfPane from '$lib/vacf/TrajectoryVacfPane.svelte'
 import VacfPlot from '$lib/vacf/VacfPlot.svelte'
 import { type Component, type ComponentProps, mount, tick, unmount } from 'svelte'
 import { SvelteMap } from 'svelte/reactivity'
-import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vite-plus/test'
 import { bind_props, make_crystal } from '../setup'
 import { build_vacf_input, circular_motion } from './helpers'
 

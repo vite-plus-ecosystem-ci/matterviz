@@ -6,7 +6,7 @@ import {
 } from '$lib/chempot-diagram/temperature'
 import { CHEMPOT_DEFAULTS } from '$lib/chempot-diagram/types'
 import type { PhaseData } from '$lib/convex-hull/types'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const temp_entries_fixture: PhaseData[] = [
   {

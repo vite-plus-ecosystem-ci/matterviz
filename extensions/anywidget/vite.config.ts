@@ -2,7 +2,7 @@ import { make_config } from 'svelte-widgets/vite-config'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { createRequire } from 'node:module'
 import { resolve } from 'node:path'
-import type { Plugin } from 'vite'
+import type { Plugin } from 'vite-plus'
 import { defineConfig, type PluginOption } from 'vite-plus'
 import { three_compat_alias, vite_plugin_json_gz } from '../../src/vite-plugins.ts'
 

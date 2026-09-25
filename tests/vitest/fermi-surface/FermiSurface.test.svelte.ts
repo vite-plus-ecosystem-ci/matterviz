@@ -1,6 +1,6 @@
 import FermiSurface from '$lib/fermi-surface/FermiSurface.svelte'
 import { mount, unmount, type ComponentProps } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { create_drop_event } from '../setup'
 
 const mounted: ReturnType<typeof mount>[] = []

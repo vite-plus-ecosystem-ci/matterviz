@@ -6,7 +6,7 @@ import type { Vec2 } from '$lib/math'
 import { colors, selected } from '$lib/state.svelte'
 import PeriodicTableDemo from '$site/PeriodicTableDemo.svelte'
 import { createRawSnippet, mount, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const { page, replace_url } = vi.hoisted(() => ({

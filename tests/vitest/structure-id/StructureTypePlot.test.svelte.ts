@@ -3,7 +3,7 @@ import { calc_structure_id, StructureTypePlot } from '$lib/structure-id'
 import * as async_compute from '$lib/structure-id/async-compute.svelte'
 import type { AnyStructure } from '$lib/structure'
 import { type ComponentProps, flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, mount_sized } from '../setup'
 import { make_bcc, make_fcc, make_hcp } from './lattices'
 

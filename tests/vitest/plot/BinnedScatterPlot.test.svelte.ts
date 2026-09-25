@@ -3,7 +3,7 @@ import { BinnedScatterPlot, type BinnedDensityConfig, COLOR_BAR_DEFAULTS } from 
 import { get_series_color } from '$lib/plot/core/data-transform'
 import { interpolateViridis } from 'd3-scale-chromatic'
 import { createRawSnippet, mount, tick, type ComponentProps } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, svg_query, trigger_intersection } from '../setup'
 
 // Shared deterministic point cloud; spreads y values without RNG overhead.

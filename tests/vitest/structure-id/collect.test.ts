@@ -7,7 +7,7 @@ import {
   sweep_frame_plan,
 } from '$lib/structure-id/collect'
 import type { FrameLoader, TrajectoryType } from '$lib/trajectory'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_fcc, with_vacancy } from './lattices'
 
 const in_memory = (structures: AnyStructure[]): TrajectoryType => ({

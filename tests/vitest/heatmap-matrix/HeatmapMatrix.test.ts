@@ -5,7 +5,7 @@ import type { AxisItem, LegendPosition } from '$lib/heatmap-matrix'
 import { format_num } from '$lib/labels'
 import type { ComponentProps } from 'svelte'
 import { flushSync, mount, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 import HeatmapMatrixReplacementHarness from './HeatmapMatrixReplacementHarness.svelte'
 

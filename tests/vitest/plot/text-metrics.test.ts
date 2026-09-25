@@ -11,7 +11,7 @@ import {
   wrap_text_paragraph,
   type FontSpec,
 } from '$lib/plot/core/text-metrics'
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 
 const TEST_FONT: FontSpec = {
   font_family: `"Inter", sans-serif`,

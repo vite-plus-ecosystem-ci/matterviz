@@ -8,7 +8,7 @@ import {
 } from '$lib/plot/core/layout'
 import { get_text_metrics_revision } from '$lib/plot/core/text-metrics'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { mock_text_measurement } from '../setup'
 
 // Plot geometry shared across cases: plot area is x∈[40,180], y∈[10,70]

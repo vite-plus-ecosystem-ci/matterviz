@@ -2,7 +2,7 @@
 // tests that fail when the rule is removed - deleting `messageerror` or `terminate()` used
 // to leave every module's suite green.
 import { create_worker_client } from '$lib/worker-client.svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 type Listener = (event: unknown) => void
 

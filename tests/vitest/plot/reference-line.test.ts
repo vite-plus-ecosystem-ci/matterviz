@@ -17,7 +17,7 @@ import {
 } from '$lib/plot/core/reference-line'
 import type { RefLine } from '$lib/plot/core/types'
 import { clear_text_metrics_cache } from '$lib/plot/core/text-metrics'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`normalize_value`, () => {
   test.each([

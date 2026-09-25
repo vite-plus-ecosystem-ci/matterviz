@@ -1,7 +1,7 @@
 import { DEFAULT_CATEGORY_COLORS, default_element_colors } from '$lib/colors'
 import { colors, theme_state } from '$lib/state.svelte'
 import { AUTO_THEME, COLOR_THEMES, THEME_TYPE } from '$lib/theme'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 test(`theme_state has correct initial values`, () => {
   // This test checks the actual initial values without any beforeEach reset

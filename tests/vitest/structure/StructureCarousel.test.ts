@@ -1,6 +1,6 @@
 import StructureCarousel from '$lib/structure/StructureCarousel.svelte'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, make_crystal } from '../setup'
 import StructureCarouselHarness from './StructureCarouselHarness.svelte'
 

@@ -1,7 +1,7 @@
 import Trajectory from '$lib/trajectory/Trajectory.svelte'
 import type { TrajectoryType } from '$lib/trajectory'
 import { type ComponentProps, mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import {
   assertHoverScopedShortcut,
   bind_props,

@@ -3,7 +3,7 @@
 import { BarPlot, BoxPlot, Histogram } from '$lib'
 import type { Vec2 } from '$lib/math'
 import { tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props, doc_query, mount_sized } from '../setup'
 
 const dist = (count: number, center = 0): number[] =>

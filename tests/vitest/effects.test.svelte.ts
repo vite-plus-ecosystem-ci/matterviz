@@ -3,7 +3,7 @@ import { trigger_intersection } from './setup'
 import { pulsing_highlight_opacity } from '$lib/effects.svelte'
 import { create_placed_tween } from '$lib/plot/core/placed-tween.svelte'
 import { flushSync, mount, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const requested_frames = new Map<number, FrameRequestCallback>()
 let next_frame_id = 1

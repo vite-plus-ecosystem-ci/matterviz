@@ -8,7 +8,7 @@ import {
   toggle_group_visibility,
   toggle_series_visibility,
 } from '$lib/plot/core/utils/series-visibility'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`resolve_legend_visibility`, () => {
   // oxfmt-ignore

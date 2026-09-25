@@ -11,7 +11,7 @@ import {
   pbc_chain_positions,
   rolls_measured_sites,
 } from '$lib/structure/measure'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // oxfmt-ignore
 const cubic = (a_len: number): Matrix3x3 => [[a_len, 0, 0], [0, a_len, 0], [0, 0, a_len]]

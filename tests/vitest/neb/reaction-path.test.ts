@@ -16,7 +16,7 @@ import {
   relative_energies,
 } from '$lib/neb/reaction-path'
 import type { Crystal } from '$lib/structure'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal as build_crystal } from '../setup'
 
 const as_li = (xyz: Vec3) => ({ element: `Li`, xyz })

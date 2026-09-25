@@ -3,7 +3,7 @@ import { element_data } from '$lib/element'
 import type { InternalPoint } from '$lib/plot'
 import { selected } from '$lib/state.svelte'
 import { mount, tick } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import { bind_props, expect_plot_controls } from '../setup'
 
 // Atomic radii for first 10 elements (H through Ne)

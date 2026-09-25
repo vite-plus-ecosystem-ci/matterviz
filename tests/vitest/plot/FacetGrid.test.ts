@@ -7,7 +7,7 @@ import type {
 } from '$lib/plot/core/facets'
 import { createRawSnippet, mount, tick, unmount, type Snippet } from 'svelte'
 import { SvelteMap } from 'svelte/reactivity'
-import { afterAll, afterEach, describe, expect, test } from 'vitest'
+import { afterAll, afterEach, describe, expect, test } from 'vite-plus/test'
 
 const original_resize_observer = globalThis.ResizeObserver
 class ControlledResizeObserver implements ResizeObserver {

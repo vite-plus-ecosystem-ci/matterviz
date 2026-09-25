@@ -39,7 +39,7 @@ import sio2_born from '$site/phonons/ir-raman/SiO2.BORN?raw'
 import sio2_raman_json from '$site/phonons/ir-raman/SiO2-raman-tensors.json.gz'
 import sio2_yaml from '$site/phonons/ir-raman/SiO2-gamma.yaml.gz?raw'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { bind_props, expect_plot_controls } from '../setup'
 
 const co2_data = parse_phonon_modes(co2_yaml)

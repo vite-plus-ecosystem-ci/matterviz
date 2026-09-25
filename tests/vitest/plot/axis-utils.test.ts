@@ -1,6 +1,6 @@
 import type { AxisConfig, AxisLoadError, DataLoaderFn, DataSeries } from '$lib/plot'
 import { create_axis_loader, merge_series_state } from '$lib/plot/core/axis-utils'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`merge_series_state`, () => {
   test.each([

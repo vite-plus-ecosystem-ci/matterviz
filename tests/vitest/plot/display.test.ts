@@ -1,6 +1,6 @@
 import { resolve_plot_display, sync_category_zero_display } from '$lib/plot/core/display'
 import { DEFAULTS } from '$lib/settings'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`resolve_plot_display`, () => {
   test.each([

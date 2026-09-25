@@ -1,7 +1,7 @@
 import type { PhaseDiagramData } from '$lib/phase-diagram'
 import { PhaseDiagramControls } from '$lib/phase-diagram'
 import { type ComponentProps, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props } from '../setup'
 
 const sample_data: PhaseDiagramData = {

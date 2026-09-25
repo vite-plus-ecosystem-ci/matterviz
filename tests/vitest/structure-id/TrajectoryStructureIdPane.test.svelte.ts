@@ -3,7 +3,7 @@ import * as collect from '$lib/structure-id/collect'
 import type { StructureIdSweep } from '$lib/structure-id/collect'
 import type { TrajectoryType } from '$lib/trajectory'
 import { flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 import { make_fcc } from './lattices'
 

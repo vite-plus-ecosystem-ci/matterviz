@@ -2,7 +2,7 @@ import FermiSurfaceControls from '$lib/fermi-surface/FermiSurfaceControls.svelte
 import type { D3InterpolateName } from '$lib/colors'
 import type { ColorProperty, FermiSurfaceData } from '$lib/fermi-surface/types'
 import { mount, tick, unmount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 
 const make_fermi_data = (band_indices = [0, 1]): FermiSurfaceData => ({

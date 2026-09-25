@@ -7,7 +7,7 @@ import type { AnyStructure } from '$lib/structure'
 import type { compute_structure_id_async as ComputeStructureIdAsync } from '$lib/structure-id/async-compute.svelte'
 import { calc_structure_id } from '$lib/structure-id/calc-structure-id'
 import type { StructureIdOptions } from '$lib/structure-id/index'
-import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vite-plus/test'
 import { make_fcc } from './lattices'
 
 type WorkerMessage = { id: number; input: AnyStructure; options: StructureIdOptions }

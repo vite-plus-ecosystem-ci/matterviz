@@ -2,7 +2,7 @@ import { BoxPlot, type Vec2 } from '$lib'
 import { DEFAULT_PLOT_PADDING } from '$lib/plot/core/layout'
 import type { BoxPlotSeries, Orientation, WhiskerMode } from '$lib/plot'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   inside_clip_path,

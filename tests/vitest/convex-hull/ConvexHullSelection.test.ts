@@ -1,7 +1,7 @@
 import { ConvexHull2D } from '$lib/convex-hull'
 import type { PhaseData } from '$lib/convex-hull/types'
 import { flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, mount_sized } from '../setup'
 import ConvexHullSelectionHarness from './ConvexHullSelectionHarness.svelte'
 

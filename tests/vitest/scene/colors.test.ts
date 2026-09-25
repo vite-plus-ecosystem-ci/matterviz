@@ -5,7 +5,7 @@ import {
   write_linear_color_to_buffer,
 } from '$lib/scene/colors'
 import { Color } from 'three/webgpu'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test(`write_linear_color_to_buffer converts CSS once without stale scratch colors`, () => {
   // Vertex and instance buffers are read raw, so these must hold exactly what three's own

@@ -6,7 +6,7 @@ import {
 } from '$lib/plot'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
-import { describe, expect, expectTypeOf, test } from 'vitest'
+import { describe, expect, expectTypeOf, test } from 'vite-plus/test'
 
 const repo_root = resolve(import.meta.dirname, `../..`)
 const lib_dir = join(repo_root, `src/lib`)

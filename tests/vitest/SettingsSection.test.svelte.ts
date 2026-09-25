@@ -1,7 +1,7 @@
 import { SettingsSection } from '$lib'
 import { createRawSnippet, flushSync, mount, tick, type ComponentProps } from 'svelte'
 import { SvelteMap, SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import SettingsSectionRerenderHarness from './SettingsSectionRerenderHarness.svelte'
 
 const snippet = (content: string) => createRawSnippet(() => ({ render: () => content }))

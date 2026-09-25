@@ -9,7 +9,7 @@ import {
   resolve_color_domain,
   strip_html,
 } from '$lib/table'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 it(`encodes grouped column IDs without changing ungrouped IDs`, () => {
   expect(get_column_id({ label: `x` })).toBe(`x`)

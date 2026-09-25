@@ -16,7 +16,7 @@ import {
   smooth_moving_average,
   smooth_savitzky_golay,
 } from '$lib/plot/core/data-cleaning-signal'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 // --- Test Data Generators ---
 

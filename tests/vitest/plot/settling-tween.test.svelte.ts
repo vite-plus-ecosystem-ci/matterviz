@@ -3,7 +3,7 @@ import type { Point2D } from '$lib/math'
 import { create_settling_tween, SETTLE_MS } from '$lib/plot/core/settling-tween.svelte'
 import { flushSync, mount, unmount } from 'svelte'
 import type { TweenOptions } from 'svelte/motion'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 // Long enough that any animated step is still far from its target when we assert.
 const SLOW = { duration: 60_000 }

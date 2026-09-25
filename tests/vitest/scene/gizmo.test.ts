@@ -1,5 +1,5 @@
 import { responsive_gizmo_size } from '$lib/scene'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Multi-view panes shrink their gizmo with the pane. Playwright used to assert this off the
 // gizmo's DOM box, but the WebGPU gizmo draws inside the canvas and has no element.

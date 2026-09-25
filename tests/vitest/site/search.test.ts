@@ -1,6 +1,6 @@
 import { create_site_search_loader, type SiteSearchAction } from '$site/search'
 import { normalize_static_url } from '$site/state.svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 const make_route_action = (url: string): SiteSearchAction => ({
   id: `route:${url}`,

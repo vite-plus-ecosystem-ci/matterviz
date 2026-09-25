@@ -4,7 +4,7 @@ import type { RadiationType } from '$lib/scattering'
 import type { Pbc } from '$lib/structure'
 import { structure_map } from '$site/structures'
 import { type ComponentProps, createRawSnippet, mount, tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, mount_sized, resize_element } from '../setup'
 import RdfPlotHarness from './RdfPlotHarness.svelte'
 

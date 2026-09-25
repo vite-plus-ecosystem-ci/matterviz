@@ -35,7 +35,7 @@ import {
   ShaderMaterial,
   SphereGeometry,
 } from 'three/webgpu'
-import { assert, beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { assert, beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 import { complex_structure, simple_structure } from '../setup'
 
 vi.mock(`$lib/io/fetch`, () => ({ download: vi.fn() }))

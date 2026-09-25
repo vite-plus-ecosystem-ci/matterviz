@@ -1,5 +1,5 @@
 import { is_crystal } from '$lib/structure/validation'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`is_crystal`, () => {
   test.each([

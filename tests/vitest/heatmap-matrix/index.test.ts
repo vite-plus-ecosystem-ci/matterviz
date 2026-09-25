@@ -11,7 +11,7 @@ import {
   rows_to_csv,
 } from '$lib/heatmap-matrix'
 import { window_axis_tracks } from '$lib/heatmap-matrix/shared'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`elements_to_axis`, () => {
   test(`returns all 118 elements with sequential sort_value and typed data`, () => {

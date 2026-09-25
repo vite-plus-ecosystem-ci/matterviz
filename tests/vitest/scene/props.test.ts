@@ -6,7 +6,7 @@ import {
   page_visibility,
 } from '$lib/scene'
 import { DEFAULTS } from '$lib/settings'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 describe(`build_gizmo_props`, () => {
   test(`shared axis defaults`, () => {

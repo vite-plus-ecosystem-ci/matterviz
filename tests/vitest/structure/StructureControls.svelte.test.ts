@@ -11,7 +11,7 @@ import { next_atom_color_config } from '$lib/structure/atom-properties'
 import { CNA_TYPE_PROPERTY } from '$lib/structure-id'
 import type { TrajectoryPositionStream } from '$lib/trajectory'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   doc_query,

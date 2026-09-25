@@ -6,7 +6,7 @@ import {
   type TickStrategy,
 } from '$lib/plot/core/tick-strategies'
 import { SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const base_candidate = create_tick_candidate({
   id: `upright`,

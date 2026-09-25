@@ -8,7 +8,7 @@ import {
 } from '$lib/plot/histogram/histogram'
 import { bin, max as d3max } from 'd3-array'
 import { mount, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   axis_label_pivot_y,
   expect_custom_x_ticks_grow_bottom_pad,

@@ -1,7 +1,7 @@
 // Tests for PortalSelect component
 import PortalSelect from '$lib/plot/core/components/PortalSelect.svelte'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 type Option = { key: string; label: string; unit?: string }
 const options: Option[] = [

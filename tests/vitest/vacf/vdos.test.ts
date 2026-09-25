@@ -1,5 +1,5 @@
 import { calc_vacf, type VacfResult } from '$lib/vacf'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { build_vacf_input, circular_motion, ideal_gas } from './helpers'
 
 // THz -> cm^-1, the same factor calc-vacf derives from the speed of light

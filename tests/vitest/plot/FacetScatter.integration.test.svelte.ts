@@ -7,7 +7,7 @@ import BinnedScatterPlot from '$lib/plot/scatter/BinnedScatterPlot.svelte'
 import ScatterPlot from '$lib/plot/scatter/ScatterPlot.svelte'
 import type { DataSeries } from '$lib/plot'
 import { type Component, createRawSnippet, mount, tick, unmount } from 'svelte'
-import { afterAll, afterEach, describe, expect, test, vi } from 'vitest'
+import { afterAll, afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const original_resize_observer = globalThis.ResizeObserver
 class ControlledResizeObserver implements ResizeObserver {
