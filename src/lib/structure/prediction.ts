@@ -2,16 +2,38 @@
 // the same contract as live tools. Undefined object fields are omitted; array holes are errors.
 import { grid_data_range, type VolumetricData } from '#lib/isosurface/types.js'
 import { grid_dimensions } from '#lib/isosurface/grid.js'
-import { det_3x3, is_finite_matrix3x3, is_finite_vec3, is_pbc } from '#lib/math.js'
+import {
+  calc_lattice_params,
+  create_cart_to_frac,
+  is_finite_matrix3x3,
+  is_finite_vec3,
+  is_pbc,
+  matrix_inverse_3x3,
+  type Matrix3x3,
+  type Vec3,
+} from '#lib/math.js'
 import { is_elem_symbol } from '#lib/element/helpers.js'
 import type { AnyStructure } from './index'
 
 // Reuse IDs only for the same physical quantity, units and normalization.
 export type StructureToolVolume = VolumetricData
+// Displayed geometry of the input sites, e.g. a relaxation step. The input stays the run's
+// identity (selections, edits and structure exports address it); only the viewer moves.
+export interface StructureToolGeometry {
+  // Cartesian positions in Å, one per input site in input order.
+  positions: Vec3[]
+  // Lattice vectors as rows in Å, for cell relaxations of periodic inputs; omit to keep the
+  // input cell.
+  lattice?: Matrix3x3
+}
 export interface StructureToolOverlay {
   site_properties?: Record<string, unknown>[]
+  geometry?: StructureToolGeometry
   volumes?: StructureToolVolume[]
   color_property?: string
+  // A live preview (e.g. an unconverged density): drawn like a prediction, under the same
+  // volume IDs as the final result, but never given to hosts, exported or reopened.
+  transient?: boolean
   // Hosts define the calculation schema; the viewer validates JSON and preserves it on export.
   result?: Record<string, unknown> & { schema: string }
 }
@@ -75,10 +97,60 @@ function copy_prediction_metadata<T>(source: T, root_path: string): T {
 
 const matrix = (value: unknown, path: string): void => {
   if (!is_finite_matrix3x3(value)) invalid(path, `expected a finite 3x3 lattice`)
-  // Only cast after checking every row; a singular lattice cannot locate a density grid.
-  const determinant = det_3x3(value as VolumetricData[`lattice`])
-  if (!Number.isFinite(determinant) || determinant === 0)
+  // A singular or ill-conditioned lattice cannot locate a density grid or fractional sites.
+  try {
+    matrix_inverse_3x3(value as Matrix3x3)
+  } catch {
     invalid(path, `lattice must be invertible`)
+  }
+}
+
+function check_geometry(value: unknown, input: AnyStructure): void {
+  const { positions, lattice } = record(value, `prediction.geometry`)
+  const n_sites = input.sites.length
+  if (!Array.isArray(positions) || positions.length !== n_sites)
+    invalid(
+      `prediction.geometry.positions`,
+      `expected ${n_sites} positions, one per input site`,
+    )
+  ;(positions as unknown[]).forEach((position, idx) => {
+    if (!is_finite_vec3(position))
+      invalid(`prediction.geometry.positions[${idx}]`, `expected a finite Cartesian Vec3`)
+  })
+  if (lattice === undefined) return
+  if (!(`lattice` in input))
+    invalid(`prediction.geometry.lattice`, `a molecule input has no cell to replace`)
+  matrix(lattice, `prediction.geometry.lattice`)
+}
+
+// The input with a tool's geometry applied, fractional coordinates recomputed in the
+// (possibly relaxed) cell. Molecule sites mirror xyz into abc.
+export function apply_tool_geometry(
+  input: AnyStructure,
+  { positions, lattice }: StructureToolGeometry,
+): AnyStructure {
+  if (!(`lattice` in input))
+    return {
+      ...input,
+      sites: input.sites.map((site, idx) => ({
+        ...site,
+        xyz: positions[idx],
+        abc: positions[idx],
+      })),
+    }
+  const matrix_rows = lattice ?? input.lattice.matrix
+  const to_frac = create_cart_to_frac(matrix_rows)
+  return {
+    ...input,
+    lattice: lattice
+      ? { ...input.lattice, matrix: lattice, ...calc_lattice_params(lattice) }
+      : input.lattice,
+    sites: input.sites.map((site, idx) => ({
+      ...site,
+      xyz: positions[idx],
+      abc: to_frac(positions[idx]),
+    })),
+  }
 }
 
 export function copy_prediction_input(value: unknown): AnyStructure {
@@ -125,11 +197,13 @@ export function copy_prediction_provenance(value: unknown): StructureToolProvena
 
 export function copy_prediction_overlay(
   value: unknown,
-  n_sites: number,
+  input: AnyStructure,
   from_json = false,
 ): StructureToolOverlay {
+  const n_sites = input.sites.length
   const { volumes, ...rest } = record(value, `prediction`)
   const properties = copy_prediction_metadata(rest, `prediction`)
+  if (properties.geometry !== undefined) check_geometry(properties.geometry, input)
   if (properties.result !== undefined)
     nonempty(record(properties.result, `prediction.result`).schema, `prediction.result.schema`)
   const rows = properties.site_properties
@@ -173,6 +247,8 @@ export function copy_prediction_overlay(
     matrix(volume.lattice, `${path}.lattice`)
     if (!is_finite_vec3(volume.origin)) invalid(`${path}.origin`, `expected a finite Vec3`)
     if (typeof volume.periodic !== `boolean`) invalid(`${path}.periodic`, `expected a boolean`)
+    if (volume.signed !== undefined && typeof volume.signed !== `boolean`)
+      invalid(`${path}.signed`, `expected a boolean`)
     // Cached host statistics may be stale after a reused buffer was updated.
     volume.data_range = grid_data_range(values)
     if (!Object.values(volume.data_range).every(Number.isFinite))
@@ -199,11 +275,12 @@ export const copy_prediction = (
     schema: _schema,
     ...overlay
   } = record(value, `prediction`)
+  if (overlay.transient) invalid(`prediction.transient`, `live previews are not predictions`)
   const input = copy_prediction_input(raw_input)
   if (!Number.isSafeInteger(run_id) || (run_id as number) < 1)
     invalid(`run_id`, `expected a positive safe integer`)
   return {
-    ...copy_prediction_overlay(overlay, input.sites.length, from_json),
+    ...copy_prediction_overlay(overlay, input, from_json),
     input,
     run_id: run_id as number,
     provenance: copy_prediction_provenance(provenance),

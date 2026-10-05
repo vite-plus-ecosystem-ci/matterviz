@@ -35,6 +35,7 @@ import type {
   StructureBond,
 } from './index'
 import { normalize_fractional_coords } from './parse'
+import { apply_tool_geometry, type StructureToolGeometry } from './prediction'
 import { capitalize_symbol } from './parsers/shared'
 import { get_pbc_image_sites, wrap_to_unit_cell } from './pbc'
 import {
@@ -51,6 +52,9 @@ import { make_supercell, parse_supercell_scaling } from './supercell'
 export interface StructureSessionInputs {
   structure: () => AnyStructure | undefined
   site_properties?: () => Record<string, unknown>[] | undefined
+  // Host geometry (e.g. a relaxation step) for the input sites: moves the drawn atoms and cell
+  // while edits, exports, selections and tool_input keep addressing the input
+  geometry?: () => StructureToolGeometry | undefined
   set_structure: (value: AnyStructure | undefined) => void
   bonds: () => StructureBond[] | undefined
   set_bonds: (value: StructureBond[] | undefined) => void
@@ -192,9 +196,17 @@ export class StructureSession {
     const structure = this.inputs.structure()
     return structure && normalize_fractional_coords(structure)
   })
+  // The drawn geometry: the input, or a host's geometry for its sites (wrapped like the input)
+  private readonly geometry_structure = $derived.by(() => {
+    const geometry = this.inputs.geometry?.()
+    const structure = this.inputs.structure()
+    return geometry && structure
+      ? normalize_fractional_coords(apply_tool_geometry(structure, geometry))
+      : this.normalized_structure
+  })
   private readonly structure_with_bonds = $derived.by((): AnyStructure | undefined => {
     const bonds = this.inputs.bonds()
-    const struct = this.normalized_structure
+    const struct = this.geometry_structure
     if (!struct || bonds === undefined) return struct
     return { ...struct, properties: { ...struct.properties, bonds } }
   })
@@ -647,6 +659,11 @@ export class StructureSession {
   }
   undo = (): boolean => this.step_history(`undo`)
   redo = (): boolean => this.step_history(`redo`)
+  // Replace the structure as one undoable edit, e.g. with a host tool's relaxed geometry
+  replace_structure = (next: AnyStructure): void => {
+    this.push_undo()
+    this.write_structure(next)
+  }
   private write_structure(next: AnyStructure): void {
     this.is_internal_edit = true
     this.inputs.set_structure(next)

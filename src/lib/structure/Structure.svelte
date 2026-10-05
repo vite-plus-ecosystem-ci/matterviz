@@ -18,10 +18,13 @@
   import { webgpu_available } from '#lib/scene/index.js'
   import { set_isosurface_error_handler } from '#lib/isosurface/context.js'
   import type { VolumeSliceSettings } from '#lib/isosurface/slice-settings.js'
-  import type { IsosurfaceSettings, VolumetricData } from '#lib/isosurface/types.js'
+  import type {
+    IsosurfaceLayer,
+    IsosurfaceSettings,
+    VolumetricData,
+  } from '#lib/isosurface/types.js'
   import VolumeSliceView from '#lib/isosurface/VolumeSliceView.svelte'
   import {
-    auto_volume_layer,
     DEFAULT_ISOSURFACE_SETTINGS,
     normalize_active_volume_id,
     index_volumes,
@@ -77,13 +80,14 @@
   import StructureViewport from './StructureViewport.svelte'
   import type { TrajectoryLinesStats } from './trajectory-lines'
   import type {
+    StructureToolGeometry,
     StructureToolPrediction,
     StructureToolProvenance,
     StructureToolView,
   } from './host-tool.svelte'
   import { structure_host_tool, create_structure_tool_controller } from './host-tool.svelte'
-  import { copy_prediction } from './prediction'
-  import { replace_tool_volumes } from './host-tool-volumes'
+  import { apply_tool_geometry, copy_prediction, copy_prediction_input } from './prediction'
+  import { replace_tool_volumes, tool_surface } from './host-tool-volumes'
   import type { FileLoadCallback } from '#lib/io/index.js'
   import type { MaterialSource } from '#lib/file-viewer/open.js'
   import { create_material_loader } from '#lib/file-viewer/material-loader.svelte.js'
@@ -340,10 +344,14 @@
   // === session: display pipeline, selection, editing, cameras ===
   // Coordinate-only updates (trajectory frames) share one key; otherwise every structure is new
   let series_key = $derived(structure_series_key ?? structure)
+  // Declared before the session: its pre-effect builds the display pipeline during construction,
+  // when active_overlay is not yet initialized (and no overlay exists yet).
+  let tool_overlay = $state.raw<StructureToolPrediction | null>(null)
   const session: StructureSession = new StructureSession({
     structure: () => structure,
     site_properties: (): Record<string, unknown>[] | undefined =>
       active_overlay?.site_properties,
+    geometry: () => (tool_overlay ? active_overlay?.geometry : undefined),
     set_structure: (value) => (structure = value),
     bonds: () => bonds,
     set_bonds: (value) => (bonds = value),
@@ -378,28 +386,38 @@
   let tool_source_revision = ``
   let tool_view = $state.raw<StructureToolView | null>(null)
   const active_tool_view = $derived(tool_source === session.tool_input ? tool_view : null)
-  let tool_overlay = $state.raw<StructureToolPrediction | null>(null)
+  // The shown run's result, kept while a transient overlay previews other field values over it.
+  let tool_result = $state.raw<StructureToolPrediction | null>(null)
   let tool_overlay_visible = $state(true)
-  const active_cloud = $derived(tool_overlay_visible ? active_tool_view?.cloud : undefined)
   const active_prediction = $derived(tool_source === session.tool_input ? tool_overlay : null)
+  // Hosts and exports see only predictions; a transient overlay is a live preview.
+  const saved_prediction = $derived(
+    active_prediction?.transient ? tool_result : active_prediction,
+  )
   const active_overlay = $derived(tool_overlay_visible ? active_prediction : null)
-  const tool_structure = $derived(
-    session.tool_input && active_prediction?.site_properties
+  const tool_structure = $derived.by(() => {
+    const input = session.tool_input
+    const geometry = active_overlay?.geometry
+    const moved = input && geometry ? apply_tool_geometry(input, geometry) : input
+    return moved && active_prediction?.site_properties
       ? {
-          ...session.tool_input,
-          sites: session.tool_input.sites.map((site, idx) => ({
+          ...moved,
+          sites: moved.sites.map((site, idx) => ({
             ...site,
             properties: { ...site.properties, ...active_prediction.site_properties?.[idx] },
           })),
         }
-      : session.tool_input,
-  )
+      : moved
+  })
   // Generated fields join the active document registry so imports, exports and controls
   // share stable field IDs, independent of object replacement or array order.
   let owned_volume_ids = $state.raw<string[]>([])
   const owned_volume_set = $derived(new Set(owned_volume_ids))
   const volume_by_id = $derived(index_volumes(volumetric_data ?? []))
   const removed_tool_fields = new Set<string>()
+  // Surfaces of owned fields a transient preview leaves out (e.g. an earlier relaxation step
+  // without a density), restored with their settings when the run publishes the fields again.
+  let parked_tool_layers: IsosurfaceLayer[] = []
   let original_active_volume_id: string | undefined
   const hidden_volume_ids = $derived(
     new Set(
@@ -413,15 +431,20 @@
       ),
     ),
   )
-  const tool_volume_notice = $derived(
-    tool_overlay_visible && hidden_volume_ids.size > 0
-      ? !active_overlay
+  const tool_output_notice = $derived.by(() => {
+    if (!tool_overlay_visible) return ``
+    const hidden_density = hidden_volume_ids.size > 0
+    if (!active_overlay)
+      return hidden_density
         ? `Prediction density belongs to a previous input. Run a new prediction.`
-        : !session.shows_input_frame
-          ? `Prediction density is hidden in standardized cells. Select the original cell to align it with the atoms.`
-          : `Finite and partially periodic prediction density is shown only in the input cell. Set supercell scaling to 1x1x1.`
-      : ``,
-  )
+        : ``
+    if (!session.shows_input_frame && active_overlay.geometry)
+      return `Predicted geometry is hidden in standardized cells. Select the original cell to show it.`
+    if (!hidden_density) return ``
+    return session.shows_input_frame
+      ? `Finite and partially periodic prediction density is shown only in the input cell. Set supercell scaling to 1x1x1.`
+      : `Prediction density is hidden in standardized cells. Select the original cell to align it with the atoms.`
+  })
   const display_isosurface_settings = $derived(
     hidden_volume_ids.size > 0
       ? {
@@ -443,7 +466,26 @@
       [atom_color_config, inactive_tool_color] = [inactive_tool_color, atom_color_config]
     tool_overlay_visible = visible
   }
-  const apply_tool_overlay = (overlay: StructureToolPrediction | null): void => {
+  const apply_tool_overlay = (published: StructureToolPrediction | null): void => {
+    // A transient overlay over its run's result previews other field values (e.g. an earlier
+    // SCF step) or geometry (a relaxation step) on the same layers: the result stays the
+    // prediction with its site properties and colors, keeps whatever the preview omits, and
+    // publishing a result again ends the preview.
+    const run_result = published?.transient
+      ? tool_result?.run_id === published.run_id
+        ? tool_result
+        : null
+      : published
+    const overlay =
+      published?.transient && run_result
+        ? {
+            ...run_result,
+            volumes: published.volumes ?? run_result.volumes,
+            geometry: published.geometry ?? run_result.geometry,
+            transient: true,
+          }
+        : published
+    tool_result = run_result
     const color_property = overlay?.color_property
     if (color_property) {
       if (tool_overlay_visible) inactive_tool_color ??= atom_color_config
@@ -463,8 +505,10 @@
     }
     // A publication is a fresh snapshot; remember user removals by field ID within this run.
     const same_run = tool_overlay?.run_id === overlay?.run_id
-    if (!same_run) removed_tool_fields.clear()
-    else
+    if (!same_run) {
+      removed_tool_fields.clear()
+      parked_tool_layers = []
+    } else
       for (const identifier of owned_volume_ids)
         if (!volume_by_id.has(identifier)) removed_tool_fields.add(identifier)
     tool_overlay = overlay
@@ -477,9 +521,20 @@
     const incoming = (overlay?.volumes ?? []).filter(
       ({ id: identifier }) => !removed_tool_fields.has(identifier),
     )
+    const incoming_ids = new Set(incoming.map(({ id: identifier }) => identifier))
+    const returning = (layer: IsosurfaceLayer) => incoming_ids.has(layer.volume_id)
+    const layers = [...isosurface_settings.layers, ...parked_tool_layers.filter(returning)]
+    parked_tool_layers = [
+      ...parked_tool_layers.filter((layer) => !returning(layer)),
+      ...(overlay?.transient
+        ? isosurface_settings.layers.filter(
+            (layer) => owned_volume_set.has(layer.volume_id) && !returning(layer),
+          )
+        : []),
+    ]
     const result = replace_tool_volumes(
       volumetric_data ?? [],
-      isosurface_settings.layers,
+      layers,
       owned_volume_ids,
       incoming,
     )
@@ -505,6 +560,28 @@
       ? structure_host_tool.input_key(input)
       : JSON.stringify(input)
   })
+  // A run adopts its result's geometry as the input: one undoable edit of the raw structure
+  // (site order, labels, species and properties kept). The run's shown output is rebased onto
+  // the new input, so neither invalidation path drops it; its volumes, layers, site properties
+  // and colors stay as they are.
+  const replace_tool_input = (geometry: StructureToolGeometry, run_id: number): void => {
+    if (!structure) throw new Error(`Host run ${run_id} has no structure to replace`)
+    session.replace_structure(apply_tool_geometry($state.snapshot(structure), geometry))
+    if (tool_overlay && tool_overlay.run_id !== run_id) apply_tool_overlay(null)
+    else {
+      const input = copy_prediction_input(session.tool_input)
+      const rebase = (shown: StructureToolPrediction | null) => {
+        if (shown?.run_id !== run_id) return shown
+        const { geometry: _geometry, ...output } = shown
+        return { ...output, input }
+      }
+      tool_overlay = rebase(tool_overlay)
+      tool_result = rebase(tool_result)
+    }
+    tool_source = session.tool_input
+    tool_source_revision = tool_overlay ? tool_input_revision : ``
+    show_toast(`Applied the result geometry to the structure; undo in edit-atoms mode`)
+  }
   const tool_controller = create_structure_tool_controller(
     () => session.tool_input,
     () => (show_host_tool ? structure_host_tool.component : null),
@@ -514,6 +591,7 @@
       if (view) tool_source = session.tool_input
     },
     () => tool_input_revision,
+    replace_tool_input,
   )
   $effect(() => {
     // Subscribe only to ownership/input changes, not the output mutations in cleanup.
@@ -563,14 +641,10 @@
   const reset_prediction_surfaces = (): void => {
     isosurface_settings = {
       ...isosurface_settings,
-      layers: [
-        ...isosurface_settings.layers.filter(
-          (layer) => !owned_volume_set.has(layer.volume_id),
-        ),
-        ...(volumetric_data ?? []).flatMap((volume) =>
-          owned_volume_set.has(volume.id) ? [auto_volume_layer(volume)] : [],
-        ),
-      ],
+      layers: tool_surface(
+        isosurface_settings.layers.filter((layer) => !owned_volume_set.has(layer.volume_id)),
+        owned_volume_ids.flatMap((identifier) => volume_by_id.get(identifier) ?? []),
+      ),
     }
   }
 
@@ -684,10 +758,7 @@
     )
     const planes_on = (scene_props.lattice_planes?.length ?? 0) > 0
     const thermal_on =
-      atom_color_field ||
-      active_cloud ||
-      volume_color_field ||
-      (cutaway && cutaway.mode !== `off`)
+      atom_color_field || volume_color_field || (cutaway && cutaway.mode !== `off`)
     const hidden =
       Boolean(symmetry_on || planes_on || thermal_on) && !session.shows_input_frame
     if (hidden && !overlay_hidden_by_frame)
@@ -804,7 +875,7 @@
       atom_color_field,
       atom_tooltip,
       atom_opacity,
-      volume_color_field: active_cloud ?? volume_color_field,
+      volume_color_field,
       volume_opacity,
       cutaway,
       render_token,
@@ -1030,7 +1101,7 @@
     <div style:display={active_tool_view?.content ? `none` : `contents`}>
       <structure_host_tool.component
         structure={session.tool_input}
-        prediction={active_prediction}
+        prediction={saved_prediction}
         overlay_visible={tool_overlay_visible}
         set_overlay_visible={set_tool_overlay_visible}
         start_run={start_tool_run}
@@ -1046,11 +1117,11 @@
       })}
     </div>
   {:else}
-    {#if tool_volume_notice}<p
+    {#if tool_output_notice}<p
         role="status"
         style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem; z-index: 2; background: var(--pane-bg, #222); padding: 0.6rem; border-radius: 0.4rem"
       >
-        {tool_volume_notice}
+        {tool_output_notice}
         {#if active_overlay && !session.shows_input_frame}
           <button onclick={() => (cell_type = `original`)}>Use original cell</button>
         {/if}
@@ -1135,7 +1206,7 @@
 
         {#if controls_config.visible(`export-pane`)}
           <StructureExportPane
-            prediction={active_prediction ?? undefined}
+            prediction={saved_prediction ?? undefined}
             on_clear_prediction={tool_controller.clear}
             on_reset_prediction_surfaces={reset_prediction_surfaces}
             bind:export_pane_open={

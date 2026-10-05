@@ -34,10 +34,10 @@
 <svelte:head><title>Host prediction tools | MatterViz</title></svelte:head>
 <h1 id="host-prediction-tools">Host prediction tools</h1>
 <p>
-  This runnable example adds deterministic charges, dipole arrows, density and a six-frame
-  trajectory to an unchanged input crystal in a Web Worker. Set a delay to try cancelling or
-  restarting work, or enable failure to verify that the previous result remains available. No
-  model download or server is needed.
+  This runnable example adds deterministic charges, dipole arrows, density, a relaxed geometry
+  and a six-frame trajectory to an unchanged input crystal in a Web Worker. Set a delay to try
+  cancelling or restarting work, or enable failure to verify that the previous result remains
+  available. No model download or server is needed.
 </p>
 {#if ready}
   <Structure
@@ -66,6 +66,7 @@ run.on_overlay({
   site_properties: result.site_properties,
   volumes: result.volumes, // each field needs a stable, unique id
   color_property: 'charge',
+  geometry: { positions: result.positions, lattice: result.cell }, // optional
 })`}</code
   ></pre>
 <p>
@@ -81,7 +82,26 @@ run.on_overlay({
   schema. The <code>prediction</code> prop includes imported results.
   <code>set_overlay_visible(false)</code> hides visuals while retaining results and surface
   settings;
-  <code>run.on_overlay(null)</code> deletes the result.
+  <code>run.on_overlay(null)</code> deletes the result. Overlays marked
+  <code>transient: true</code> are live previews, e.g. each SCF step's density: they render,
+  but the <code>prediction</code> prop and export pane skip them until the final result replaces
+  them. Published after the result, a transient overlay previews other field values, e.g. an earlier
+  SCF step, on the same surfaces while the result stays the prediction; publishing the result again
+  ends the preview. Only the first field of a publication gets a default surface.
+</p>
+<p>
+  <code>geometry</code> moves the drawn atoms, and with <code>lattice</code> the cell and
+  supercell tiles, e.g. to follow a relaxation live: <code>positions</code> holds one Cartesian
+  position in Å per input site, in input order, and <code>lattice</code> optional cell rows for
+  periodic inputs. The input stays the run's identity, so the run, selections, edits and
+  structure exports are unaffected, and volumes keep their own <code>lattice</code> and
+  <code>origin</code>. Transient geometry is a preview like transient density; a result's
+  geometry is exported with the prediction and shown again when it is reopened. A transient
+  overlay after the result previews the geometry or fields it carries and keeps the result's
+  others. Predicted geometry, like density, follows only the original cell.
+  <code>run.replace_input(geometry)</code> adopts a result's geometry as the input in one undoable
+  edit (undo in edit-atoms mode); the run stays current and its prediction is rebased onto the new
+  input.
 </p>
 <p>
   Set <code>structure_host_tool.input_key</code> to select calculation inputs, including atom order.
