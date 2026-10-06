@@ -1,7 +1,7 @@
 import ThemeControl from '#lib/theme/ThemeControl.svelte'
 import { mount } from 'svelte'
 import ThemeControlTypeFixture from './ThemeControlTypeFixture.svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 vi.mock(`#lib/theme/index.js`, () => ({

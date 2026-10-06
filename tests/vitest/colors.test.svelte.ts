@@ -1,6 +1,6 @@
 import { resolve_backdrop, resolve_css_color } from '#lib/colors/backdrop.svelte.js'
 import { flushSync } from 'svelte'
-import { afterEach, expect, test } from 'vitest'
+import { afterEach, expect, test } from 'vite-plus/test'
 
 let roots: (() => void)[] = []
 

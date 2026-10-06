@@ -18,7 +18,7 @@ import TernaryPhaseDiagramControls from '#lib/phase-diagram/ternary/TernaryPhase
 import { compute_ternary_phase_diagram_async } from '#lib/phase-diagram/ternary/async-compute.svelte.js'
 import TernarySectionCanvas from '#lib/phase-diagram/ternary/TernarySectionCanvas.svelte'
 import { type Component, flushSync, mount, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query, set_input } from '../../setup'
 import { make_phase } from '../../test-fixtures'
 import { toy_elements, toy_entries } from './fixtures'

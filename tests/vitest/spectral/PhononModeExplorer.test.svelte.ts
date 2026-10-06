@@ -5,7 +5,7 @@ import { spectrum_from_phonon_data } from '#lib/spectral/ir-raman.js'
 import born_file from '#site/phonons/ir-raman/NaCl.BORN?raw'
 import band_yaml from '#site/phonons/ir-raman/NaCl-Gamma-X-band.yaml?raw'
 import { mount, tick, type ComponentProps, unmount } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { query, set_input } from '../setup'
 
 type ExplorerProps = ComponentProps<typeof PhononModeExplorer>

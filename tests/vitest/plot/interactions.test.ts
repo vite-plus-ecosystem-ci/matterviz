@@ -14,7 +14,7 @@ import {
 import { create_scale } from '#lib/plot/core/scales.js'
 import { create_pan_zoom } from '#lib/plot/core/pan-zoom.svelte.js'
 import type { AxisRanges, ScaleType, Y2SyncConfig, Y2SyncMode } from '#lib/plot/core/types.js'
-import { describe, expect, it, onTestFinished, vi } from 'vitest'
+import { describe, expect, it, onTestFinished, vi } from 'vite-plus/test'
 
 it.each([`wheel_x`, `wheel_y`, `drag`, `touch_pan`, `pinch`] as const)(
   `%s validates every axis before writing ranges and can recover after rejection`,

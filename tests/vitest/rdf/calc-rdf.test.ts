@@ -6,7 +6,7 @@ import type { Crystal, Pbc } from '#lib/structure/index.js'
 import { neighbor_query } from '#lib/structure/bonding.js'
 import { is_crystal } from '#lib/structure/validation.js'
 import { structure_map } from '#site/structures.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../test-fixtures'
 
 const fixture = (identifier: string): Crystal => {

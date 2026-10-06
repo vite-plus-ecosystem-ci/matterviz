@@ -1,7 +1,7 @@
 import EosPlot from '#lib/eos/EosPlot.svelte'
 import type { EosFit, EosKind } from '#lib/eos/index.js'
 import { flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import { bind_props } from '../setup'
 
 // Cu-like 9-point scan, see fit.test.ts

@@ -4,7 +4,7 @@ import Page from '#root/src/routes/(demos)/structure/xrd/+page.svelte'
 import type { XrdPattern } from '#lib/xrd/index.js'
 import * as xrd from '#lib/xrd/index.js'
 import { type ComponentProps, createRawSnippet, flushSync, mount, tick, unmount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   create_drop_event,

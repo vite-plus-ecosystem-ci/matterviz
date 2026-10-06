@@ -6,7 +6,7 @@ import type { FermiHoverData, FermiIsosurface } from '#lib/fermi-surface/types.j
 import type * as threlte_core from '@threlte/core'
 import { type ComponentProps, flushSync, mount, unmount } from 'svelte'
 import { DoubleSide, type MeshStandardMaterial, Vector3 } from 'three/webgpu'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { threlte_stub } from '../isosurface/threlte-stub'
 import { bind_props } from '../setup'
 import { make_fermi_surface } from '../test-fixtures'

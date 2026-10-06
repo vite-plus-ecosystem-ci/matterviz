@@ -11,7 +11,7 @@ import {
   pbc_chain_positions,
   rolls_measured_sites,
 } from '#lib/structure/measure.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_molecule } from '../test-fixtures'
 
 // oxfmt-ignore

@@ -4,7 +4,7 @@ import RouteTable from '#lib/synthesis-planning/RouteTable.svelte'
 import { plan_synthesis } from '#lib/synthesis-planning/plan.js'
 import type { SynthesisRoute } from '#lib/synthesis-planning/types.js'
 import { type ComponentProps, mount, tick, unmount } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query, trigger_resize_observer } from '../setup'
 import { load_json } from '../test-fixtures'
 

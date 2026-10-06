@@ -7,7 +7,7 @@ import type { StructureEntry, StructureInput } from '#lib'
 import { calc_coordination_nums } from '#lib/coordination/calc-coordination.js'
 import CoordinationBarPlot from '#lib/coordination/CoordinationBarPlot.svelte'
 import { tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 import { make_crystal, make_molecule, make_rocksalt } from '../test-fixtures'
 

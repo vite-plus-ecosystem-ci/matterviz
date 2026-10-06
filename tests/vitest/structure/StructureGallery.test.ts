@@ -1,7 +1,7 @@
 import { get_d3_interpolator } from '#lib/colors/index.js'
 import StructureGallery from '#lib/structure/StructureGallery.svelte'
 import { type ComponentProps, createRawSnippet, flushSync, mount, tick } from 'svelte'
-import { describe, expect, onTestFinished, test, vi } from 'vitest'
+import { describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { doc_query, keydown, mouse } from '../setup'
 import { make_crystal } from '../test-fixtures'
 import StructureGalleryHarness from './StructureGalleryHarness.svelte'

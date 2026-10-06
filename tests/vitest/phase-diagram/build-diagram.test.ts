@@ -5,7 +5,7 @@ import {
 } from '#lib/phase-diagram/build-diagram.js'
 import type { DiagramInput } from '#lib/phase-diagram/diagram-input.js'
 import type { SpecialPoint } from '#lib/phase-diagram/types.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { pts } from './fixtures/test-data'
 
 describe(`parse_curve_ref`, () => {

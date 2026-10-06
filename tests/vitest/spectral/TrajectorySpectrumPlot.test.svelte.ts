@@ -3,7 +3,7 @@ import TrajectorySpectroscopyPane from '#lib/spectral/TrajectorySpectroscopyPane
 import TrajectorySpectrumPlot from '#lib/spectral/TrajectorySpectrumPlot.svelte'
 import { trajectory_from_frames } from '#lib/trajectory/runs/memory.js'
 import { flushSync, mount, tick, unmount, type Component } from 'svelte'
-import { describe, expect, it, onTestFinished, vi } from 'vitest'
+import { describe, expect, it, onTestFinished, vi } from 'vite-plus/test'
 import { query, set_select } from '../setup'
 import { IDENTITY_MATRIX3, make_crystal } from '../test-fixtures'
 

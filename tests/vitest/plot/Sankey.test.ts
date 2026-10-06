@@ -7,7 +7,7 @@ import type {
   SankeyNodeHandlerProps,
 } from '#lib/plot/index.js'
 import { type ComponentProps, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { bucket_sankey_data } from '#lib/plot/sankey/sankey.js'
 import { mount_sized } from '../setup'
 

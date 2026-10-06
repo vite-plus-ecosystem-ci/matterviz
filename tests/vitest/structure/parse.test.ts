@@ -51,7 +51,7 @@ import tio2_cif from '#site/structures/TiO2.cif?raw'
 import vasp4_format from '#site/structures/vasp4-format.poscar?raw'
 import process from 'node:process'
 import { join } from 'node:path'
-import { assert, describe, expect, it, onTestFinished, test, vi } from 'vitest'
+import { assert, describe, expect, it, onTestFinished, test, vi } from 'vite-plus/test'
 import { get_dummy_structure, read_maybe_gz } from '../test-fixtures'
 
 // Helpers to reduce duplication and strengthen invariants

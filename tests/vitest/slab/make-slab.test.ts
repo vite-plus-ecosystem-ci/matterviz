@@ -11,7 +11,7 @@ import { make_slab } from '#lib/slab/make-slab.js'
 import type { Slab } from '#lib/slab/index.js'
 import type { Crystal, Pbc, Site } from '#lib/structure/index.js'
 import { structure_map } from '#site/structures.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal, make_rocksalt } from '../test-fixtures'
 
 // Conventional cubic cells: exact fractional coordinates, so every expectation below can

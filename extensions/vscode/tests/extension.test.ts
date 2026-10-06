@@ -12,7 +12,7 @@ import { is_trajectory_file } from '#lib/trajectory/parse/index.js'
 import { Buffer } from 'node:buffer'
 import type * as node_path from 'node:path'
 import { gzipSync } from 'node:zlib'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import type { ExtensionContext, Tab, TextEditor, Uri, WebviewOptions } from 'vscode'
 import pkg_json from '../package.json' with { type: 'json' }
 import type { WebviewToHostMessage } from '#lib/file-viewer/host-protocol.js'

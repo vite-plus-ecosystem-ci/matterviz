@@ -1,6 +1,6 @@
 import { brighten_hex, css_to_linear_rgb, parse_linear_rgb } from '#lib/scene/colors.js'
 import { Color } from 'three/webgpu'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test.each([parse_linear_rgb, css_to_linear_rgb])(
   `%s converts CSS to linear RGB without stale scratch colors`,

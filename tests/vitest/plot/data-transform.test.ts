@@ -4,7 +4,7 @@ import {
   series_symbol_swatch,
 } from '#lib/plot/core/data-transform.js'
 import { DEFAULTS } from '#lib/settings.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`data-transform utility functions`, () => {
   describe(`extract_series_color`, () => {

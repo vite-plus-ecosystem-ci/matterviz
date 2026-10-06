@@ -13,7 +13,7 @@ import type { Component, ComponentProps } from 'svelte'
 import { createRawSnippet, flushSync, mount, tick, unmount } from 'svelte'
 import * as animations from 'svelte/animate'
 import { prefersReducedMotion as reduced_motion } from 'svelte/motion'
-import { assert, describe, expect, expectTypeOf, it, onTestFinished, vi } from 'vitest'
+import { assert, describe, expect, expectTypeOf, it, onTestFinished, vi } from 'vite-plus/test'
 import {
   bind_props,
   dismiss_popover,

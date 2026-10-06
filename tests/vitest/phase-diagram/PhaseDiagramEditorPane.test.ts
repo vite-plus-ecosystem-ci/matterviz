@@ -1,7 +1,7 @@
 import PhaseDiagramEditorPane from '#lib/phase-diagram/PhaseDiagramEditorPane.svelte'
 import type { PhaseDiagramData } from '#lib/phase-diagram/index.js'
 import { flushSync, mount, tick, unmount } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import al_cu_data from './fixtures/al-cu-sample.json' with { type: 'json' }
 import { set_input } from '../setup'
 

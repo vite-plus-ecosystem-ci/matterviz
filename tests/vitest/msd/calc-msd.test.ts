@@ -2,7 +2,7 @@ import type { ElementSymbol } from '#lib/element/index.js'
 import { calc_msd, fit_einstein_diffusion, fit_msd_curves } from '#lib/msd/calc-msd.js'
 import { compute_msd_async } from '#lib/msd/async-compute.svelte.js'
 import type { Pbc } from '#lib/structure/index.js'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { cubic_matrix } from '../test-fixtures'
 import {
   ballistic_frames,

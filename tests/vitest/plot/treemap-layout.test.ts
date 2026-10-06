@@ -17,7 +17,7 @@ import {
   normalize_treemap_label_lines,
   place_treemap_label,
 } from '#lib/plot/treemap/labels.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const size = { width: 400, height: 300 }
 

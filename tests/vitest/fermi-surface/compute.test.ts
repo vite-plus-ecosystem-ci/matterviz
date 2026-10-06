@@ -17,7 +17,7 @@ import type {
 import { vertex_count } from '#lib/fermi-surface/types.js'
 import * as math from '#lib/math.js'
 import type { Matrix3x3, Matrix4Tuple, Vec3 } from '#lib/math.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import {
   BOX_TRI_FACES,
   BOX_VERTICES,

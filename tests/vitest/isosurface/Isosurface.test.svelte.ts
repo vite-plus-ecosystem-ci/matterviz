@@ -10,7 +10,7 @@ import type {
 import { DEFAULT_ISOSURFACE_SETTINGS } from '#lib/isosurface/types.js'
 import { flushSync, mount, unmount } from 'svelte'
 import type { BufferGeometry } from 'three/webgpu'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { make_grid, make_volume } from '../test-fixtures'
 import { threlte_stub } from './threlte-stub'
 

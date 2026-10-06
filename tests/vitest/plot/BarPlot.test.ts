@@ -6,7 +6,7 @@ import { SvelteMap } from 'svelte/reactivity'
 import { point_in_rect, rects_overlap } from '#lib/plot/core/layout.js'
 import { DEFAULT_FONT_SPEC } from '#lib/plot/core/text-metrics.js'
 import { measure_text_width } from '#lib/plot/core/tick-layout.js'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   clip_rect,
   inside_clip_path,

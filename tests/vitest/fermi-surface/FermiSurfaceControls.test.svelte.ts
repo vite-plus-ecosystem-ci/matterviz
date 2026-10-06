@@ -5,7 +5,7 @@ import type {
   FermiSurfaceData,
 } from '#lib/fermi-surface/types.js'
 import { type ComponentProps, mount, tick, unmount } from 'svelte'
-import { describe, expect, onTestFinished, test, vi } from 'vitest'
+import { describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query, set_input } from '../setup'
 import { IDENTITY_MATRIX3, make_fermi_isosurface, make_fermi_surface } from '../test-fixtures'
 

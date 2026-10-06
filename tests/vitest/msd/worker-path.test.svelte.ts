@@ -9,7 +9,7 @@ import type { MsdOptions, MsdResult } from '#lib/msd/index.js'
 import MsdPlot from '#lib/msd/MsdPlot.svelte'
 import type { TrajectoryPositionStream } from '#lib/trajectory/index.js'
 import { mount, unmount } from 'svelte'
-import { afterEach, beforeAll, describe, expect, it } from 'vitest'
+import { afterEach, beforeAll, describe, expect, it } from 'vite-plus/test'
 import { bind_props, expect_module_worker, install_stub_worker, settle } from '../setup'
 import { drift_positions } from './helpers'
 

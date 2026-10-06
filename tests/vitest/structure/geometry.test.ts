@@ -17,7 +17,7 @@ import {
 } from '#lib/structure/geometry.js'
 import { Euler, Matrix4, Vector3 } from 'three/webgpu'
 import { SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { create_numeric_md_frame, FrameView } from '#lib/trajectory/frame.js'
 import { BondMesh } from '#lib/structure/bond-mesh.js'
 

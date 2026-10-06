@@ -22,7 +22,7 @@ import {
 } from '#lib/symmetry/spacegroups.js'
 import { structure_map } from '#site/structures.js'
 import { space_group_type } from '@spglib/moyo-wasm'
-import { beforeAll, describe, expect, test } from 'vitest'
+import { beforeAll, describe, expect, test } from 'vite-plus/test'
 import { fcc_primitive_matrix, init_moyo_for_tests, make_crystal } from '../test-fixtures'
 
 // Helper to get structure or throw with descriptive error

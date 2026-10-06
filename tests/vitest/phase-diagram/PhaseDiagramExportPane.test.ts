@@ -2,7 +2,7 @@ import { export_svg_as_png, export_svg_as_svg } from '#lib/io/export.js'
 import type { PhaseDiagramData } from '#lib/phase-diagram/index.js'
 import PhaseDiagramExportPane from '#lib/phase-diagram/PhaseDiagramExportPane.svelte'
 import { type ComponentProps, mount } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, mock_object_url } from '../setup'
 // Real Al-Cu phase diagram data from pycalphad computation (subset of 5 boundaries)
 import al_cu_data from './fixtures/al-cu-sample.json' with { type: 'json' }

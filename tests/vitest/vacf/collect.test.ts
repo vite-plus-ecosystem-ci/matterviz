@@ -6,7 +6,7 @@ import {
   suggest_vacf_frame_stride,
   VELOCITY_SITE_PROPERTY,
 } from '#lib/vacf/collect.js'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 import { make_frame } from '../test-fixtures'
 import { max_abs_error, orbit_run } from './helpers'
 

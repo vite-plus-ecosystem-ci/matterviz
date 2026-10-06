@@ -12,7 +12,7 @@ import type {
   VolumetricData,
 } from '#lib/isosurface/types.js'
 import { flushSync, mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query, bind_props, expect_labelled_settings_grid, set_input } from '../setup'
 import { make_grid, make_volume as make_volume_fixture } from '../test-fixtures'
 

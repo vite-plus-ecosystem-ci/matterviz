@@ -10,7 +10,7 @@ import {
 } from '#lib/spectral/helpers.js'
 import type { ElectronicDos, FrequencyUnit, PhononDos, SpinMode } from '#lib/spectral/types.js'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import {
   bind_props,
   clip_rect,

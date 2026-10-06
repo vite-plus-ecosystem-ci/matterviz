@@ -16,7 +16,7 @@ import {
 } from '#lib/plot/core/reference-line.js'
 import type { RefLine } from '#lib/plot/core/types.js'
 import { clear_text_metrics_cache } from '#lib/plot/core/text-metrics.js'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { mock_canvas_context } from '../setup'
 
 describe(`normalize_value`, () => {

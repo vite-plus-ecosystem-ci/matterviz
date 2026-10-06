@@ -31,7 +31,7 @@ import {
 } from '#lib/spectral/helpers.js'
 import type { BaseBandStructure, QPoint } from '#lib/spectral/types.js'
 import * as math from '#lib/math.js'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 
 // pymatgen input needs a reciprocal lattice to measure its k-path; the identity keeps the
 // hand-computed fractional distances valid

@@ -16,7 +16,7 @@ import {
 import type { GasSpecies, GasThermodynamicsConfig, PhaseData } from '#lib/convex-hull/types.js'
 import { DEFAULT_GAS_PRESSURES, GAS_SPECIES } from '#lib/convex-hull/types.js'
 import type { ElementSymbol } from '#lib/element/index.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_phase } from '../test-fixtures'
 
 // pin the stoichiometry/gas-mapping tables: a typo here silently skews all corrections

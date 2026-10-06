@@ -9,7 +9,7 @@ import {
   save_theme_preference,
   THEME_TYPE,
 } from '#lib/theme/index.js'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const mock_match_media = (matches: boolean) => {
   Object.defineProperty(window, `matchMedia`, {

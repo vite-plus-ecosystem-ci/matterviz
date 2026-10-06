@@ -9,7 +9,7 @@ import {
 } from '#lib/isosurface/parse.js'
 import type { VolumetricFileData } from '#lib/isosurface/types.js'
 import type { Vec3 } from '#lib/math.js'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { normalize_scientific_notation } from '#lib/utils.js'
 import { grid_value, read_maybe_gz } from '../test-fixtures'
 import { create_volume_sampler } from '#lib/isosurface/sampling.js'

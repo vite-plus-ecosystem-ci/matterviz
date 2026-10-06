@@ -34,7 +34,7 @@ import { create_thermo_cache } from '#lib/synthesis-planning/thermo.js'
 import { describe_atmosphere } from '#lib/synthesis-planning/scoring.js'
 import { get_default_gas_provider } from '#lib/convex-hull/gas-thermodynamics.js'
 import * as math from '#lib/math.js'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { make_phase, read_maybe_gz } from '../test-fixtures'
 import pymatgen_reference from './fixtures/ba_ti_o_pymatgen_reference.json' with { type: 'json' }
 

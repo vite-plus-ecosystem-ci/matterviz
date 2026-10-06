@@ -1,6 +1,6 @@
 import { type CanvasMarker, draw_markers } from '#lib/plot/core/canvas-markers.js'
 import { prepare_canvas } from '#lib/plot/core/utils.js'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 afterEach(() => {
   vi.restoreAllMocks()

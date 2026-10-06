@@ -6,7 +6,7 @@ import type { AtomColorConfig, AtomPropertyColors } from '#lib/structure/atom-pr
 import { DEFAULT_ATOM_COLOR_CONFIG } from '#lib/structure/atom-properties.js'
 import type { ComponentProps } from 'svelte'
 import { mount, tick, unmount } from 'svelte'
-import { afterEach, describe, expect, onTestFinished, test } from 'vitest'
+import { afterEach, describe, expect, onTestFinished, test } from 'vite-plus/test'
 import { dismiss_popover, doc_query, set_input } from '../setup'
 
 let mounted_components: ReturnType<typeof mount>[] = []

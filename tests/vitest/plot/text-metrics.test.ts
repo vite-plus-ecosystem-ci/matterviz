@@ -10,7 +10,7 @@ import {
   resolve_font_spec,
   wrap_text_paragraph,
 } from '#lib/plot/core/text-metrics.js'
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 
 const TEST_FONT: FontSpec = {
   font_family: `"Inter", sans-serif`,

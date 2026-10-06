@@ -17,7 +17,7 @@ import {
 } from 'd3-shape'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
 import { SvelteSet } from 'svelte/reactivity'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, keydown, mouse, set_input } from '../setup'
 
 const legend_item = (

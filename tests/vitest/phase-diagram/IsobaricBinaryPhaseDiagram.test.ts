@@ -3,7 +3,7 @@ import IsobaricBinaryPhaseDiagram from '#lib/phase-diagram/IsobaricBinaryPhaseDi
 import type { DiagramInput } from '#lib/phase-diagram/diagram-input.js'
 import type { LeverRuleResult, PhaseDiagramData } from '#lib/phase-diagram/types.js'
 import { type ComponentProps, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { create_drop_event, doc_query, keydown, mount_sized, mouse, plot_svg } from '../setup'
 import { create_hover_info, pts, rect } from './fixtures/test-data'
 import IsobaricBinaryPhaseDiagramHarness from './IsobaricBinaryPhaseDiagramHarness.svelte'

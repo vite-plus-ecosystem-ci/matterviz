@@ -9,7 +9,7 @@ import type {
 import PhaseDiagramTooltip from '#lib/phase-diagram/PhaseDiagramTooltip.svelte'
 import type { ComponentProps, Snippet } from 'svelte'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { create_hover_info, pts } from './fixtures/test-data'
 
 const mount_tooltip = (props: ComponentProps<typeof PhaseDiagramTooltip>) =>

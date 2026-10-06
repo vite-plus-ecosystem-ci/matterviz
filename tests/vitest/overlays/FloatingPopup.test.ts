@@ -1,6 +1,6 @@
 import FloatingPopup from '#lib/overlays/FloatingPopup.svelte'
 import { type ComponentProps, createRawSnippet, flushSync, mount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const mount_popup = (props: Partial<ComponentProps<typeof FloatingPopup>> = {}): void => {

@@ -6,7 +6,7 @@ import { compute_opportunity_map_async } from '#lib/synthesis-planning/opportuni
 import { plan_synthesis } from '#lib/synthesis-planning/plan.js'
 import type { SynthesisConditions } from '#lib/synthesis-planning/types.js'
 import { mount, tick, unmount } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { expect_module_worker, install_stub_worker, set_input } from '../setup'
 import { load_json } from '../test-fixtures'
 

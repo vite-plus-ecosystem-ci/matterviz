@@ -2,7 +2,7 @@ import Sunburst from '#lib/plot/sunburst/Sunburst.svelte'
 import type { PositionedArc, SunburstNode, SunburstNodeHandlerProps } from '#lib/plot/index.js'
 import { PLOT_COLORS } from '#lib/colors/index.js'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { fire, keydown, mount_sized, mouse, query, resize_element } from '../setup'
 
 // A (explicit color) -> {A1: 4, A2: 6}, B: 10. Root total = 20.

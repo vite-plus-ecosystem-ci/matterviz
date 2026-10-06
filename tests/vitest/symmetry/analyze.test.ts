@@ -6,7 +6,7 @@ import {
   transform_cell,
 } from '#lib/symmetry/analyze.js'
 import type { MoyoCell, MoyoDataset } from '@spglib/moyo-wasm'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { make_crystal } from '../test-fixtures'
 
 // Helper to create a MoyoCell

@@ -6,7 +6,7 @@ import { make_position_stream } from '../test-fixtures'
 import { flushSync } from 'svelte'
 import type { BufferGeometry } from 'three/webgpu'
 import { BufferAttribute, LineSegments } from 'three/webgpu'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 // Three atoms on straight lines through a 10 Å cell, never wrapping
 const stream = make_position_stream(

@@ -3,7 +3,7 @@
 // to leave every module's suite green.
 import { create_worker_client } from '#lib/worker-client.svelte.js'
 import { serve_worker } from '#lib/worker-serve.js'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { install_stub_worker, type StubWorkerInstance, type StubWorkerMessage } from './setup'
 
 // Installed without a `compute`, so the stub records posts and never replies unless told to

@@ -2,7 +2,7 @@
 import FillArea from '#lib/plot/core/components/FillArea.svelte'
 import type { FillGradient, FillRegion } from '#lib/plot/core/types.js'
 import { type ComponentProps, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // Mock scale functions

@@ -40,7 +40,7 @@ import {
 import { SETTLE_MS } from '#lib/plot/core/settling-tween.svelte.js'
 import type { InstanceTween } from '#lib/plot/scatter-3d/instance-tween.svelte.js'
 import { pack_instances } from '#lib/plot/scatter-3d/instance-tween.svelte.js'
-import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { mock_fullscreen, bind_props, expect_plot_controls, query, set_input } from '../setup'
 
 vi.mock(`$app/env`, () => ({ browser: false }))

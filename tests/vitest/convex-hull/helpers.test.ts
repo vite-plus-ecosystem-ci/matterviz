@@ -6,7 +6,7 @@ import {
 } from '#lib/convex-hull/thermodynamics.js'
 import type { ConvexHullEntry, PhaseData } from '#lib/convex-hull/types.js'
 import { MAGNETIC_ORDERING_CATEGORY } from '#lib/convex-hull/types.js'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 // Entry with only the fields given (no energy default): the polymorph metric selection
 // depends on which energy fields are absent

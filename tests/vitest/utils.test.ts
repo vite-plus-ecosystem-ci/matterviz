@@ -6,7 +6,7 @@ import {
   parse_num_token,
   to_error,
 } from '#lib/utils.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 test.each([
   `failure`,

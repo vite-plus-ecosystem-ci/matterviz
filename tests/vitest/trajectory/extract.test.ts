@@ -6,7 +6,7 @@ import {
   structural_data_extractor,
 } from '#lib/trajectory/extract.js'
 import { open_trajectory } from '#lib/trajectory/open.js'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import { make_trajectory_frame, read_binary_test_file } from '../test-fixtures'
 
 describe(`trajectory data extractors`, () => {

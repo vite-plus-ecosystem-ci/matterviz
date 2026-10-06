@@ -14,7 +14,7 @@ import type { Molecule } from '#lib/structure/index.js'
 import { calc_coordination_nums } from '#lib/coordination/calc-coordination.js'
 import { structure_map } from '#site/structures.js'
 import { tick } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { bind_props, expect_plot_controls, mount_sized } from '../setup'
 import { make_crystal, make_molecule, make_rocksalt } from '../test-fixtures'
 

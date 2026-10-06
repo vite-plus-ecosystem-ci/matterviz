@@ -19,7 +19,7 @@ import {
 import { parse_phonon_modes } from '#lib/spectral/parse-phonon-modes.js'
 import { get_structure_vector_keys } from '#lib/structure/vectors.js'
 import { compute_bonds, get_bond_key } from '#lib/structure/bonding.js'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 import cspbi3_band_yaml from '#site/phonons/ir-raman/CsPbI3-Pnma-band.yaml.gz?raw'
 import nacl_band_yaml from '#site/phonons/ir-raman/NaCl-Gamma-X-band.yaml?raw'
 import { IDENTITY_MATRIX3 } from '../test-fixtures'

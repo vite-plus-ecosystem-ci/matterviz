@@ -15,7 +15,7 @@ import { rects_overlap, type Rect } from '#lib/plot/core/layout.js'
 import { SETTLE_MS } from '#lib/plot/core/settling-tween.svelte.js'
 import { type ComponentProps, flushSync, mount, tick, unmount } from 'svelte'
 import { SvelteSet } from 'svelte/reactivity'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   clip_rect,

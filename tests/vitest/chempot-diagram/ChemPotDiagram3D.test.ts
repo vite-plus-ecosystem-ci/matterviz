@@ -8,7 +8,7 @@ import type * as convex_module from 'three/examples/jsm/geometries/ConvexGeometr
 import { swizzle_to_render } from '#lib/chempot-diagram/compute.js'
 import type { Vec3 } from '#lib/math.js'
 import { type ComponentProps, flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { threlte_stub } from '../isosurface/threlte-stub'
 import { bind_props, set_input } from '../setup'
 import { load_json } from '../test-fixtures'

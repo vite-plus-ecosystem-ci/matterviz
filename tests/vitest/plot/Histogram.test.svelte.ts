@@ -11,7 +11,7 @@ import {
   normalize_counts,
 } from '#lib/plot/histogram/histogram.js'
 import { tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   doc_query,

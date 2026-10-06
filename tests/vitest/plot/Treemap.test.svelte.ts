@@ -2,7 +2,7 @@ import Treemap from '#lib/plot/treemap/Treemap.svelte'
 import type { SunburstNodeHandlerProps, TreemapArc, TreemapNode } from '#lib/plot/index.js'
 import { PLOT_COLORS } from '#lib/colors/index.js'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   fire,
   keydown,

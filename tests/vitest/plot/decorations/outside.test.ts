@@ -13,7 +13,7 @@ import {
   place_outside_decorations,
 } from '#lib/plot/core/decorations/outside.js'
 import type { Vec2 } from '#lib/math.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const base_pad = { t: 5, b: 50, l: 50, r: 20 }
 const width = 400

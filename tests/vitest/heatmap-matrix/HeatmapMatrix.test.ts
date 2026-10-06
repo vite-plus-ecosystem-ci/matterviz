@@ -11,7 +11,7 @@ import { format_num } from '#lib/labels.js'
 import type { ComponentProps } from 'svelte'
 import { flushSync, mount, tick } from 'svelte'
 import { fromStore, writable } from 'svelte/store'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   doc_query,

@@ -1,7 +1,7 @@
 import TernaryPlot from '#lib/plot/ternary/TernaryPlot.svelte'
 import type { TernaryPointProps, TernarySeries } from '#lib/plot/index.js'
 import { type ComponentProps, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   mount_sized,

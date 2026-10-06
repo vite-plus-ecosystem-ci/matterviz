@@ -9,7 +9,7 @@ import {
   smooth_moving_average,
 } from '#lib/plot/core/data-cleaning.js'
 import { mount, unmount } from 'svelte'
-import { describe, expect, it, onTestFinished, vi } from 'vitest'
+import { describe, expect, it, onTestFinished, vi } from 'vite-plus/test'
 import DataCleaningDemo from '../../../src/routes/(demos)/plot/data-cleaning/+page.svelte'
 
 it(`updates the accessible highlighted example when cleaning options change`, async () => {

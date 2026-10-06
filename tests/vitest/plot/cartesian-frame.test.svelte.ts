@@ -17,7 +17,7 @@ import {
 } from '#lib/plot/core/layout.js'
 import BinnedScatterPlot from '#lib/plot/scatter/BinnedScatterPlot.svelte'
 import { type Component, createRawSnippet, flushSync, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   axis_label_pivot_y,
   bind_props,

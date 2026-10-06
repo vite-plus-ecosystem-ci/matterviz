@@ -1,5 +1,5 @@
 import { download } from '#lib/io/fetch.js'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 afterEach(() => vi.restoreAllMocks())
 

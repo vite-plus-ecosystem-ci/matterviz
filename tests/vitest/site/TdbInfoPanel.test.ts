@@ -1,7 +1,7 @@
 import TdbInfoPanel from '#site/phase-diagrams/TdbInfoPanel.svelte'
 import type { TdbParseResult } from '#site/phase-diagrams/tdb-parse.js'
 import { type ComponentProps, mount } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const create_tdb_result = (

@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import pkg_json from '../package.json' with { type: 'json' }
 import { build_custom_editor_selectors, build_vscode_settings } from '../scripts/sync-config'
 
