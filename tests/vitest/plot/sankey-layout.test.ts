@@ -2,7 +2,7 @@ import type { Vec3 } from '#lib/math.js'
 import type { SankeyData } from '#lib/plot/index.js'
 import { compute_sankey_layout, sankey_from_links } from '#lib/plot/sankey/sankey.js'
 import { sankey as d3_sankey, sankeyJustify } from 'd3-sankey'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 // Simple two-column graph: A->C (1), B->C (2). C value = 1 + 2 = 3.
 const tri: SankeyData = {

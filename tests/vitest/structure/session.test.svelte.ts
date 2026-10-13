@@ -18,7 +18,7 @@ import { make_supercell } from '#lib/structure/supercell.js'
 import type { CellType, SymmetryDataset } from '#lib/symmetry/index.js'
 import { analyze_structure_symmetry } from '#lib/symmetry/analyze.js'
 import { flushSync } from 'svelte'
-import { afterEach, beforeEach, describe, expect, it, onTestFinished, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, onTestFinished, vi } from 'vite-plus/test'
 import {
   fcc_primitive_matrix,
   get_dummy_structure,

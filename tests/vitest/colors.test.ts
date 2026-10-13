@@ -21,7 +21,7 @@ import {
 } from '#lib/colors/index.js'
 import { ELEM_SYMBOLS } from '#lib/element/types.js'
 import * as d3_sc from 'd3-scale-chromatic'
-import { beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 
 // Generate expected element symbols from atomic numbers 1-109 (first 109 elements)
 const EXPECTED_ELEMENTS = Array.from({ length: 109 }, (_, idx) => ELEM_SYMBOLS[idx])

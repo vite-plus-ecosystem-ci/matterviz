@@ -2,7 +2,7 @@
 import SceneLights from '#lib/scene/SceneLights.svelte'
 import { DEFAULTS } from '#lib/settings.js'
 import { mount, unmount } from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { threlte_stub } from '../isosurface/threlte-stub'
 
 vi.mock(`@threlte/core`, async () => ({

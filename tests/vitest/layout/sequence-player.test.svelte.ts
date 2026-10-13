@@ -2,7 +2,7 @@ import { normalize_show_controls } from '#lib/controls.js'
 import SequenceControls from '#lib/layout/SequenceControls.svelte'
 import { create_sequence_player } from '#lib/layout/sequence-player.svelte.js'
 import { flushSync, mount, unmount } from 'svelte'
-import { describe, expect, onTestFinished, test, vi } from 'vitest'
+import { describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { bind_props, doc_query, set_input } from '../setup'
 
 type Host = {

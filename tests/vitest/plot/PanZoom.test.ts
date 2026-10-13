@@ -6,7 +6,7 @@ import ScatterPlot from '#lib/plot/scatter/ScatterPlot.svelte'
 import type { Vec2 } from '#lib/math.js'
 import type { InternalPoint } from '#lib/plot/core/types.js'
 import { tick, type ComponentProps } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { mount_sized, plot_svg, translate_of } from '../setup'
 
 type LocalPoint = { x: number; y: number; button?: number }

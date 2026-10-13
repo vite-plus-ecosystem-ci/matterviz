@@ -3,7 +3,7 @@ import type { ChemPotDiagramConfig, ChemPotHoverInfo } from '#lib/chempot-diagra
 import type { PhaseData } from '#lib/convex-hull/types.js'
 import type { WorkerRequestOptions } from '#lib/worker-client.svelte.js'
 import { type ComponentProps, flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, expect, onTestFinished, test, vi } from 'vitest'
+import { afterEach, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { mouse, resize_element } from '../setup'
 
 // Every compute request is held until the test resolves it, so "while recomputing" states are

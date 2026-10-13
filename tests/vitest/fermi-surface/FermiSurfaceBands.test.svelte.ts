@@ -3,7 +3,7 @@ import FermiSurfaceBands from '#lib/fermi-surface/FermiSurfaceBands.svelte'
 import type { BandGridData } from '#lib/fermi-surface/types.js'
 import type { BaseBandStructure } from '#lib/spectral/types.js'
 import { flushSync } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { fire, mount_sized, mouse, plot_svg } from '../setup'
 import { IDENTITY_MATRIX3 } from '../test-fixtures'
 

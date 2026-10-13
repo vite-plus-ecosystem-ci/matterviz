@@ -1,4 +1,4 @@
-import { describe, expect, expectTypeOf, it } from 'vitest'
+import { describe, expect, expectTypeOf, it } from 'vite-plus/test'
 import { normalize_show_controls, track_settings } from '#lib/controls.js'
 
 describe(`normalize_show_controls`, () => {

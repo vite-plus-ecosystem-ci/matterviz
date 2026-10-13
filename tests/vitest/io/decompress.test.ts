@@ -10,7 +10,7 @@ import {
   MAX_STRING_CHARS,
 } from '#lib/io/decompress.js'
 import { zipSync } from 'fflate'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 
 // Compress bytes with the platform CompressionStream for round-trip tests
 const compress = async (

@@ -7,7 +7,7 @@ import {
 import type { LabelPlacement } from '#lib/structure/atom-label-placement.js'
 import type { Camera } from 'three/webgpu'
 import { Matrix4, OrthographicCamera, PerspectiveCamera, Vector3 } from 'three/webgpu'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const expectVecClose = (actual: Vec3, expected: Vec3): void => {
   for (const [idx, val] of actual.entries()) {

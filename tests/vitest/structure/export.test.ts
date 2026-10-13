@@ -22,7 +22,7 @@ import {
 import ba_ti_o3_tetragonal from '#site/structures/BaTiO3-tetragonal.poscar?raw'
 import extended_xyz_quartz from '#site/structures/quartz.extxyz?raw'
 import tio2_cif from '#site/structures/TiO2.cif?raw'
-import { assert, beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { assert, beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 import { complex_structure, simple_structure } from '../test-fixtures'
 
 vi.mock(`#lib/io/fetch.js`, () => ({ download: vi.fn() }))

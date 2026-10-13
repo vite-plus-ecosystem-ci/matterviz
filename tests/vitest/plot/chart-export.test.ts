@@ -7,7 +7,7 @@ import {
   series_to_csv_rows,
   to_csv,
 } from '#lib/plot/core/utils/chart-export.js'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 vi.mock('#lib/io/fetch.js', () => ({ download: vi.fn() }))
 vi.mock('#lib/io/export.js', () => ({
