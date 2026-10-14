@@ -13,10 +13,10 @@ import { dirname, resolve } from 'node:path'
 import process from 'node:process'
 import { gunzipSync } from 'node:zlib'
 import source_links from 'svelte-widgets/source-links/vite-plugin'
-import type { Plugin } from 'vite'
+import type { Plugin } from 'vite-plus'
 import { defineConfig } from 'vite-plus'
-import { configDefaults } from 'vitest/config'
-import { BaseSequencer, type TestSpecification } from 'vitest/node'
+import { configDefaults } from 'vite-plus'
+import { BaseSequencer, type TestSpecification } from 'vite-plus/test/node'
 import * as shared from './src/vite-plugins.ts'
 
 // svelte-widgets' default highlighter only knows starry-night's `common` bundle plus

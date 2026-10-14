@@ -1,7 +1,7 @@
 import { DEFAULT_CATEGORY_COLORS, default_element_colors } from '#lib/colors/index.js'
 import { colors, theme_state } from '#lib/state.svelte.js'
 import { AUTO_THEME } from '#lib/theme/index.js'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 test(`theme_state starts in auto mode`, () => {
   expect(theme_state).toEqual({ mode: AUTO_THEME })

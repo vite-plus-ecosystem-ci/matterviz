@@ -2,7 +2,7 @@ import JsonBrowser from '#lib/file-viewer/JsonBrowser.svelte'
 import { mount_viewer } from '#lib/file-viewer/mount-viewer.js'
 import { flushSync, mount, unmount } from 'svelte'
 import type * as SvelteModule from 'svelte'
-import { afterEach, beforeEach, expect, onTestFinished, test, vi } from 'vitest'
+import { afterEach, beforeEach, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { doc_query, keydown } from '../setup'
 
 // Pass-through spy: a panel render is one mount_viewer call, so the count tells how many

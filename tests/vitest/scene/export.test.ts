@@ -24,7 +24,7 @@ import {
   ShaderMaterial,
   SphereGeometry,
 } from 'three/webgpu'
-import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, test, vi } from 'vite-plus/test'
 
 const stl_spy = vi.fn()
 const obj_spy = vi.fn()

@@ -1,6 +1,6 @@
 import LoadingStatus from '#lib/layout/LoadingStatus.svelte'
 import { mount } from 'svelte'
-import { expect, test, vi } from 'vitest'
+import { expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // cancel_label only reached the aria-label: the visible button always read `Cancel`

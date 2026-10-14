@@ -15,7 +15,7 @@ import { download } from '#lib/io/fetch.js'
 import type { Camera, Scene, WebGPURenderer } from 'three/webgpu'
 import { Vector2, PerspectiveCamera } from 'three/webgpu'
 import { plan_movie, movie_frame } from '#lib/trajectory/movie.js'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { mock_object_url } from '../setup'
 
 vi.mock(`#lib/io/fetch.js`, () => ({ download: vi.fn() }))

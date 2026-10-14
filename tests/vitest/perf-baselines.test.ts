@@ -35,7 +35,7 @@ import { MAX_STRING_CHARS } from '#lib/io/decompress.js'
 import { compute_xrd_pattern } from '#lib/xrd/calc-xrd.js'
 import process from 'node:process'
 import { type Component, flushSync, mount, tick, unmount } from 'svelte'
-import { afterAll, afterEach, beforeAll, describe, expect, test, vi } from 'vitest'
+import { afterAll, afterEach, beforeAll, describe, expect, test, vi } from 'vite-plus/test'
 import { make_rng } from './numeric-helpers'
 import { mount_sized } from './setup'
 import {

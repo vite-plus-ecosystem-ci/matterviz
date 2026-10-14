@@ -10,7 +10,7 @@ import type { LatticePlane } from '#lib/structure/lattice-planes.js'
 import type * as threlte_core from '@threlte/core'
 import { flushSync, mount, unmount } from 'svelte'
 import type { BufferGeometry } from 'three/webgpu'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { threlte_stub } from '../isosurface/threlte-stub'
 
 vi.mock(`@threlte/core`, async (original) => ({

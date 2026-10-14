@@ -8,7 +8,7 @@ import TrajectoryVacfPane from '#lib/vacf/TrajectoryVacfPane.svelte'
 import VacfPlot from '#lib/vacf/VacfPlot.svelte'
 import { type Component, type ComponentProps, mount, tick, unmount } from 'svelte'
 import { fromStore, writable } from 'svelte/store'
-import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vite-plus/test'
 import {
   bind_props,
   expect_module_worker,

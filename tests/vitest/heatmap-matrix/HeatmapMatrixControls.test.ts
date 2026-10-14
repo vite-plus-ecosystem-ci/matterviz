@@ -4,7 +4,7 @@ import * as file_io from '#lib/io/fetch.js'
 import { ELEMENT_ORDERINGS, ORDERING_LABELS } from '#lib/heatmap-matrix/index.js'
 import HeatmapMatrixControls from '#lib/heatmap-matrix/HeatmapMatrixControls.svelte'
 import { mount, tick, type ComponentProps } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   doc_query,

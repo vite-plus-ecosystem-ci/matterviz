@@ -21,7 +21,7 @@ import {
 import type { SymmetryElement } from '#lib/symmetry/index.js'
 import type { MoyoDataset } from '@spglib/moyo-wasm'
 import { operations_from_number } from '@spglib/moyo-wasm'
-import { beforeAll, describe, expect, test } from 'vitest'
+import { beforeAll, describe, expect, test } from 'vite-plus/test'
 import {
   col_major,
   cubic_matrix,

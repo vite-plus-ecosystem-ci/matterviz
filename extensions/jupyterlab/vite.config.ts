@@ -1,7 +1,7 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { resolve } from 'node:path'
-import type { Plugin, PluginOption } from 'vite'
-import { defineConfig } from 'vite'
+import type { Plugin, PluginOption } from 'vite-plus'
+import { defineConfig } from 'vite-plus'
 import {
   json_gz_worker_plugins,
   lib_aliases,

@@ -18,7 +18,7 @@ import type {
   FillRegion,
 } from '#lib/plot/core/types.js'
 import { curveMonotoneX, line } from 'd3-shape'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 const make_point = (x_value: number, y_value: number): Pt => ({ x: x_value, y: y_value })
 const series_ref = (series_idx: number) => ({ type: `series` as const, series_idx })

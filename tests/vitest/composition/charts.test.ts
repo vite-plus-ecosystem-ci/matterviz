@@ -10,7 +10,7 @@ import {
 } from '#lib/composition/chart.js'
 import PieChart from '#lib/composition/PieChart.svelte'
 import { type Component, type ComponentProps, flushSync, mount, unmount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 const lfp: CompositionType = { Li: 1, Fe: 1, P: 1, O: 4 }

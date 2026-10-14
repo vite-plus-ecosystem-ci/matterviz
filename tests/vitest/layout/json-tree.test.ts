@@ -1,7 +1,7 @@
 import { JsonTree } from '#lib/layout/index.js'
 import SharedJsonTree from 'svelte-widgets/JsonTree.svelte'
 import { mount, flushSync, unmount } from 'svelte'
-import { expect, test, onTestFinished } from 'vitest'
+import { expect, test, onTestFinished } from 'vite-plus/test'
 
 test(`layout exports the shared JSON viewer with nested data`, () => {
   expect(JsonTree).toBe(SharedJsonTree)
