@@ -7,7 +7,7 @@ import CameraFlightPane from '#lib/scene/CameraFlightPane.svelte'
 import { mount, tick, unmount } from 'svelte'
 import type { Scene, WebGPURenderer } from 'three/webgpu'
 import { PerspectiveCamera, Vector3 } from 'three/webgpu'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { doc_query, mock_canvas_context } from '../setup'
 
 // The playhead caption numbers MD frames from 1 like the trajectory's step input

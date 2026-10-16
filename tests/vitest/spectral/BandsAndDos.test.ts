@@ -3,7 +3,7 @@ import BrillouinBandsDos from '#lib/spectral/BrillouinBandsDos.svelte'
 import type { BaseBandStructure, ElectronicDos, PhononDos } from '#lib/spectral/types.js'
 import { createRawSnippet, flushSync } from 'svelte'
 import { fromStore, writable } from 'svelte/store'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vite-plus/test'
 import {
   clip_rect,
   fire,

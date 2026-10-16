@@ -10,7 +10,7 @@ import type { ZoneAxisMode } from '#lib/scene/zone-axis.js'
 import { DEFAULTS } from '#lib/settings.js'
 import { is_valid_zone_axis, zone_axis_direction } from '#lib/scene/zone-axis.js'
 import { PerspectiveCamera, Vector3 } from 'three/webgpu'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 // Deliberately triclinic (no 90-degree angle) so direct and reciprocal directions genuinely
 // differ — a cubic-only test cannot tell the two conventions apart.

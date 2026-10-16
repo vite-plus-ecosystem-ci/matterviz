@@ -15,7 +15,7 @@ import {
   structure_to_xyz_str,
 } from '#lib/structure/export.js'
 import { parse_cif, parse_poscar, parse_xyz } from '#lib/structure/parse.js'
-import { assert, beforeEach, describe, expect, it, vi } from 'vitest'
+import { assert, beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 import { complex_structure, simple_structure } from '../test-fixtures'
 
 vi.mock(`#lib/io/fetch.js`, () => ({ download: vi.fn() }))

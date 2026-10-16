@@ -3,7 +3,7 @@ import type { Slab } from '#lib/slab/index.js'
 import SlabBuilder from '#lib/slab/SlabBuilder.svelte'
 import type { Crystal } from '#lib/structure/index.js'
 import { flushSync, mount, unmount } from 'svelte'
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import { bind_props, doc_query } from '../setup'
 import { make_crystal, make_rocksalt } from '../test-fixtures'
 

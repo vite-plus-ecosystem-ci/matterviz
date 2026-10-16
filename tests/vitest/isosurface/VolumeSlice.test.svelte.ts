@@ -6,7 +6,7 @@ import type { VolumeSliceSettings } from '#lib/isosurface/slice-settings.js'
 import type { SliceResult } from '#lib/isosurface/slice.js'
 import type { VolumeSliceMode } from '#lib/isosurface/slice-rendering.js'
 import { mount, tick, type ComponentProps } from 'svelte'
-import { afterEach, describe, expect, test, vi, onTestFinished } from 'vitest'
+import { afterEach, describe, expect, test, vi, onTestFinished } from 'vite-plus/test'
 import { doc_query } from '../setup'
 import { make_grid, make_volume } from '../test-fixtures'
 
