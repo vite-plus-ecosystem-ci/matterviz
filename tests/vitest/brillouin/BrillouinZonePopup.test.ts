@@ -1,7 +1,7 @@
 import BrillouinZonePopup from '#lib/brillouin/BrillouinZonePopup.svelte'
 import type { Matrix3x3 } from '#lib/math.js'
 import { type ComponentProps, flushSync, mount } from 'svelte'
-import { expect, test, vi } from 'vitest'
+import { expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 // The dismissal/drag shell is covered by tests/vitest/overlays/FloatingPopup.test.ts

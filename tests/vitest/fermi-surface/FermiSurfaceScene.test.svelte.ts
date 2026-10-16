@@ -15,7 +15,7 @@ import {
 } from 'three/webgpu'
 import { centered_cell_edges } from '#lib/fermi-surface/compute.js'
 import type { Matrix3x3, Vec3 } from '#lib/math.js'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { threlte_stub } from '../isosurface/threlte-stub'
 import { bind_props } from '../setup'
 import { make_fermi_surface } from '../test-fixtures'

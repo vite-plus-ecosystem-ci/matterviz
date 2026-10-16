@@ -18,7 +18,7 @@ import { deflateSync as deflate_sync, gzipSync as gzip_sync } from 'node:zlib'
 import { zipSync } from 'fflate'
 import { mount } from 'svelte'
 import type * as svelte_module from 'svelte'
-import { afterEach, describe, expect, onTestFinished, test, vi } from 'vitest'
+import { afterEach, describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import {
   IDENTITY_MATRIX3,
   make_crystal,

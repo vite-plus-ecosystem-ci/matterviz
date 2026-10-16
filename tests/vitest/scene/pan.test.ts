@@ -7,7 +7,7 @@ import {
   set_pan_offset,
 } from '#lib/scene/pan.js'
 import { Camera, OrthographicCamera, PerspectiveCamera } from 'three/webgpu'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 const make_cameras = () =>
   [

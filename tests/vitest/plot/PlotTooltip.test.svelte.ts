@@ -4,7 +4,7 @@ import { hover_tooltip } from '#lib/tooltip/hover.svelte.js'
 import { DEFAULT_CURSOR_SIZE } from '#lib/plot/core/decorations/tooltip.js'
 import { color as d3_color } from 'd3-color'
 import { createRawSnippet, flushSync, mount, type ComponentProps } from 'svelte'
-import { describe, expect, onTestFinished, test, vi } from 'vitest'
+import { describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { doc_query, trigger_resize_observer } from '../setup'
 
 const make_children = (text: string = `Test`) =>

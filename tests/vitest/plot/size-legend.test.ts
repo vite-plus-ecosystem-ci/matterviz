@@ -7,7 +7,7 @@ import {
 import { DEFAULT_FONT_SPEC, measure_text_line } from '#lib/plot/core/text-metrics.js'
 import type { ScaleType } from '#lib/plot/core/types.js'
 import type { Vec2 } from '#lib/math.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 const format_label = (value: number) => `${value}`
 const font = { ...DEFAULT_FONT_SPEC, font_size: 11 }

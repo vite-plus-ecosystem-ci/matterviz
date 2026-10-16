@@ -32,7 +32,7 @@ import {
   Vector3,
   Vector2,
 } from 'three/webgpu'
-import { expect, test, vi } from 'vitest'
+import { expect, test, vi } from 'vite-plus/test'
 
 const cell_point = (cell: Matrix4, axis: StructureCutaway[`axis`], depth: number) =>
   new Vector3(0.5, 0.5, 0.5).setComponent(axis, depth).applyMatrix4(cell)

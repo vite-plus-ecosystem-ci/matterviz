@@ -8,7 +8,7 @@ import { spectrum_from_phonon_data } from '#lib/spectral/ir-raman.js'
 import born_file from '#site/phonons/ir-raman/NaCl.BORN?raw'
 import band_yaml from '#site/phonons/ir-raman/NaCl-Gamma-X-band.yaml?raw'
 import { flushSync, mount, tick, type ComponentProps, unmount } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import {
   click_when_ready,
   fire,
