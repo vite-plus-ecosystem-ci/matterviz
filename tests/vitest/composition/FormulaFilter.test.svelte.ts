@@ -2,7 +2,15 @@ import type { FormulaSearchMode } from '#lib/composition/index.js'
 import FormulaFilter from '#lib/composition/FormulaFilter.svelte'
 import { type ComponentProps, flushSync, mount, tick } from 'svelte'
 import type { Mock } from 'vite-plus/test'
-import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
+import {
+  afterEach,
+  beforeEach,
+  describe,
+  expect,
+  onTestFinished,
+  test,
+  vi,
+} from 'vite-plus/test'
 import { bind_props, doc_query, keydown, mouse, set_input } from '../setup'
 
 describe(`FormulaFilter`, () => {
