@@ -19,7 +19,7 @@ import { download } from 'svelte-widgets/download'
 import type { Camera, Scene, WebGPURenderer } from 'three/webgpu'
 import { Vector2, PerspectiveCamera } from 'three/webgpu'
 import { plan_movie, movie_frame } from '#lib/trajectory/movie.js'
-import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { mock_object_url } from '../setup'
 
 vi.mock(`svelte-widgets/download`, () => ({ download: vi.fn() }))

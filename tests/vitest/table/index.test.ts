@@ -31,7 +31,7 @@ import {
   with_numeric_bound,
 } from '#lib/table/index.js'
 import { html_to_text } from '#lib/utils.js'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 // one-shot wrapper around the memoized factory, for the single-cell assertions below
 const calc_cell_color = (

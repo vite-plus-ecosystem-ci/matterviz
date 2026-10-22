@@ -18,7 +18,7 @@ import { SvelteSet } from 'svelte/reactivity'
 import { rgb } from 'd3-color'
 import { scaleSequentialLog } from 'd3-scale'
 import { interpolateViridis } from 'd3-scale-chromatic'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   click_export,

@@ -3,7 +3,7 @@ import IsobaricBinaryPhaseDiagram from '#lib/phase-diagram/IsobaricBinaryPhaseDi
 import type { DiagramInput } from '#lib/phase-diagram/diagram-input.js'
 import type { PhaseDiagramData } from '#lib/phase-diagram/types.js'
 import { type ComponentProps, createRawSnippet, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   create_drop_event,
   doc_query,

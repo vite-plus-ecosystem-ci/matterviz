@@ -1,6 +1,6 @@
 import type { Site } from '#lib/structure/index.js'
 import { has_site_data } from '#lib/structure/site-table.js'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 const site = (properties: Record<string, unknown>): Site => ({
   species: [{ element: `Fe`, occu: 1, oxidation_state: 0 }],

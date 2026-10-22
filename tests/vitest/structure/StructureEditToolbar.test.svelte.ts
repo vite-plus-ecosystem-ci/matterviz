@@ -9,7 +9,7 @@ import { DEFAULT_ATOM_COLOR_CONFIG } from '#lib/structure/atom-properties.js'
 import { StructureSession } from '#lib/structure/session.svelte.js'
 import StructureEditToolbar from '#lib/structure/StructureEditToolbar.svelte'
 import { flushSync } from 'svelte'
-import { expect, onTestFinished, test } from 'vitest'
+import { expect, onTestFinished, test } from 'vite-plus/test'
 import { doc_query, fire, keydown, mount_in_test, set_input } from '../setup'
 import { get_dummy_structure } from '../test-fixtures'
 

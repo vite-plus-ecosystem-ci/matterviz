@@ -15,7 +15,7 @@ import {
 } from '#lib/structure/scene-picking.svelte.js'
 import { MAX_SELECTED_SITES } from '#lib/structure/measure.js'
 import { Group, Vector3 } from 'three/webgpu'
-import { describe, expect, onTestFinished, test, vi } from 'vitest'
+import { describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 
 const state = (overrides: Partial<PickState> = {}): PickState => ({
   measure_mode: `distance`,

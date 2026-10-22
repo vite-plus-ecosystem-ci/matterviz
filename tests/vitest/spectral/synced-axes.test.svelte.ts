@@ -4,7 +4,7 @@ import {
 } from '#lib/spectral/synced-axes.svelte.js'
 import type { BaseBandStructure, FrequencyUnit, PhononDos } from '#lib/spectral/types.js'
 import { flushSync } from 'svelte'
-import { afterEach, expect, test } from 'vitest'
+import { afterEach, expect, test } from 'vite-plus/test'
 
 const roots: (() => void)[] = []
 afterEach(() => {

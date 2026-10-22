@@ -1,6 +1,6 @@
 import AnalysisSummary from '#lib/trajectory/AnalysisSummary.svelte'
 import { createRawSnippet } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { fire, form_controls, mount_in_test, set_input, settle } from '../setup'
 
 test(`downloads build data only on click and follow the edited export name`, async () => {
