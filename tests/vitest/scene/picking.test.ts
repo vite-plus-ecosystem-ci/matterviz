@@ -1,7 +1,7 @@
 import { TAP_MS, TouchTaps } from '#lib/scene/interactivity.js'
 import { front_hit } from '#lib/scene/picking.js'
 import { Object3D, Plane, Vector3 } from 'three/webgpu'
-import { expect, test, vi } from 'vitest'
+import { expect, test, vi } from 'vite-plus/test'
 
 // Raycaster hits come sorted nearest first; each hit is labelled by its distance along z
 const hit = (z_coord: number, pick_rank?: number) => {

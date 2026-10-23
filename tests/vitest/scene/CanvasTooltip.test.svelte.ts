@@ -3,7 +3,7 @@ import type { Vec3 } from '#lib/math.js'
 import { clip_bounds } from '#lib/plot/core/decorations/tooltip.js'
 import { createRawSnippet, flushSync } from 'svelte'
 import { PerspectiveCamera } from 'three/webgpu'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { mount_scene } from './mount'
 
 vi.mock(`#lib/plot/core/decorations/tooltip.js`, async (import_original) => {

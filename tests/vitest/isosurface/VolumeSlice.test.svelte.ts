@@ -8,7 +8,7 @@ import type { VolumeSliceMode } from '#lib/isosurface/slice-rendering.js'
 import type { Vec2 } from '#lib/math.js'
 import { rgb } from 'd3-color'
 import { mount, tick, type ComponentProps } from 'svelte'
-import { afterEach, describe, expect, test, vi, onTestFinished } from 'vitest'
+import { afterEach, describe, expect, test, vi, onTestFinished } from 'vite-plus/test'
 import { doc_query } from '../setup'
 import { make_grid, make_volume } from '../test-fixtures'
 

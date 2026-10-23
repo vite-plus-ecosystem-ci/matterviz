@@ -15,7 +15,7 @@ import type { HoverKey, HoverLink } from '#lib/tooltip/hover-link.svelte.js'
 import { HoverLinks, hover_links, join_hover_link } from '#lib/tooltip/hover-link.svelte.js'
 import { type Component, flushSync, mount, unmount } from 'svelte'
 import { OrthographicCamera } from 'three/webgpu'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query, fire, marker_position, mouse, mount_sized, plot_svg } from '../setup'
 import { cubic_matrix, make_crystal, make_phase } from '../test-fixtures'
 

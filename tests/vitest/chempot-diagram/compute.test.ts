@@ -46,7 +46,7 @@ import type { ColorScaleConfig } from '#lib/plot/core/types.js'
 import { filter_entries_at_temperature, slim_phase_entry } from '#lib/convex-hull/helpers.js'
 import type { PhaseData } from '#lib/convex-hull/types.js'
 import type { Vec2 } from '#lib/math.js'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import { load_json, make_phase } from '../test-fixtures'
 
 // n-D points written as one flat list, so geometry fixtures stay on a single line

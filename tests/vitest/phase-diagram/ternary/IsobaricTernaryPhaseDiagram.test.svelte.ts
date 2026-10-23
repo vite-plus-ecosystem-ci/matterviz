@@ -20,7 +20,7 @@ import TernaryPhaseDiagramControls from '#lib/phase-diagram/ternary/TernaryPhase
 import { compute_ternary_phase_diagram_async } from '#lib/phase-diagram/ternary/async-compute.svelte.js'
 import TernarySectionCanvas from '#lib/phase-diagram/ternary/TernarySectionCanvas.svelte'
 import { type Component, createRawSnippet, flushSync, mount, unmount } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   create_drop_event,
@@ -563,7 +563,9 @@ describe(`PhaseStabilityMap`, () => {
   test(`swapping a function color scheme repaints the cached rows`, async () => {
     const fills = new Set<string>()
     Object.defineProperty(mock_canvas_context({ setLineDash: vi.fn() }), `fillStyle`, {
-      set: (fill: string) => fills.add(fill),
+      set: (fill: string) => {
+        fills.add(fill)
+      },
     })
     const props = $state({
       diagram: map_diagram,

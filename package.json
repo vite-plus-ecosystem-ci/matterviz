@@ -292,7 +292,7 @@
   "scripts": {
     "movie": "node src/scripts/movie.mjs",
     "build:site": "vp build && pagefind --site build",
-    "test": "vitest run && playwright test",
+    "test": "vp test run && playwright test",
     "typecheck": "svelte-check --tsconfig ./tsconfig.json --config ./vite.config.ts --threshold warning",
     "knip": "knip --include files,dependencies,exports,types,nsExports",
     "publint": "publint",
@@ -342,7 +342,7 @@
     "@types/d3-time-format": "^4.0.3",
     "@types/node": "^26.6.4",
     "@types/three": "^0.186.0",
-    "@vitest/coverage-v8": "5.0.3",
+    "@vitest/coverage-v8": "catalog:",
     "@wooorm/starry-night": "^3.11.0",
     "happy-dom": "^20.14.6",
     "knip": "^6.40.0",
@@ -351,9 +351,9 @@
     "svelte": "^5.57.2",
     "svelte-check": "^4.7.6",
     "typescript": "^6.0.3",
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.1.0",
-    "vite-plus": "1.1.0",
-    "vitest": "5.0.3"
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
   },
   "peerDependencies": {
     "svelte": "^5.48.0"

@@ -1,7 +1,7 @@
 import type { Column } from '#lib/table/index.js'
 import ToggleMenu from '#lib/table/ToggleMenu.svelte'
 import { type ComponentProps, createRawSnippet, mount, tick } from 'svelte'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test'
 import { bind_props, dismiss_popover, doc_query, fire } from '../setup'
 
 afterEach(() => {

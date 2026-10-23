@@ -49,7 +49,9 @@ runs:
         MATTERVIZ_SKIP_PREPARE: 1
       run: |
         # Git dependencies need prepare; generate the allowlist in CI.
-        printf 'allowBuilds:\n  svelte-widgets: true\n' > pnpm-workspace.yaml
+        # Ecosystem-ci smoke test: append, so the catalog and overrides that vp migrate
+        # wrote to the committed pnpm-workspace.yaml survive.
+        printf 'allowBuilds:\n  svelte-widgets: true\n' >> pnpm-workspace.yaml
         # Registry packages ship their generated artifacts, so their prepare scripts do not
         # need to run. Keep their skipped builds non-fatal.
         # Resolve moving Git branches afresh instead of reusing a previous lockfile's commit.

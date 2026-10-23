@@ -6,7 +6,7 @@ import {
   SPRITE_MIN_MARKERS,
 } from '#lib/plot/core/canvas-markers.svelte.js'
 import { prepare_canvas } from '#lib/plot/core/utils.js'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 
 afterEach(() => {
   vi.restoreAllMocks()
@@ -36,7 +36,9 @@ const fake_ctx = () => {
   }
   for (const prop of [`fillStyle`, `strokeStyle`, `lineWidth`, `globalAlpha`]) {
     Object.defineProperty(ctx, prop, {
-      set: (value: unknown) => void calls.push({ op: `set:${prop}`, args: [value] }),
+      set: (value: unknown) => {
+        calls.push({ op: `set:${prop}`, args: [value] })
+      },
     })
   }
   return ctx as unknown as CanvasRenderingContext2D & { calls: Call[] }
