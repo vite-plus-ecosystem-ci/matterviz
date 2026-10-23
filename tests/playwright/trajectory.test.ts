@@ -1481,7 +1481,7 @@ test.describe(`Trajectory Component`, () => {
             const structure = element.querySelector(`.structure`)
             const plot = element.querySelector(`.scatter`)
             if (!(structure instanceof HTMLElement) || !(plot instanceof HTMLElement)) {
-              throw new Error(`trajectory panes not found`)
+              throw new TypeError(`trajectory panes not found`)
             }
             return {
               structure: structure.getBoundingClientRect(),
