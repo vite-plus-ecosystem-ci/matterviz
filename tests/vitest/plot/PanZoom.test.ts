@@ -7,7 +7,7 @@ import ZoomRect from '#lib/plot/core/components/ZoomRect.svelte'
 import type { Vec2 } from '#lib/math.js'
 import type { InternalPoint } from '#lib/plot/core/types.js'
 import { tick, type ComponentProps } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { mount_in_test, mount_sized, plot_svg, svg_rect, translate_of } from '../setup'
 
 type LocalPoint = { x: number; y: number; button?: number }

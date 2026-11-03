@@ -12,7 +12,7 @@ import {
   tokenize_formula_markup,
 } from '#lib/composition/format.js'
 import { parse_formula } from '#lib/composition/parse.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 describe(`get_alphabetical_formula`, () => {
   test.each([

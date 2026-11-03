@@ -8,7 +8,7 @@ import TrajectorySpectroscopyPane from '#lib/spectral/TrajectorySpectroscopyPane
 import type { TrajectoryRun } from '#lib/trajectory/index.js'
 import { trajectory_from_frames } from '#lib/trajectory/runs/memory.js'
 import { mount, tick, unmount } from 'svelte'
-import { beforeEach, expect, onTestFinished, test, vi } from 'vitest'
+import { beforeEach, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   click_when_ready,
