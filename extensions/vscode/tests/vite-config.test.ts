@@ -1,5 +1,5 @@
 import { make_config } from 'svelte-widgets/vite-config'
-import { expect, test } from 'vitest'
+import { expect, test } from 'vite-plus/test'
 
 // vite.config.ts takes its cssTarget from this shared config, so the two builds cannot drift
 // apart again — what is left to guard is the shared value itself. A target without native

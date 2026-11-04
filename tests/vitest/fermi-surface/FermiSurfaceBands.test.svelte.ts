@@ -8,7 +8,7 @@ import { band_crossings, band_k_path, BANDS_CSS_COLORS } from '#lib/spectral/hel
 import type { Vec2 } from '#lib/math.js'
 import type { BaseBandStructure } from '#lib/spectral/types.js'
 import { type ComponentProps, createRawSnippet, flushSync } from 'svelte'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { fire, mount_sized, mouse, plot_svg } from '../setup'
 import { IDENTITY_MATRIX3 } from '../test-fixtures'
 

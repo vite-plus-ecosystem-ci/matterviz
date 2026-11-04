@@ -13,7 +13,7 @@ import {
   structure_to_xyz_str,
 } from '#lib/structure/export.js'
 import { parse_cif, parse_poscar, parse_xyz } from '#lib/structure/parse.js'
-import { assert, describe, expect, it } from 'vitest'
+import { assert, describe, expect, it } from 'vite-plus/test'
 import { complex_structure, simple_structure } from '../test-fixtures'
 
 // Local factories to cut fixture boilerplate: single-species site + diagonal lattice

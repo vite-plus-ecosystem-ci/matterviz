@@ -23,7 +23,7 @@ import {
   RepeatWrapping,
   SphereGeometry,
 } from 'three/webgpu'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 import { threlte_stub } from '../isosurface/threlte-stub'
 
 const frame_task = vi.hoisted(() => ({ update: () => {} }))

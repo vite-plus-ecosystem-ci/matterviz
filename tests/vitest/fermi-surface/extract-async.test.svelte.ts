@@ -9,7 +9,7 @@ import {
 } from '#lib/fermi-surface/extract-job.js'
 import { parse_fermi_file } from '#lib/fermi-surface/parse.js'
 import type { BandGridData, FermiSurfaceOptions } from '#lib/fermi-surface/types.js'
-import { afterEach, expect, test } from 'vitest'
+import { afterEach, expect, test } from 'vite-plus/test'
 import {
   expect_module_worker,
   expect_worker_safe_import_graph,

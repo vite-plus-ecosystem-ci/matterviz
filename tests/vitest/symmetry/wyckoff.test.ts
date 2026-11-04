@@ -12,7 +12,7 @@ import {
   wyckoff_sequence,
 } from '#lib/symmetry/wyckoff.js'
 import type { MoyoDataset, MoyoWyckoffPosition } from '@spglib/moyo-wasm'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { cubic_matrix, make_crystal, make_wyckoff_dataset } from '../test-fixtures'
 
 describe(`wyckoff_positions_from_moyo`, () => {
