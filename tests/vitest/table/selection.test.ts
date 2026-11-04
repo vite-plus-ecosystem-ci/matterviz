@@ -1,5 +1,5 @@
 import { CellSelection } from '#lib/table/selection.svelte.js'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vite-plus/test'
 
 describe(`CellSelection`, () => {
   const sorted_keys = (selection: CellSelection) => [...selection.keys].toSorted()

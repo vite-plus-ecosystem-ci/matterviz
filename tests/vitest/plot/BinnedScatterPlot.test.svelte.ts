@@ -8,7 +8,7 @@ import { svg_to_string } from '#lib/io/export.js'
 import { plot_color } from '#lib/colors/index.js'
 import { interpolateBlues, interpolateReds, interpolateViridis } from 'd3-scale-chromatic'
 import { createRawSnippet, mount, tick, unmount, type ComponentProps } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   mock_fullscreen,
   bind_props,
@@ -1090,7 +1090,9 @@ describe(`BinnedScatterPlot`, () => {
     const ctx = mock_canvas_context()
     Object.defineProperty(ctx, `fillStyle`, {
       get: () => fill_styles.at(-1) ?? ``,
-      set: (value: string) => void fill_styles.push(value),
+      set: (value: string) => {
+        fill_styles.push(value)
+      },
     })
     mount_plot({
       series: [

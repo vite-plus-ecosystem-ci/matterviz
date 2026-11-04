@@ -30,7 +30,7 @@ import {
   InterleavedBufferAttribute,
   Vector3,
 } from 'three/webgpu'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { make_crystal, make_rocksalt } from '../test-fixtures'
 import { octahedron_points } from './geometry-fixtures'
 

@@ -832,7 +832,7 @@ function neighbor_query_cutoff(
     const coord_y = coordinates ? coordinates[idx * stride + 1] : sites[idx].xyz[1]
     const coord_z = coordinates ? coordinates[idx * stride + 2] : sites[idx].xyz[2]
     if (!(Number.isFinite(coord_x) && Number.isFinite(coord_y) && Number.isFinite(coord_z))) {
-      throw new Error(
+      throw new TypeError(
         `neighbor_query: site ${display_idx(idx)} has a non-finite position (${coord_x}, ${coord_y}, ${coord_z})`,
       )
     }

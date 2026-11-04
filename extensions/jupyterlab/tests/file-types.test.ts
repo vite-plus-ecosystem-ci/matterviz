@@ -2,7 +2,7 @@
 // any extension match, and these types are in `defaultFor`, so an over-broad pattern
 // silently makes MatterViz the default opener for unrelated files rather than an
 // extra "Open With" entry.
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { BASE64_FILE_TYPES, is_default_file_type, TEXT_FILE_TYPES } from '../src/file-types'
 
 // Registration order in `index.ts`: text types first, then base64.

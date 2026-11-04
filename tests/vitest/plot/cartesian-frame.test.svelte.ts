@@ -19,7 +19,7 @@ import BinnedScatterPlot from '#lib/plot/scatter/BinnedScatterPlot.svelte'
 import ChartHeaderControls from '#lib/plot/core/components/ChartHeaderControls.svelte'
 import type { PaneToggleProps } from '#lib/overlays/index.js'
 import { type Component, createRawSnippet, flushSync, tick } from 'svelte'
-import { afterEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   axis_label_pivot_y,
   bind_props,

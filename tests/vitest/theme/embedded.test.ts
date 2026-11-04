@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { detect_parent_theme, watch_theme } from '#lib/theme/embedded.js'
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 
 // Isolate watcher behavior from palette data and theme registration side effects.
 // Black (and transparent black, which is_dark_color must filter out first) read as dark.

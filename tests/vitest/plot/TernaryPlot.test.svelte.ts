@@ -3,7 +3,7 @@ import { CANVAS_MARKER_THRESHOLD } from '#lib/plot/core/canvas-markers.svelte.js
 import { make_rng } from '../numeric-helpers'
 import type { ColorScaleConfig, TernaryPointProps, TernarySeries } from '#lib/plot/index.js'
 import { type ComponentProps, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   pin_cycle,
