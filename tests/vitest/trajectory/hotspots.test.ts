@@ -2,7 +2,7 @@ import { BOLTZMANN_EV_PER_K } from '#lib/constants.js'
 import { element_by_symbol } from '#lib/element/data.js'
 import type { Matrix3x3 } from '#lib/math.js'
 import { encode_frame, materialize_frame_result } from '#lib/trajectory/frame.js'
-import { describe, expect, it, onTestFinished, vi } from 'vitest'
+import { describe, expect, it, onTestFinished, vi } from 'vite-plus/test'
 import type {
   HotspotGrid,
   HotspotRequest,

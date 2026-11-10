@@ -8,7 +8,7 @@ import { ParseWorkerError } from '#lib/file-viewer/parse-in-worker.js'
 import { request_large_file_content } from '#lib/file-viewer/host-bridge.js'
 import type { TrajectoryRun } from '#lib/trajectory/index.js'
 import type * as SvelteModule from 'svelte'
-import { afterEach, expect, test, vi } from 'vitest'
+import { afterEach, expect, test, vi } from 'vite-plus/test'
 
 const test_mocks = vi.hoisted(() => {
   const post_message = vi.fn()

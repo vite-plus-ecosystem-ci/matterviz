@@ -1,6 +1,6 @@
 import PhaseDiagramExportPane from '#lib/phase-diagram/PhaseDiagramExportPane.svelte'
 import { type ComponentProps, mount } from 'svelte'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import { click_export, doc_query, mock_object_url } from '../setup'
 import { eutectic as mock_phase_data } from './fixtures/test-data'
 

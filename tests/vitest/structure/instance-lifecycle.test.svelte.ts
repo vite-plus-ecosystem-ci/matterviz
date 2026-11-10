@@ -77,7 +77,7 @@ import {
 import { LineSegments2 } from 'three/examples/jsm/lines/webgpu/LineSegments2.js'
 import { TransformControls } from 'three/examples/jsm/controls/TransformControls.js'
 import { SvelteSet } from 'svelte/reactivity'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { flush_set } from './session-harness.svelte'
 
 // Spy on Threlte's interactivity() and return a getter for the scene's interactivity state

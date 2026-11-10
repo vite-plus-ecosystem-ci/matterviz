@@ -10,7 +10,7 @@ import type {
 } from '#lib/phase-diagram/types.js'
 import { binary_diagrams } from '#site/phase-diagrams.js'
 import { type ComponentProps, createRawSnippet, tick } from 'svelte'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import {
   bind_props,
   create_drop_event,

@@ -18,7 +18,7 @@ import { get_bond_data } from '#lib/structure/bonding.js'
 import { compute_polyhedra } from '#lib/structure/polyhedra.js'
 import type { TrajectoryFrame } from '#lib/trajectory/index.js'
 import { flushSync } from 'svelte'
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vite-plus/test'
 import { make_trajectory_frame } from '../test-fixtures'
 
 const frames = (count: number, site_count = 3): TrajectoryFrame[] =>

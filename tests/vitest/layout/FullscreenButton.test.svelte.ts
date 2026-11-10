@@ -6,7 +6,7 @@ import ViewerChrome from '#lib/layout/ViewerChrome.svelte'
 import ScatterPlot from '#lib/plot/scatter/ScatterPlot.svelte'
 import Sankey from '#lib/plot/sankey/Sankey.svelte'
 import { createRawSnippet, flushSync, mount, tick, unmount } from 'svelte'
-import { afterEach, beforeEach, describe, expect, type Mock, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, type Mock, test, vi } from 'vite-plus/test'
 
 // Buttons keep a window keydown listener for the `f` shortcut, so one left mounted would
 // answer a later test's keypress and fullscreen its own stale wrapper

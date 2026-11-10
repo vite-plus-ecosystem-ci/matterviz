@@ -21,7 +21,7 @@ import type { Camera, Scene, WebGPURenderer } from 'three/webgpu'
 import { Vector2, PerspectiveCamera } from 'three/webgpu'
 import { plan_movie, movie_frame } from '#lib/trajectory/movie.js'
 import { crc32 } from 'node:zlib'
-import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { mock_object_url } from '../setup'
 import { png_blob } from '../test-fixtures'
 

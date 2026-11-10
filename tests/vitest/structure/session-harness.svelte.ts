@@ -14,7 +14,7 @@ import type { ResolvedPolyhedraOptions } from '#lib/structure/polyhedra.js'
 import { StructureSession } from '#lib/structure/session.svelte.js'
 import type { CellType, SymmetryDataset } from '#lib/symmetry/index.js'
 import { flushSync } from 'svelte'
-import { onTestFinished } from 'vitest'
+import { onTestFinished } from 'vite-plus/test'
 import { get_dummy_structure, image_options } from '../test-fixtures'
 
 export type SessionHost = {

@@ -17,7 +17,7 @@ import {
   mount,
   type ComponentProps,
 } from 'svelte'
-import { describe, expect, onTestFinished, test, vi } from 'vitest'
+import { describe, expect, onTestFinished, test, vi } from 'vite-plus/test'
 import {
   doc_query,
   pin_cycle,

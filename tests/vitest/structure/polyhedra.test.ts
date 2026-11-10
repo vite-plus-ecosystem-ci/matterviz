@@ -34,7 +34,7 @@ import {
   InterleavedBufferAttribute,
   Vector3,
 } from 'three/webgpu'
-import { beforeEach, describe, expect, test, vi } from 'vitest'
+import { beforeEach, describe, expect, test, vi } from 'vite-plus/test'
 import {
   fcc_primitive_matrix,
   image_options,

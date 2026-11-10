@@ -1,7 +1,7 @@
 import GibbsEnergyPlot from '#lib/phase-diagram/GibbsEnergyPlot.svelte'
 import type { BinaryPhaseDiagram, DiagramCursor } from '#lib/phase-diagram/types.js'
 import { binary_diagrams } from '#site/phase-diagrams.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import { mount_sized } from '../setup'
 import { eutectic } from './fixtures/test-data'
 

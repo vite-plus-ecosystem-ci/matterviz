@@ -7,7 +7,7 @@ import prop_docs from 'virtual:prop-docs'
 import { flushSync, mount } from 'svelte'
 import { globSync } from 'node:fs'
 import { resolve } from 'node:path'
-import { describe, expect, test, vi } from 'vitest'
+import { describe, expect, test, vi } from 'vite-plus/test'
 import { doc_query } from '../setup'
 
 vi.mock(`$app/state`, () => ({ page: { route: { id: `/(demos)/layout/info-tag` } } }))

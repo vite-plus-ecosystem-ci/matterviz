@@ -12,7 +12,7 @@ import { binary_diagrams } from '#site/phase-diagrams.js'
 import { rgb } from 'd3-color'
 import type { ComponentProps } from 'svelte'
 import { mount } from 'svelte'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 import {
   create_hover_info,
   eutectic,

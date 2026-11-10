@@ -16,7 +16,7 @@ import { DEFAULTS } from '#lib/settings.js'
 import { read_pan_offset, set_pan_offset } from '#lib/scene/pan.js'
 import { type ComponentProps, flushSync } from 'svelte'
 import { type Camera, OrthographicCamera, PerspectiveCamera } from 'three/webgpu'
-import { expect, onTestFinished, test, vi } from 'vitest'
+import { expect, onTestFinished, test, vi } from 'vite-plus/test'
 import { mount_scene } from './mount'
 
 // SceneCamera with no position yet (as while a scene measures its bounds) unless given one

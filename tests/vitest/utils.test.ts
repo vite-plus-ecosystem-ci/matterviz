@@ -8,7 +8,7 @@ import {
   toggle_item,
   value_key,
 } from '#lib/utils.js'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from 'vite-plus/test'
 
 test.each([
   [{}, true],

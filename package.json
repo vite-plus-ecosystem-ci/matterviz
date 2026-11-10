@@ -295,7 +295,7 @@
     "movie": "node src/scripts/movie.mjs",
     "snapshot": "node src/scripts/snapshot.mjs",
     "build:site": "vp build && pagefind --site build",
-    "test": "vitest run && playwright test",
+    "test": "vp test run && playwright test",
     "typecheck": "node -e \"process.exit(+!require('fs').existsSync('extensions/anywidget/node_modules/anywidget'))\" || pnpm install:anywidget && svelte-check --tsconfig ./tsconfig.json --config ./vite.config.ts --threshold warning",
     "knip": "knip --include files,dependencies,exports,types,nsExports",
     "publint": "publint",
@@ -346,7 +346,7 @@
     "@types/d3-time-format": "^4.0.3",
     "@types/node": "^26.6.6",
     "@types/three": "^0.187.0",
-    "@vitest/coverage-v8": "5.1.0",
+    "@vitest/coverage-v8": "catalog:",
     "@wooorm/starry-night": "^3.11.0",
     "happy-dom": "^21.0.4",
     "knip": "^6.44.2",
@@ -355,9 +355,9 @@
     "svelte": "^5.57.3",
     "svelte-check": "^4.7.8",
     "typescript": "^6.0.3",
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.5.1",
-    "vite-plus": "1.5.1",
-    "vitest": "5.1.0"
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
   },
   "peerDependencies": {
     "svelte": "^5.48.0"
