@@ -3,7 +3,7 @@
 // must error instead of leaving a blank panel. Mock `./viewer` and @jupyterlab/*
 // (@microsoft/fast throws outside a real browser); keep @lumino/widgets real.
 import type { DocumentRegistry } from '@jupyterlab/docregistry'
-import { beforeEach, expect, test, vi } from 'vitest'
+import { beforeEach, expect, test, vi } from 'vite-plus/test'
 
 const create_display = vi.fn((root: HTMLElement) => {
   root.textContent = `mounted`
